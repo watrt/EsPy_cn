@@ -34,7 +34,7 @@ namespace EsPy.Forms
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern IntPtr PostMessage(IntPtr hWnd, int msg, IntPtr wp, IntPtr lp);
-
+        int lastCaretPos = 0;
         private EditorForm()
         {
             InitializeComponent();
@@ -43,8 +43,7 @@ namespace EsPy.Forms
             this.DockAreas = DockAreas.Document;
             this.EOLVisible = Properties.Settings.Default.EolVisible;
             this.WhitespaceVisible = Properties.Settings.Default.WhitespaceVisible;
-            
-            
+
         }
 
         public EditorForm(MainForm main_form) : this()
@@ -397,9 +396,62 @@ namespace EsPy.Forms
                 this.Port = null;
             }
         }
+        private static bool IsBrace(int c)
+        {
+            switch (c)
+            {
+                case '(':
+                case ')':
+                case '[':
+                case ']':
+                case '{':
+                case '}':
+                case '<':
+                case '>':
+                    return true;
+            }
+
+            return false;
+        }
 
         public void UpdateUI()
         {
+            // Has the caret changed position?
+            var caretPos = this.scintilla.CurrentPosition;
+            if (lastCaretPos != caretPos)
+            {
+                lastCaretPos = caretPos;
+                var bracePos1 = -1;
+                var bracePos2 = -1;
+
+                // Is there a brace to the left or right?
+                if (caretPos > 0 && IsBrace(this.scintilla.GetCharAt(caretPos - 1)))
+                    bracePos1 = (caretPos - 1);
+                else if (IsBrace(this.scintilla.GetCharAt(caretPos)))
+                    bracePos1 = caretPos;
+
+                if (bracePos1 >= 0)
+                {
+                    // Find the matching brace
+                    bracePos2 = this.scintilla.BraceMatch(bracePos1);
+                    if (bracePos2 == Scintilla.InvalidPosition)
+                    {
+                        this.scintilla.BraceBadLight(bracePos1);
+                        this.scintilla.HighlightGuide = 0;
+                    }
+                    else
+                    {
+                        this.scintilla.BraceHighlight(bracePos1, bracePos2);
+                        this.scintilla.HighlightGuide = this.scintilla.GetColumn(bracePos1);
+                    }
+                }
+                else
+                {
+                    // Turn off brace matching
+                    this.scintilla.BraceHighlight(Scintilla.InvalidPosition, Scintilla.InvalidPosition);
+                    this.scintilla.HighlightGuide = 0;
+                }
+            }
             this.mnUpload.Enabled =
             this.btnUpload.Enabled = this.Port != null
                 && this.Port.IsOpen && !this.Port.Busy;

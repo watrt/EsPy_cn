@@ -291,6 +291,11 @@ namespace EsPy.Forms
             this.scintilla.Focus();
         }
 
+        private void scintilla_CharAdded(object sender, CharAddedEventArgs e)
+        {
+            this.scintilla.AutoCCancel();
+        }
+
         //public void UIStateChanged(object sender, UIChangedEventArgs e)
         //{
         //    //throw new NotImplementedException();

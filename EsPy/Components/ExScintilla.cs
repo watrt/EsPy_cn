@@ -54,6 +54,7 @@ namespace EsPy.Components
             this.CharAdded += new System.EventHandler<ScintillaNET.CharAddedEventArgs>(this.ExScintilla_CharAdded);
             this.Delete += new System.EventHandler<ScintillaNET.ModificationEventArgs>(this.ExScintilla_Delete);
             this.DwellEnd += new System.EventHandler<ScintillaNET.DwellEventArgs>(this.ExScintilla_DwellEnd);
+            this.TextChanged += new System.EventHandler(this.ExScintilla_TextChanged);
             this.Leave += new System.EventHandler(this.ExScintilla_Leave);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ExScintilla_MouseDown);
             this.MouseHover += new System.EventHandler(this.ExScintilla_MouseHover);
@@ -434,13 +435,19 @@ namespace EsPy.Components
             this.StyleResetDefault();
             this.Styles[Style.Default].Font = "Consolas";
             this.Styles[Style.Default].Size = 10;
-            this.StyleClearAll(); 
+            this.StyleClearAll();
+
+            //括号高亮
+            this.Styles[Style.BraceLight].BackColor = Color.LightGray;
+            this.Styles[Style.BraceLight].ForeColor = Color.BlueViolet;
+            this.Styles[Style.BraceBad].ForeColor = Color.Red;
 
             this.IndentWidth = 4;
             this.TabWidth = 4;
             this.IndentationGuides = IndentView.LookBoth;
 
-
+            this.ExtraAscent = Properties.Settings.Default.ExtraAscent;
+            this.ExtraDescent = Properties.Settings.Default.ExtraDescent;
             this.SetProperty("tab.timmy.whinge.level", "1");
             this.SetProperty("fold", "1");
 
@@ -512,9 +519,77 @@ namespace EsPy.Components
 
         }
 
+        private void InsertMatchedChars(CharAddedEventArgs e)
+        {
+            var caretPos = this.CurrentPosition;
+            var docStart = caretPos == 1;
+            var docEnd = caretPos == this.Text.Length;
+
+            var charPrev = docStart ? this.GetCharAt(caretPos) : this.GetCharAt(caretPos - 2);
+            var charNext = this.GetCharAt(caretPos);
+
+            var isCharPrevBlank = charPrev == ' ' || charPrev == '\t' ||
+                                  charPrev == '\n' || charPrev == '\r';
+
+            var isCharNextBlank = charNext == ' ' || charNext == '\t' ||
+                                  charNext == '\n' || charNext == '\r' ||
+                                  docEnd;
+
+            var isEnclosed = (charPrev == '(' && charNext == ')') ||
+                                  (charPrev == '{' && charNext == '}') ||
+                                  (charPrev == '[' && charNext == ']');
+
+            var isSpaceEnclosed = (charPrev == '(' && isCharNextBlank) || (isCharPrevBlank && charNext == ')') ||
+                                  (charPrev == '{' && isCharNextBlank) || (isCharPrevBlank && charNext == '}') ||
+                                  (charPrev == '[' && isCharNextBlank) || (isCharPrevBlank && charNext == ']');
+
+            var isCharOrString = (isCharPrevBlank && isCharNextBlank) || isEnclosed || isSpaceEnclosed;
+
+            var charNextIsCharOrString = charNext == '"' || charNext == '\'';
+
+            switch (e.Char)
+            {
+                case '(':
+                    if (charNextIsCharOrString) return;
+                    this.InsertText(caretPos, ")");
+                    break;
+                case '{':
+                    if (charNextIsCharOrString) return;
+                    this.InsertText(caretPos, "}");
+                    break;
+                case '[':
+                    if (charNextIsCharOrString) return;
+                    this.InsertText(caretPos, "]");
+                    break;
+                case '"':
+                    // 0x22 = "
+                    if (charPrev == 0x22 && charNext == 0x22)
+                    {
+                        this.DeleteRange(caretPos, 1);
+                        this.GotoPosition(caretPos);
+                        return;
+                    }
+
+                    if (isCharOrString)
+                        this.InsertText(caretPos, "\"");
+                    break;
+                case '\'':
+                    // 0x27 = '
+                    if (charPrev == 0x27 && charNext == 0x27)
+                    {
+                        this.DeleteRange(caretPos, 1);
+                        this.GotoPosition(caretPos);
+                        return;
+                    }
+
+                    if (isCharOrString)
+                        this.InsertText(caretPos, "'");
+                    break;
+            }
+        }
         private void ExScintilla_CharAdded(object sender, CharAddedEventArgs e)
         {
-
+            InsertMatchedChars(e);
             // Find the word start
             int currentPos = this.CurrentPosition;
             int wordStartPos = this.WordStartPosition(currentPos, true);
@@ -524,7 +599,8 @@ namespace EsPy.Components
             if (lenEntered > 0)
             {
                 if (!this.AutoCActive)
-                    this.AutoCShow(lenEntered, "abstract as base break case catch checked continue default delegate do else event explicit extern false finally fixed for foreach goto if implicit in interface internal is lock namespace new null object operator out override params private protected public readonly ref return sealed sizeof stackalloc switch this throw true try typeof unchecked unsafe using virtual while");
+                    this.AutoCShow(lenEntered, "abstract as base break case catch checked continue default delegate do else event explicit extern false finally fixed for foreach goto if implicit in interface internal is lock namespace new null object operator out override params private protected public readonly ref return sealed sizeof stackalloc switch this throw true try typeof unchecked unsafe using virtual while cmath gc math uarray uasyncio ubinascii ucollections uerrno uhashlib uheapq uio ujson uos ure uselect usocket ussl ustruct usys utime uzlib _thread btree framebuf machine micropython network ubluetooth ucryptolib uctypes");
+
             }
 
             //var currentPos = this.CurrentPosition;
@@ -630,6 +706,11 @@ namespace EsPy.Components
                     
             //    }
             //}
+        }
+
+        private void ExScintilla_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

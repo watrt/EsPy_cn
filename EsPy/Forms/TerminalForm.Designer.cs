@@ -279,19 +279,19 @@
             this.toolStripSeparator3,
             this.advancedToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(180, 316);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(169, 288);
             // 
             // cmSoftReset
             // 
             this.cmSoftReset.Enabled = false;
             this.cmSoftReset.Name = "cmSoftReset";
-            this.cmSoftReset.Size = new System.Drawing.Size(179, 26);
+            this.cmSoftReset.Size = new System.Drawing.Size(168, 26);
             this.cmSoftReset.Text = "软复位";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(176, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(165, 6);
             // 
             // cmUndo
             // 
@@ -301,7 +301,7 @@
             this.cmUndo.MergeIndex = 0;
             this.cmUndo.Name = "cmUndo";
             this.cmUndo.ShortcutKeyDisplayString = "Ctrl+Z";
-            this.cmUndo.Size = new System.Drawing.Size(179, 26);
+            this.cmUndo.Size = new System.Drawing.Size(168, 26);
             this.cmUndo.Text = "撒消";
             this.cmUndo.Click += new System.EventHandler(this.mnUndo_Click);
             // 
@@ -313,7 +313,7 @@
             this.cmRedo.MergeIndex = 1;
             this.cmRedo.Name = "cmRedo";
             this.cmRedo.ShortcutKeyDisplayString = "Ctrl+Y";
-            this.cmRedo.Size = new System.Drawing.Size(179, 26);
+            this.cmRedo.Size = new System.Drawing.Size(168, 26);
             this.cmRedo.Text = "重做";
             this.cmRedo.Click += new System.EventHandler(this.mnRedo_Click);
             // 
@@ -322,7 +322,7 @@
             this.toolStripSeparator4.MergeAction = System.Windows.Forms.MergeAction.Insert;
             this.toolStripSeparator4.MergeIndex = 2;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(176, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(165, 6);
             // 
             // cmCut
             // 
@@ -332,7 +332,7 @@
             this.cmCut.MergeIndex = 3;
             this.cmCut.Name = "cmCut";
             this.cmCut.ShortcutKeyDisplayString = "Ctrl+X";
-            this.cmCut.Size = new System.Drawing.Size(179, 26);
+            this.cmCut.Size = new System.Drawing.Size(168, 26);
             this.cmCut.Text = "剪切";
             this.cmCut.Click += new System.EventHandler(this.mnCut_Click);
             // 
@@ -344,7 +344,7 @@
             this.cmCopy.MergeIndex = 4;
             this.cmCopy.Name = "cmCopy";
             this.cmCopy.ShortcutKeyDisplayString = "";
-            this.cmCopy.Size = new System.Drawing.Size(179, 26);
+            this.cmCopy.Size = new System.Drawing.Size(168, 26);
             this.cmCopy.Text = "复制";
             this.cmCopy.Click += new System.EventHandler(this.mnCopy_Click);
             // 
@@ -356,7 +356,7 @@
             this.cmPaste.MergeIndex = 5;
             this.cmPaste.Name = "cmPaste";
             this.cmPaste.ShortcutKeyDisplayString = "Ctrl+V";
-            this.cmPaste.Size = new System.Drawing.Size(179, 26);
+            this.cmPaste.Size = new System.Drawing.Size(168, 26);
             this.cmPaste.Text = "粘贴";
             this.cmPaste.Click += new System.EventHandler(this.mnPaste_Click);
             // 
@@ -367,7 +367,7 @@
             this.cmDelete.MergeIndex = 6;
             this.cmDelete.Name = "cmDelete";
             this.cmDelete.ShortcutKeyDisplayString = "Del";
-            this.cmDelete.Size = new System.Drawing.Size(179, 26);
+            this.cmDelete.Size = new System.Drawing.Size(168, 26);
             this.cmDelete.Text = "删除";
             this.cmDelete.Click += new System.EventHandler(this.mnDelete_Click);
             // 
@@ -375,14 +375,14 @@
             // 
             this.cmClean.Image = global::EsPy.Properties.Resources.editclear;
             this.cmClean.Name = "cmClean";
-            this.cmClean.Size = new System.Drawing.Size(179, 26);
+            this.cmClean.Size = new System.Drawing.Size(168, 26);
             this.cmClean.Text = "清屏";
             this.cmClean.Click += new System.EventHandler(this.mnClean_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(176, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(165, 6);
             // 
             // cmSelectAll
             // 
@@ -391,14 +391,14 @@
             this.cmSelectAll.MergeIndex = 8;
             this.cmSelectAll.Name = "cmSelectAll";
             this.cmSelectAll.ShortcutKeyDisplayString = "";
-            this.cmSelectAll.Size = new System.Drawing.Size(179, 26);
+            this.cmSelectAll.Size = new System.Drawing.Size(168, 26);
             this.cmSelectAll.Text = "保存全部";
             this.cmSelectAll.Click += new System.EventHandler(this.mnSelectAll_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(176, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(165, 6);
             // 
             // advancedToolStripMenuItem
             // 
@@ -406,7 +406,7 @@
             this.cmShowEOL,
             this.cmShowWhitespace});
             this.advancedToolStripMenuItem.Name = "advancedToolStripMenuItem";
-            this.advancedToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.advancedToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.advancedToolStripMenuItem.Text = "高级";
             // 
             // cmShowEOL
@@ -444,6 +444,7 @@
             this.scintilla.Size = new System.Drawing.Size(885, 302);
             this.scintilla.TabIndex = 2;
             this.scintilla.ViewWhitespace = ScintillaNET.WhitespaceMode.VisibleAlways;
+            this.scintilla.CharAdded += new System.EventHandler<ScintillaNET.CharAddedEventArgs>(this.scintilla_CharAdded);
             this.scintilla.UpdateUI += new System.EventHandler<ScintillaNET.UpdateUIEventArgs>(this.terminal_UpdateUI);
             // 
             // TerminalForm

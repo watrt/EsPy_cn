@@ -274,5 +274,37 @@ namespace EsPy.Properties {
                 this["Workpath"] = value;
             }
         }
+        
+        /// <summary>
+        /// 扩展行距
+        /// </summary>
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.SettingsDescriptionAttribute("扩展行距")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        public int ExtraAscent {
+            get {
+                return ((int)(this["ExtraAscent"]));
+            }
+            set {
+                this["ExtraAscent"] = value;
+            }
+        }
+        
+        /// <summary>
+        /// 扩展行距
+        /// </summary>
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.SettingsDescriptionAttribute("扩展行距")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        public int ExtraDescent {
+            get {
+                return ((int)(this["ExtraDescent"]));
+            }
+            set {
+                this["ExtraDescent"] = value;
+            }
+        }
     }
 }
