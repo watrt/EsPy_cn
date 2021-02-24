@@ -111,7 +111,10 @@ namespace EsPy.Components
 
         private void FPort_DataReceived(object sender, string data)
         {
-           
+            //byte[] gb;
+            //gb = Encoding.Default.GetBytes("#测试中文");
+            //gb = Encoding.Default.GetBytes(data);
+            //Console.WriteLine(Encoding.UTF8.GetString(gb));
             this.UpdateTerminal(data, "");
         }
 
@@ -158,9 +161,10 @@ namespace EsPy.Components
                 //{
                 //    this.DeleteRange(this.TextLength - 1, 1);
                 //}
-
+                
                 if (message != "")
                 {
+                    //message = Encoding.UTF8.GetString(Encoding.ASCII.GetBytes(message));
                     if (message.Contains("\r\n"))
                     {
                         this.AppendText(message);
@@ -381,6 +385,11 @@ namespace EsPy.Components
                         case Keys.Control | Keys.B:
                             //this.Port.Write(new byte[] { 2 });
                             this.Port.LeaveRawMode();
+                            return true;
+
+                        case Keys.Control | Keys.C:
+                            //this.Port.Write(new byte[] { 2 });
+                            this.Port.Interrupt();
                             return true;
 
                         case Keys.Control | Keys.I:

@@ -114,22 +114,22 @@ namespace EsPy.Forms
 
         private void Port_DataReceived(object sender, string data)
         {
-
+            
         }
 
         private void Port_PortClose(object sender, EventArgs e)
         {
-            this.scintilla.Append("\nDisconnected.\r\n");
+            this.scintilla.Append("\n断开端口.\r\n");
             this.scintilla.ReadOnly = true;
         }
 
         private void Port_PortOpen(object sender, EventArgs e)
         {
             this.scintilla.ReadOnly = false;
-            this.scintilla.Append($"{this.Port.PortName} {this.Port.BaudRate } Connected...\r\n");
-            this.scintilla.Append("Press CTRL + D or Soft Reset Button on the Toolbar\r\n");
+            this.scintilla.Append($"端口：{this.Port.PortName} 波特率：{this.Port.BaudRate } 已连接...\r\n");
+            this.scintilla.Append("按下 CTRL + D 或 [软复位] 按钮进行复位\r\n");
             //this.scintilla.Append("Press CTRL + C to interrupt current program.\r\n");
-            this.scintilla.Append("Press CTRL + I to interrupt current program.\r\n");
+            this.scintilla.Append("按下 CTRL + I 中断当前运行\r\n");
         }
 
         public ToolStrip ToolStrip
@@ -238,9 +238,12 @@ namespace EsPy.Forms
             if (c != null && c.Tag != null)
             {
                 string[] lines = c.Tag.ToString().Split(';');
+
+                
                 foreach (string line in lines)
                 {
                     this.Port.WriteLine(line);
+                    
                 }
             }
         }

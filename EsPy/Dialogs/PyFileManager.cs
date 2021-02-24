@@ -1,4 +1,5 @@
-﻿using EsPy.Units;
+﻿using EsPy.Forms;
+using EsPy.Units;
 using EsPy.Utility;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,8 @@ namespace EsPy.Dialogs
 
         public PySerial Port
         { get; set; }
-   
+        public string Pyfile
+        { get; set; }
 
         private List<PyFile> Files = null;
         private void Fill()
@@ -126,9 +128,28 @@ namespace EsPy.Dialogs
                 if (this.listView1.SelectedItems[0].Tag is PyFile)
                 {
                     PyFile f = this.listView1.SelectedItems[0].Tag as PyFile;
+                    //目录打开
                     if (f.IsDir)
                     {
                         path = f.FileName;
+                    }
+                    //文件下载
+                    if (f.IsFile)
+                    {
+                        ProgressDialog p = new ProgressDialog();
+                        string Filepath = "";
+                        p.Port = this.Port;
+                        p.Mode = ProgressDialog.Modes.Download;
+                        p.FileName = System.IO.Path.GetFileName(f.FileName);
+                        Filepath = System.AppDomain.CurrentDomain.BaseDirectory + Properties.Settings.Default.Workpath + "\\" + f.FileName;
+
+                        if (p.ShowDialog() == DialogResult.OK)
+                        {
+                            File.WriteAllBytes(Filepath, p.Buffer);
+                            this.Pyfile = Filepath;
+                            p.Dispose();
+                            this.Close();
+                        }
                     }
                 }
                 else
@@ -173,8 +194,8 @@ namespace EsPy.Dialogs
                 {
                     int i = this.listView1.SelectedItems[0].Index;
                     InputDialog d = new InputDialog();
-                    d.Text = "Rename";
-                    d.label1.Text = "New name:";
+                    d.Text = "重命名";
+                    d.label1.Text = "新名称:";
                     if (d.ShowDialog() == DialogResult.OK)
                     {
                         ResultStatus res = this.Port.Rename(f.FileName, d.textBox1.Text);
@@ -326,6 +347,31 @@ namespace EsPy.Dialogs
             {
                 this.listView1_DoubleClick(this, null);
                 e.Handled = true;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (this.listView1.SelectedItems != null && this.listView1.SelectedItems.Count > 0)
+            {
+                string path = "";
+                if (this.listView1.SelectedItems[0].Tag is PyFile)
+                {
+                    PyFile f = this.listView1.SelectedItems[0].Tag as PyFile;
+                    //文件才运行
+                    if (f.IsFile)
+                    {
+                        //MessageBox.Show(f.FileName);
+                        ResultStatus res = this.Port.Run(f.FileName);
+                        this.DialogResult = DialogResult.OK;
+                        this.Close();
+                    }
+                }
+                else
+                {
+                    path = this.listView1.SelectedItems[0].Text;
+                }
+
             }
         }
     }

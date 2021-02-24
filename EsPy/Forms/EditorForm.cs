@@ -255,6 +255,7 @@ namespace EsPy.Forms
             }
             else
             {
+                
                 this.SaveToFile(this.FileName);
                 //this.scintilla.SetSavePoint();
                 this.UpdateUI();
@@ -310,12 +311,13 @@ namespace EsPy.Forms
             {
                 text = this.scintilla.Text;
             }
-
+            
             this.Port.Interrupt();
             this.Port.Interrupt();
             this.Port.PasteMode();
             this.Port.ReadAllLines();
-            byte[] buff = Encoding.UTF8.GetBytes(text.Replace("\r", ""));
+            //text = text.Replace("\r\n", "\n").Replace("\n", "\r\n");
+            byte[] buff = Encoding.UTF8.GetBytes(text);
             this.Port.Write(buff, 0, buff.Length);
             this.Port.SoftReset();
         }

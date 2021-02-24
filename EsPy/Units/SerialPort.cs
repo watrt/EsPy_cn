@@ -38,7 +38,8 @@ namespace EsPy.Units
         public SerialPort()
         {
             this.SP = new System.IO.Ports.SerialPort();
-            this.Sync(false);
+            this.SP.Encoding = System.Text.Encoding.UTF8;
+             this.Sync(false);
         }
 
         public void Dispose()
@@ -282,6 +283,9 @@ namespace EsPy.Units
         {
             this.Busy = true;
             string part = this.SP.ReadExisting();
+
+
+            Console.WriteLine("收到文本:"+part);
             this.Prompt(part);
             return part;
         }
@@ -297,7 +301,8 @@ namespace EsPy.Units
         }
 
         public string ReadLine()
-        {          
+        {
+            
             string line = this.SP.ReadLine();
             this.Busy = line.EndsWith(PROMPT);
             return line;

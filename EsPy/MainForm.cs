@@ -141,7 +141,7 @@ namespace EsPy
 
                     if (e.ChangeType == WatcherChangeTypes.Changed)
                     {
-                        if (MessageBox.Show($"{e.FullPath}\r\n\r\nhas been modified by another program!\r\nWould you like reload it?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+                        if (MessageBox.Show($"{e.FullPath}\r\n\r\n文件被修改!\r\n是否重新载入?", "重载", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
                         {
                             (doc as IDocument).LoadFromFile(e.FullPath);
                         }
@@ -919,6 +919,7 @@ namespace EsPy
 
         private void mnViewHelp_Click(object sender, EventArgs e)
         {
+            
             string p = Path.Combine(Application.StartupPath, "Helps", "help.html");
             if (File.Exists(p))
                 System.Diagnostics.Process.Start(p);
@@ -958,6 +959,14 @@ namespace EsPy
                 PyFileManager d = new PyFileManager();
                 d.Port = this.Port;
                 d.ShowDialog();
+                if (d.Pyfile != null)
+                {
+                    IDocument doc = this.OpenFromFile(d.Pyfile, EditorForm.EditorFileFormats);
+                    if (doc != null)
+                    {
+                        (doc as DockContent).Show(this.dockPanel1);
+                    }
+                }
                 d.Dispose();
                 this.Port.Clean();
                 this.Port.Sync(false);

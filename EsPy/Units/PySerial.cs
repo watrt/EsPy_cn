@@ -334,7 +334,13 @@ namespace EsPy.Units
             //res.Data = new PyFile(fname, int.Parse(items[0].Trim()), int.Parse(items[6].Trim()));
             return res;
         }
-
+        public ResultStatus Run(string file)
+        {
+            List<string> prog = new List<string>();
+            this.WriteLine("import os");
+            this.WriteLine($"exec(open('./{file}').read(),globals())");
+            return new ResultStatus(ResultStatus.Statuses.Success,"");
+        }
         public ResultStatus Cd(string path)
         {
             List<string> prog = new List<string>();
