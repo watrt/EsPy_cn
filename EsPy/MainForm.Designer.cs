@@ -276,7 +276,7 @@
             // 
             this.settingsToolStripMenuItem.MergeIndex = 20;
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
             this.settingsToolStripMenuItem.Text = "设置...";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
@@ -292,7 +292,7 @@
             // mnTerminal
             // 
             this.mnTerminal.Name = "mnTerminal";
-            this.mnTerminal.Size = new System.Drawing.Size(114, 26);
+            this.mnTerminal.Size = new System.Drawing.Size(181, 26);
             this.mnTerminal.Text = "终端";
             this.mnTerminal.Click += new System.EventHandler(this.mnTerminal_Click);
             // 
@@ -718,14 +718,14 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnOpenFileFolder});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(182, 28);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 56);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // mnOpenFileFolder
             // 
             this.mnOpenFileFolder.Name = "mnOpenFileFolder";
-            this.mnOpenFileFolder.Size = new System.Drawing.Size(181, 24);
-            this.mnOpenFileFolder.Text = "Open Folder...";
+            this.mnOpenFileFolder.Size = new System.Drawing.Size(180, 24);
+            this.mnOpenFileFolder.Text = "打开所在目录...";
             this.mnOpenFileFolder.Click += new System.EventHandler(this.mnOpenFileFolder_Click);
             // 
             // visualStudioToolStripExtender1

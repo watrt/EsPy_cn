@@ -1,39 +1,32 @@
-# MicroPython IDE for ESP8266
+# MicroPython IDE for ESP32
 
-## v1.0.0.12
-### Downloads
-https://github.com/jungervin/EsPy/tree/master/EsPy/Release
+## v2.0.0.2
 
-### Minimum Requirements:
+
+### 依赖:
 
 - MS Windows 7
 - MS .NET Framework 4.6
 
-### Features:
+### 特性:
 
-- Code editor
-- Interactive terminal
-- File manager
-- esptool
+- 代码编辑
+- 终端运行
+- 文件管理
+- 自带烧写工具
+- 全部完成汉化
+- 优化操作
+- 支持中文IDE
+- 优化布局
 
-### Installation:
-
-Only unzip the downloaded file and run EsPy.exe
-
-To use all features ([esptool](https://github.com/espressif/esptool)),  [Python](https://www.python.org) installation is recomended
-
-**After Python intsallation:**
+**安装扩展 Python intsallation:**
 
 - python -m pip install --upgrade pip  
 - python -m pip install esptool
 
-### Quick Start:
+### 快速开始:
 
-1. On the menubar choose Device => Ports and select one
-2. Press the connect button on the toolbar 
-3. Press the Soft Reset button on the toolbar
-4. Press the New button on the toolbar and create a new py file
-5. Type the code and press the Run button on the toolbar. (When the statusbar color is orange, it means the device is busy)
+
 
 **quick test:**
 ```python
@@ -49,15 +42,4 @@ To use all features ([esptool](https://github.com/espressif/esptool)),  [Python]
     time.sleep_ms(500)
     p.high()
 ```
-
-**Good to know:**
-- Filemanager is enabled when device is connected and not busy
-- Esptool enabled when the port is closed
-
-### Images:
-![alt text](https://raw.githubusercontent.com/jungervin/EsPy/master/EsPy/Helps/images/espy.png "Main screen")
-
-![alt text](https://raw.githubusercontent.com/jungervin/EsPy/master/EsPy/Helps/images/filemanager.png "File Manager")
-
-![alt text](https://raw.githubusercontent.com/jungervin/EsPy/master/EsPy/Helps/images/esptool.png "esptool")
 

@@ -102,7 +102,7 @@ namespace EsPy.Dialogs
         {
             if (this.cbPort.SelectedItem == null)
             {
-                Helpers.WarningBox("There is not selected serial port!");
+                Helpers.WarningBox("没有选择串口!");
                 return "";
             }
 
@@ -229,10 +229,10 @@ namespace EsPy.Dialogs
         {
             if (this.CheckPaths(false))
             {
-                if (MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                if (MessageBox.Show("确定擦除设备?", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                 {
                     string args = String.Format("\"{0}\" -p {1} -b {2} erase_flash", this.tbEsptool.Text, this.PortName, this.BaudRate);
-                    this.textBox4.Text = "Please wait...\r\n\r\n";
+                    this.textBox4.Text = "请等待...\r\n\r\n";
                     Application.DoEvents();
                     this.textBox4.Text += this.Run(this.tbPython.Text, args);
                 }
@@ -243,7 +243,7 @@ namespace EsPy.Dialogs
         {
             if (this.CheckPaths())
             {
-                if (MessageBox.Show("Are you sure? Did you erase the device?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                if (MessageBox.Show("你确定写入设备吗?", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                 {
 
                     //string args = String.Format("\"{0}\" -p {1} -b {2} write_flash --verify --flash_size=detect 0 \"{3}\"", this.tbEsptool.Text, this.PortName, this.BaudRate, this.tbFirmware.Text);
@@ -269,7 +269,7 @@ namespace EsPy.Dialogs
                         args = " \"" + this.tbEsptool.Text + "\" " + args;
 
                         this.textBox4.Text = args + "\r\n\r\n";
-                        this.textBox4.Text += "Please wait...\r\n\r\n";
+                        this.textBox4.Text += "请等待...\r\n\r\n";
 
                         Application.DoEvents();
                         this.textBox4.Text += this.Run(this.tbPython.Text, args);
@@ -297,13 +297,13 @@ namespace EsPy.Dialogs
             string err = "";
 
             if (!File.Exists(this.tbPython.Text))
-                err += "python.exe does not exists!\r\n";
+                err += "python.exe 位置不正确!\r\n";
 
             if (!File.Exists(this.tbEsptool.Text))
-                err += "esptool.py does not exists!\r\n";
+                err += "esptool.py 位置不正确!\r\n";
 
             if (firmware && !File.Exists(this.tbFirmware.Text))
-                err += "firmware.bin does not exists!\r\n";
+                err += "firmware.bin 位置不正确!\r\n";
 
             if (err != "")
             {
@@ -334,7 +334,7 @@ namespace EsPy.Dialogs
             {
                 this.cbBaudrate.BackColor = Color.Red;
                 this.cbBaudrate.ForeColor = Color.White;
-                Helpers.ErrorBox("Baud rate has invalid value!\r\n");
+                Helpers.ErrorBox("波特率无效的值!\r\n");
                 e.Cancel = true;
             }
 

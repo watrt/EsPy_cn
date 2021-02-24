@@ -229,9 +229,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="ClassDiagram1.cd" />
-    <None Include="Release\EsPy.1.0.0.10.7z" />
-    <None Include="Release\EsPy.1.0.0.7.7z" />
-    <None Include="Release\EsPy.1.0.0.9.7z" />
     <None Include="Resources\error16.png" />
     <None Include="Resources\info.png" />
     <None Include="Resources\compile.png" />
@@ -439,6 +436,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

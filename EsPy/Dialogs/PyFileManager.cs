@@ -172,8 +172,8 @@ namespace EsPy.Dialogs
         private void bntMkDir_Click(object sender, EventArgs e)
         {
             InputDialog d = new InputDialog();
-            d.Text = "MkDir";
-            d.label1.Text = "Directory name:";
+            d.Text = "新建文件夹";
+            d.label1.Text = "文件夹名称:";
             if (d.ShowDialog() == DialogResult.OK)
             {
                 ResultStatus res = this.Port.MkDir(d.textBox1.Text);
@@ -224,7 +224,7 @@ namespace EsPy.Dialogs
                 if (f != null)
                 {
                     ResultStatus res = null;
-                    if (MessageBox.Show("Are you sure?", "Delete",MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("确定删除?", "删除",MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         if (f.IsDir)
                         {
@@ -236,7 +236,7 @@ namespace EsPy.Dialogs
                         }
                         else
                         {
-                            MessageBox.Show("Unknow type!");
+                            MessageBox.Show("未知类型!");
                             return;
                         }
                         if (res.Result == ResultStatus.Statuses.Success)

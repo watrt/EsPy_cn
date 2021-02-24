@@ -265,7 +265,7 @@ namespace EsPy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("./src")]
+        [global::System.Configuration.DefaultSettingValueAttribute("src")]
         public string Workpath {
             get {
                 return ((string)(this["Workpath"]));

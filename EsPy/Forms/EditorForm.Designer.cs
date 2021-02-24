@@ -734,7 +734,7 @@
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(36, 36);
             this.btnRun.Text = "运行 ";
-            this.btnRun.ToolTipText = "Run (Ctrl+R)";
+            this.btnRun.ToolTipText = "运行 (Ctrl+R)";
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
             // btnPause
@@ -761,7 +761,7 @@
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(36, 36);
             this.btnUpload.Text = "上传";
-            this.btnUpload.ToolTipText = "Upload to the current directory";
+            this.btnUpload.ToolTipText = "上传到当前位置";
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // scintilla

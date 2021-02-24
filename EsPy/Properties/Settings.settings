@@ -63,7 +63,7 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Workpath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">./src</Value>
+      <Value Profile="(Default)">src</Value>
     </Setting>
     <Setting Name="ExtraAscent" Description="扩展行距" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
