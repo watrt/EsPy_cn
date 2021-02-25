@@ -71,5 +71,11 @@
     <Setting Name="ExtraDescent" Description="扩展行距" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
+    <Setting Name="InsertMatchedChars" Description="自动合闭字符" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="fontsize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

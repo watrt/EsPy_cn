@@ -306,5 +306,33 @@ namespace EsPy.Properties {
                 this["ExtraDescent"] = value;
             }
         }
+        
+        /// <summary>
+        /// 自动合闭字符
+        /// </summary>
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.SettingsDescriptionAttribute("自动合闭字符")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool InsertMatchedChars {
+            get {
+                return ((bool)(this["InsertMatchedChars"]));
+            }
+            set {
+                this["InsertMatchedChars"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int fontsize {
+            get {
+                return ((int)(this["fontsize"]));
+            }
+            set {
+                this["fontsize"] = value;
+            }
+        }
     }
 }

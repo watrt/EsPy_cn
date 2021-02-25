@@ -283,9 +283,6 @@ namespace EsPy.Units
         {
             this.Busy = true;
             string part = this.SP.ReadExisting();
-
-
-            Console.WriteLine("收到文本:"+part);
             this.Prompt(part);
             return part;
         }

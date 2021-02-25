@@ -370,9 +370,6 @@ namespace EsPy.Components
                                 //byte[] buff = Encoding.UTF8.GetBytes(Clipboard.GetText().Replace("\r", ""));
                                 //this.Port.Write(buff, 0, buff.Length);
                                 //this.Port.SoftReset();
-
-                                 
-
                             }
                             return true;
 

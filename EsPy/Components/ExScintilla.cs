@@ -434,7 +434,7 @@ namespace EsPy.Components
             this.EolMode = Eol.CrLf;
             this.StyleResetDefault();
             this.Styles[Style.Default].Font = "Consolas";
-            this.Styles[Style.Default].Size = 10;
+            this.Styles[Style.Default].Size = Properties.Settings.Default.fontsize;
             this.StyleClearAll();
 
             //括号高亮
@@ -442,8 +442,8 @@ namespace EsPy.Components
             this.Styles[Style.BraceLight].ForeColor = Color.BlueViolet;
             this.Styles[Style.BraceBad].ForeColor = Color.Red;
 
-            this.IndentWidth = 4;
-            this.TabWidth = 4;
+            this.IndentWidth = 2;
+            this.TabWidth = 2;
             this.IndentationGuides = IndentView.LookBoth;
 
             this.ExtraAscent = Properties.Settings.Default.ExtraAscent;
@@ -485,10 +485,12 @@ namespace EsPy.Components
             this.EolMode = Eol.CrLf;
             this.StyleResetDefault();
             this.Styles[Style.Default].Font = "Consolas";
-            this.Styles[Style.Default].Size = 10;
+            this.Styles[Style.Default].Size = Properties.Settings.Default.fontsize;
             this.StyleClearAll(); // i.e. Apply to all
-            
-          
+
+            this.ExtraAscent = Properties.Settings.Default.ExtraAscent;
+            this.ExtraDescent = Properties.Settings.Default.ExtraDescent;
+
             this.SetProperty("tab.timmy.whinge.level", "1");
             this.SetProperty("fold", "1");
 
@@ -589,7 +591,11 @@ namespace EsPy.Components
         }
         private void ExScintilla_CharAdded(object sender, CharAddedEventArgs e)
         {
-            InsertMatchedChars(e);
+            if (Properties.Settings.Default.InsertMatchedChars)
+            {
+                InsertMatchedChars(e);
+            }
+            
             // Find the word start
             int currentPos = this.CurrentPosition;
             int wordStartPos = this.WordStartPosition(currentPos, true);
