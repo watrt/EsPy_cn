@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsDialog));
             this.label1 = new System.Windows.Forms.Label();
             this.tbPythonPath = new System.Windows.Forms.TextBox();
             this.btnPythonPath = new System.Windows.Forms.Button();
@@ -40,17 +41,17 @@
             this.workpath = new System.Windows.Forms.TextBox();
             this.btnworkpath = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.InsertMatchedChars = new System.Windows.Forms.CheckBox();
-            this.spacing = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.fontsize = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.spacing = new System.Windows.Forms.NumericUpDown();
+            this.InsertMatchedChars = new System.Windows.Forms.CheckBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fontsize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spacing)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fontsize)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -188,15 +189,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "编辑器设置";
             // 
-            // InsertMatchedChars
+            // fontsize
             // 
-            this.InsertMatchedChars.AutoSize = true;
-            this.InsertMatchedChars.Location = new System.Drawing.Point(501, 36);
-            this.InsertMatchedChars.Name = "InsertMatchedChars";
-            this.InsertMatchedChars.Size = new System.Drawing.Size(164, 19);
-            this.InsertMatchedChars.TabIndex = 0;
-            this.InsertMatchedChars.Text = "自动闭合括号、引号";
-            this.InsertMatchedChars.UseVisualStyleBackColor = true;
+            this.fontsize.Location = new System.Drawing.Point(107, 72);
+            this.fontsize.Name = "fontsize";
+            this.fontsize.Size = new System.Drawing.Size(120, 25);
+            this.fontsize.TabIndex = 16;
+            this.fontsize.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(19, 78);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 15);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "字体大小：";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(49, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "行距：";
             // 
             // spacing
             // 
@@ -210,14 +231,15 @@
             0,
             0});
             // 
-            // label3
+            // InsertMatchedChars
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "行距：";
+            this.InsertMatchedChars.AutoSize = true;
+            this.InsertMatchedChars.Location = new System.Drawing.Point(501, 36);
+            this.InsertMatchedChars.Name = "InsertMatchedChars";
+            this.InsertMatchedChars.Size = new System.Drawing.Size(164, 19);
+            this.InsertMatchedChars.TabIndex = 0;
+            this.InsertMatchedChars.Text = "自动闭合括号、引号";
+            this.InsertMatchedChars.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -235,27 +257,6 @@
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "工作环境：";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 15);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "字体大小：";
-            // 
-            // fontsize
-            // 
-            this.fontsize.Location = new System.Drawing.Point(107, 72);
-            this.fontsize.Name = "fontsize";
-            this.fontsize.Size = new System.Drawing.Size(120, 25);
-            this.fontsize.TabIndex = 16;
-            this.fontsize.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
             // 
             // label9
             // 
@@ -282,6 +283,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -291,10 +293,10 @@
             this.Load += new System.EventHandler(this.SettingsDialog_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fontsize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spacing)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fontsize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

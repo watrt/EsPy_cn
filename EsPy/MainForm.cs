@@ -235,7 +235,7 @@ namespace EsPy
             set
             {
                 Properties.Settings.Default.PortName = value ?? "";
-                this.toolStripStatusLabel2.Text = value ?? "Unknown";
+                this.toolStripStatusLabel2.Text = value ?? "未知";
             }
         }
 
@@ -259,7 +259,7 @@ namespace EsPy
                 }
                 catch (Exception ex)
                 {
-                    Helpers.ErrorBox(ex.Message + "\r\n\r\n"+ "Plase restart the program!");
+                    Helpers.ErrorBox(ex.Message + "\r\n\r\n"+ "请重新启动程序!");
                     this.TerminalForm.Close();
                     this.Close();
                     return;
@@ -523,7 +523,7 @@ namespace EsPy
                                 IDocument d = dc as IDocument;
                                 if (d.FileName == path)
                                 {
-                                    if (MessageBox.Show($"{path} already exists!\r\n\r\nWould you like reload it?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                                    if (MessageBox.Show($"{path} 已经打开!\r\n\r\n是否要重新加载它?", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                                     {
                                         d.LoadFromFile(path);
                                         return d;
@@ -728,14 +728,14 @@ namespace EsPy
         {
             if (!CanConnect)
             {
-                Helpers.ErrorBox("Internal error at connecting!");
+                Helpers.ErrorBox("连接错误！");
                 return;
             }
 
             if (!this.ComportIsExists)
             {
                 //this.btnConnect.Enabled = false;
-                MessageBox.Show($"Serialport \"{this.CurretPortName}\" does not exists!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"串口 \"{this.CurretPortName}\" 不存在!", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -920,10 +920,10 @@ namespace EsPy
         private void mnViewHelp_Click(object sender, EventArgs e)
         {
             
-            string p = Path.Combine(Application.StartupPath, "Helps", "help.html");
+            string p = Path.Combine(Application.StartupPath, "帮助", "help.html");
             if (File.Exists(p))
                 System.Diagnostics.Process.Start(p);
-            else MessageBox.Show("Help file does not exits!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else MessageBox.Show("帮助文件不出口!", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void mnWebREPL_Click(object sender, EventArgs e)
@@ -931,7 +931,7 @@ namespace EsPy
             string p = Path.Combine(Application.StartupPath, "Tools", "webrepl", "webrepl.html");
             if (File.Exists(p))
                 System.Diagnostics.Process.Start(p);
-            else MessageBox.Show("Help file does not exits!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else MessageBox.Show("帮助文件不出口!", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void btnFlashing_Click(object sender, EventArgs e)
@@ -945,7 +945,7 @@ namespace EsPy
             }
             else
             {
-                MessageBox.Show("Select a Port first!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("请选择通信串口端口！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -1018,12 +1018,12 @@ namespace EsPy
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void ePS8266ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://docs.micropython.org/en/latest/esp8266/");
+            System.Diagnostics.Process.Start("http://docs.micropython.org/en/latest/esp32/quickref.html");
         }
 
         private void mnOpenFileFolder_Click(object sender, EventArgs e)
@@ -1046,6 +1046,11 @@ namespace EsPy
             {
                 this.TerminalForm.scintilla.Clean();
             }
+        }
+
+        private void myblog_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.付坤.中国");
         }
     }
 }

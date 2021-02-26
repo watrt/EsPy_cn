@@ -61,6 +61,7 @@
             this.mnHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.ePS8266ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnViewHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.myblog = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -259,6 +260,7 @@
             // 
             // exitToolStripMenuItem
             // 
+            this.exitToolStripMenuItem.Image = global::EsPy.Properties.Resources.power_exit;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
             this.exitToolStripMenuItem.Text = "退出";
@@ -291,8 +293,9 @@
             // 
             // mnTerminal
             // 
+            this.mnTerminal.Image = global::EsPy.Properties.Resources.command;
             this.mnTerminal.Name = "mnTerminal";
-            this.mnTerminal.Size = new System.Drawing.Size(181, 26);
+            this.mnTerminal.Size = new System.Drawing.Size(114, 26);
             this.mnTerminal.Text = "终端";
             this.mnTerminal.Click += new System.EventHandler(this.mnTerminal_Click);
             // 
@@ -312,7 +315,7 @@
             // 
             this.mnPorts.Image = global::EsPy.Properties.Resources.port;
             this.mnPorts.Name = "mnPorts";
-            this.mnPorts.Size = new System.Drawing.Size(181, 26);
+            this.mnPorts.Size = new System.Drawing.Size(151, 26);
             this.mnPorts.Text = "端口";
             // 
             // mnFileManager
@@ -320,19 +323,20 @@
             this.mnFileManager.Enabled = false;
             this.mnFileManager.Image = global::EsPy.Properties.Resources.filemanager;
             this.mnFileManager.Name = "mnFileManager";
-            this.mnFileManager.Size = new System.Drawing.Size(181, 26);
+            this.mnFileManager.Size = new System.Drawing.Size(151, 26);
             this.mnFileManager.Text = "文件管理";
             this.mnFileManager.Click += new System.EventHandler(this.mnFileManager_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(178, 6);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(148, 6);
             // 
             // mnEspTool
             // 
+            this.mnEspTool.Image = global::EsPy.Properties.Resources.cpu;
             this.mnEspTool.Name = "mnEspTool";
-            this.mnEspTool.Size = new System.Drawing.Size(181, 26);
+            this.mnEspTool.Size = new System.Drawing.Size(151, 26);
             this.mnEspTool.Text = "Esp工具...";
             this.mnEspTool.Click += new System.EventHandler(this.btnFlashing_Click);
             // 
@@ -347,7 +351,7 @@
             // mnWebREPL
             // 
             this.mnWebREPL.Name = "mnWebREPL";
-            this.mnWebREPL.Size = new System.Drawing.Size(153, 26);
+            this.mnWebREPL.Size = new System.Drawing.Size(181, 26);
             this.mnWebREPL.Text = "WebREPL";
             this.mnWebREPL.Click += new System.EventHandler(this.mnWebREPL_Click);
             // 
@@ -356,6 +360,7 @@
             this.mnHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ePS8266ToolStripMenuItem,
             this.mnViewHelp,
+            this.myblog,
             this.toolStripMenuItem1,
             this.mnAbout});
             this.mnHelp.Name = "mnHelp";
@@ -364,27 +369,37 @@
             // 
             // ePS8266ToolStripMenuItem
             // 
+            this.ePS8266ToolStripMenuItem.Image = global::EsPy.Properties.Resources.Mlogo_138wh;
             this.ePS8266ToolStripMenuItem.Name = "ePS8266ToolStripMenuItem";
-            this.ePS8266ToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
-            this.ePS8266ToolStripMenuItem.Text = "EPS8266...";
+            this.ePS8266ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.ePS8266ToolStripMenuItem.Text = "EPS32";
             this.ePS8266ToolStripMenuItem.Click += new System.EventHandler(this.ePS8266ToolStripMenuItem_Click);
             // 
             // mnViewHelp
             // 
+            this.mnViewHelp.Image = global::EsPy.Properties.Resources.help;
             this.mnViewHelp.Name = "mnViewHelp";
-            this.mnViewHelp.Size = new System.Drawing.Size(170, 26);
-            this.mnViewHelp.Text = "View Help...";
+            this.mnViewHelp.Size = new System.Drawing.Size(181, 26);
+            this.mnViewHelp.Text = "帮助";
             this.mnViewHelp.Click += new System.EventHandler(this.mnViewHelp_Click);
+            // 
+            // myblog
+            // 
+            this.myblog.Image = global::EsPy.Properties.Resources.watrt;
+            this.myblog.Name = "myblog";
+            this.myblog.Size = new System.Drawing.Size(181, 26);
+            this.myblog.Text = "我的博客";
+            this.myblog.Click += new System.EventHandler(this.myblog_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(167, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(178, 6);
             // 
             // mnAbout
             // 
             this.mnAbout.Name = "mnAbout";
-            this.mnAbout.Size = new System.Drawing.Size(170, 26);
+            this.mnAbout.Size = new System.Drawing.Size(181, 26);
             this.mnAbout.Text = "关于...";
             this.mnAbout.Click += new System.EventHandler(this.mnAbout_Click);
             // 
@@ -718,7 +733,7 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnOpenFileFolder});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 56);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 28);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // mnOpenFileFolder
@@ -741,6 +756,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -837,6 +853,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripButton btnTerminalClear;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem myblog;
     }
 }
 

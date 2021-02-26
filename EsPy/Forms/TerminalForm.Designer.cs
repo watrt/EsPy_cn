@@ -432,6 +432,8 @@
             this.scintilla.ContextMenuStrip = this.contextMenuStrip1;
             this.scintilla.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scintilla.EolMode = ScintillaNET.Eol.Cr;
+            this.scintilla.ExtraAscent = 3;
+            this.scintilla.ExtraDescent = 3;
             this.scintilla.IndentationGuides = ScintillaNET.IndentView.LookForward;
             this.scintilla.IndentWidth = 4;
             this.scintilla.Lexer = ScintillaNET.Lexer.Python;
@@ -443,6 +445,7 @@
             this.scintilla.ReadOnly = true;
             this.scintilla.Size = new System.Drawing.Size(885, 302);
             this.scintilla.TabIndex = 2;
+            this.scintilla.TabWidth = 2;
             this.scintilla.ViewWhitespace = ScintillaNET.WhitespaceMode.VisibleAlways;
             this.scintilla.CharAdded += new System.EventHandler<ScintillaNET.CharAddedEventArgs>(this.scintilla_CharAdded);
             this.scintilla.UpdateUI += new System.EventHandler<ScintillaNET.UpdateUIEventArgs>(this.terminal_UpdateUI);
