@@ -599,13 +599,15 @@ namespace EsPy.Components
             // Find the word start
             int currentPos = this.CurrentPosition;
             int wordStartPos = this.WordStartPosition(currentPos, true);
-
+            List<string> s = new List<string>();
+            s.AddRange("abstract|as|base|break|case|catch|checked|continue|default|delegate|do|else|event|explicit|extern|false|finally|fixed|for|foreach|goto|if|implicit|in|interface|internal|is|lock|namespace|new|null|object|operator|out|override|params|private|protected|public|readonly|ref|return|sealed|sizeof|stackalloc|switch|this|throw|true|try|typeof|unchecked|unsafe|using|virtual|while|cmath|gc|math|uarray|uasyncio|ubinascii|ucollections|uerrno|uhashlib|uheapq|uio|ujson|uos|ure|uselect|usocket|ussl|ustruct|usys|utime|uzlib|_thread|btree|framebuf|machine|micropython|network|ubluetooth|ucryptolib|uctypes".Split('|'));
+            s.Sort();
             // Display the autocompletion list
             int lenEntered = currentPos - wordStartPos;
             if (lenEntered > 0)
             {
                 if (!this.AutoCActive)
-                    this.AutoCShow(lenEntered, "abstract as base break case catch checked continue default delegate do else event explicit extern false finally fixed for foreach goto if implicit in interface internal is lock namespace new null object operator out override params private protected public readonly ref return sealed sizeof stackalloc switch this throw true try typeof unchecked unsafe using virtual while cmath gc math uarray uasyncio ubinascii ucollections uerrno uhashlib uheapq uio ujson uos ure uselect usocket ussl ustruct usys utime uzlib _thread btree framebuf machine micropython network ubluetooth ucryptolib uctypes");
+                    this.AutoCShow(lenEntered, string.Join(" ", s));
 
             }
 

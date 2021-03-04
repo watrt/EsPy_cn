@@ -563,7 +563,7 @@ namespace EsPy
                         }
 
                     }
-                    catch(Exception ex)
+                    catch(Exception)
                     {
                         if (item != null && item is IDisposable)
                         {
