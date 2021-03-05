@@ -1,0 +1,2 @@
+fontlib		字体目录
+weather		天气图标文件rgb565格式 高位在前
