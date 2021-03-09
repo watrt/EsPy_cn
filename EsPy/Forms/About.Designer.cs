@@ -65,9 +65,9 @@
             this.label3.Location = new System.Drawing.Point(16, 56);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 54);
+            this.label3.Size = new System.Drawing.Size(152, 54);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Copyright (c) Jung Ervin\r\n\r\n付坤汉化\r\n";
+            this.label3.Text = "这是一个开源软件！\r\n欢迎你使用\r\n付坤汉化\r\n";
             // 
             // button1
             // 
@@ -89,10 +89,10 @@
             this.linkLabel1.Location = new System.Drawing.Point(13, 120);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(245, 18);
+            this.linkLabel1.Size = new System.Drawing.Size(120, 18);
             this.linkLabel1.TabIndex = 2;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "https://github.com/jungervin/EsPy";
+            this.linkLabel1.Text = "http://付坤.中国/";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 

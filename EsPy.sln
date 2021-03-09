@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsPy", "EsPy\EsPy.csproj", "{F7FBC30C-9014-4169-AC86-4883087EC672}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Espy_x64", "Espy_x64\Espy_x64.vdproj", "{FDFB3408-4516-40F3-A407-FA94E983874E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Espy_x86", "Espy_x86\Espy_x86.vdproj", "{0092D2B9-70F4-4D3D-92BD-8448EAB225FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,8 +30,8 @@ Global
 		{F7FBC30C-9014-4169-AC86-4883087EC672}.Debug|x86.Build.0 = Debug|x86
 		{F7FBC30C-9014-4169-AC86-4883087EC672}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7FBC30C-9014-4169-AC86-4883087EC672}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7FBC30C-9014-4169-AC86-4883087EC672}.Release|x64.ActiveCfg = Release|x64
-		{F7FBC30C-9014-4169-AC86-4883087EC672}.Release|x64.Build.0 = Release|x64
+		{F7FBC30C-9014-4169-AC86-4883087EC672}.Release|x64.ActiveCfg = Release|x86
+		{F7FBC30C-9014-4169-AC86-4883087EC672}.Release|x64.Build.0 = Release|x86
 		{F7FBC30C-9014-4169-AC86-4883087EC672}.Release|x86.ActiveCfg = Release|x86
 		{F7FBC30C-9014-4169-AC86-4883087EC672}.Release|x86.Build.0 = Release|x86
 		{F7FBC30C-9014-4169-AC86-4883087EC672}.Signed|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,6 +40,24 @@ Global
 		{F7FBC30C-9014-4169-AC86-4883087EC672}.Signed|x64.Build.0 = Release|x64
 		{F7FBC30C-9014-4169-AC86-4883087EC672}.Signed|x86.ActiveCfg = Release|x86
 		{F7FBC30C-9014-4169-AC86-4883087EC672}.Signed|x86.Build.0 = Release|x86
+		{FDFB3408-4516-40F3-A407-FA94E983874E}.Debug|Any CPU.ActiveCfg = Debug
+		{FDFB3408-4516-40F3-A407-FA94E983874E}.Debug|x64.ActiveCfg = Debug
+		{FDFB3408-4516-40F3-A407-FA94E983874E}.Debug|x86.ActiveCfg = Debug
+		{FDFB3408-4516-40F3-A407-FA94E983874E}.Release|Any CPU.ActiveCfg = Release
+		{FDFB3408-4516-40F3-A407-FA94E983874E}.Release|x64.ActiveCfg = Release
+		{FDFB3408-4516-40F3-A407-FA94E983874E}.Release|x86.ActiveCfg = Release
+		{FDFB3408-4516-40F3-A407-FA94E983874E}.Signed|Any CPU.ActiveCfg = Release
+		{FDFB3408-4516-40F3-A407-FA94E983874E}.Signed|x64.ActiveCfg = Release
+		{FDFB3408-4516-40F3-A407-FA94E983874E}.Signed|x86.ActiveCfg = Release
+		{0092D2B9-70F4-4D3D-92BD-8448EAB225FB}.Debug|Any CPU.ActiveCfg = Debug
+		{0092D2B9-70F4-4D3D-92BD-8448EAB225FB}.Debug|x64.ActiveCfg = Debug
+		{0092D2B9-70F4-4D3D-92BD-8448EAB225FB}.Debug|x86.ActiveCfg = Debug
+		{0092D2B9-70F4-4D3D-92BD-8448EAB225FB}.Release|Any CPU.ActiveCfg = Release
+		{0092D2B9-70F4-4D3D-92BD-8448EAB225FB}.Release|x64.ActiveCfg = Release
+		{0092D2B9-70F4-4D3D-92BD-8448EAB225FB}.Release|x86.ActiveCfg = Release
+		{0092D2B9-70F4-4D3D-92BD-8448EAB225FB}.Signed|Any CPU.ActiveCfg = Release
+		{0092D2B9-70F4-4D3D-92BD-8448EAB225FB}.Signed|x64.ActiveCfg = Release
+		{0092D2B9-70F4-4D3D-92BD-8448EAB225FB}.Signed|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
