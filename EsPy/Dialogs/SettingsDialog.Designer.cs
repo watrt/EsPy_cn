@@ -262,12 +262,12 @@
             // 
             this.label9.Image = global::EsPy.Properties.Resources.Warning;
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Location = new System.Drawing.Point(340, 371);
+            this.label9.Location = new System.Drawing.Point(227, 365);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(136, 16);
+            this.label9.Size = new System.Drawing.Size(262, 29);
             this.label9.TabIndex = 19;
-            this.label9.Text = "   设置重启后生效！";
+            this.label9.Text = "   需求管理权限，设置重启后生效！";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SettingsDialog

@@ -258,7 +258,7 @@
             this.groupBox1.Size = new System.Drawing.Size(816, 240);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Settings";
+            this.groupBox1.Text = "设置";
             // 
             // label11
             // 
@@ -406,7 +406,7 @@
             this.btnMac.Name = "btnMac";
             this.btnMac.Size = new System.Drawing.Size(99, 27);
             this.btnMac.TabIndex = 0;
-            this.btnMac.Text = "MAC";
+            this.btnMac.Text = "网卡 MAC";
             this.btnMac.UseVisualStyleBackColor = true;
             this.btnMac.Click += new System.EventHandler(this.btnMac_Click);
             // 
@@ -418,7 +418,7 @@
             this.btnFlashID.Name = "btnFlashID";
             this.btnFlashID.Size = new System.Drawing.Size(99, 27);
             this.btnFlashID.TabIndex = 1;
-            this.btnFlashID.Text = "Flash ID";
+            this.btnFlashID.Text = "闪存 ID";
             this.btnFlashID.UseVisualStyleBackColor = true;
             this.btnFlashID.Click += new System.EventHandler(this.btnFlashID_Click);
             // 
@@ -430,7 +430,7 @@
             this.btnChipID.Name = "btnChipID";
             this.btnChipID.Size = new System.Drawing.Size(99, 27);
             this.btnChipID.TabIndex = 2;
-            this.btnChipID.Text = "Chip ID";
+            this.btnChipID.Text = "芯片 ID";
             this.btnChipID.UseVisualStyleBackColor = true;
             this.btnChipID.Click += new System.EventHandler(this.btnChipID_Click);
             // 

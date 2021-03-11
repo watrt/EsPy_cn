@@ -22,13 +22,21 @@ namespace EsPy.Forms
 
         private void Splash_Load(object sender, EventArgs e)
         {
-            this.button1.Visible = 
-                linkLabel1.Visible = Modal;
-            this.label2.Visible = !Modal;
-            this.label1.Text = Application.ProductName + " v" + Application.ProductVersion;
+            this.label1.Text = Application.ProductName;
+            this.label2.Text = "版本：v" + Application.ProductVersion;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(this.linkLabel1.Text);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             Process.Start(this.linkLabel1.Text);
         }

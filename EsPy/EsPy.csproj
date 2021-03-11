@@ -375,6 +375,7 @@
     <None Include="Resources\help.png" />
     <None Include="Resources\Mlogo_138wh.png" />
     <None Include="Resources\watrt.png" />
+    <None Include="Resources\202005141589436766159685.png" />
     <Content Include="src\1.txt" />
     <Content Include="src\analogRead.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

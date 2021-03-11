@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>    本软件是在EsPy的基础上修改优化而来，这是一个自由软件，你可以免费的使用本软件！
+
+    1、文件管理增加直接打开功能
+    2、文件管理中增加直接运行功能
+    3、汉化了软件语言
+    4、优化了编辑的器显示效果和代码提示等内容
+    5、修改了界面的布局习惯
+    6、调整了mcirpython中目录文件过多的问题。
+    7、调整了优化串口获取文件目录的命令
+    8、增加编辑设置相关参数
+
+    下一版计划增加云端获取驱动库相关支持。
+</value>
+  </data>
 </root>
