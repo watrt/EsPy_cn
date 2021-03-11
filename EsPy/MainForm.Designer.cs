@@ -351,7 +351,7 @@
             // mnWebREPL
             // 
             this.mnWebREPL.Name = "mnWebREPL";
-            this.mnWebREPL.Size = new System.Drawing.Size(181, 26);
+            this.mnWebREPL.Size = new System.Drawing.Size(153, 26);
             this.mnWebREPL.Text = "WebREPL";
             this.mnWebREPL.Click += new System.EventHandler(this.mnWebREPL_Click);
             // 
@@ -371,7 +371,7 @@
             // 
             this.ePS8266ToolStripMenuItem.Image = global::EsPy.Properties.Resources.Mlogo_138wh;
             this.ePS8266ToolStripMenuItem.Name = "ePS8266ToolStripMenuItem";
-            this.ePS8266ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.ePS8266ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.ePS8266ToolStripMenuItem.Text = "EPS32";
             this.ePS8266ToolStripMenuItem.Click += new System.EventHandler(this.ePS8266ToolStripMenuItem_Click);
             // 
@@ -379,7 +379,7 @@
             // 
             this.mnViewHelp.Image = global::EsPy.Properties.Resources.help;
             this.mnViewHelp.Name = "mnViewHelp";
-            this.mnViewHelp.Size = new System.Drawing.Size(181, 26);
+            this.mnViewHelp.Size = new System.Drawing.Size(144, 26);
             this.mnViewHelp.Text = "帮助";
             this.mnViewHelp.Click += new System.EventHandler(this.mnViewHelp_Click);
             // 
@@ -387,19 +387,19 @@
             // 
             this.myblog.Image = global::EsPy.Properties.Resources.watrt;
             this.myblog.Name = "myblog";
-            this.myblog.Size = new System.Drawing.Size(181, 26);
+            this.myblog.Size = new System.Drawing.Size(144, 26);
             this.myblog.Text = "我的博客";
             this.myblog.Click += new System.EventHandler(this.myblog_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(178, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(141, 6);
             // 
             // mnAbout
             // 
             this.mnAbout.Name = "mnAbout";
-            this.mnAbout.Size = new System.Drawing.Size(181, 26);
+            this.mnAbout.Size = new System.Drawing.Size(144, 26);
             this.mnAbout.Text = "关于...";
             this.mnAbout.Click += new System.EventHandler(this.mnAbout_Click);
             // 
@@ -749,6 +749,7 @@
             // 
             // MainForm
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 485);
@@ -766,6 +767,8 @@
             this.Deactivate += new System.EventHandler(this.MainForm_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop_1);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter_1);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);

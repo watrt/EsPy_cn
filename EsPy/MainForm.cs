@@ -243,7 +243,7 @@ namespace EsPy
         {
             //this.TerminalForm.PortOpen += TerminalForm_PortOpen;
             //this.TerminalForm.PortClose += TerminalForm_PortClose;
-            
+
             string configFile = this.DockPanelConfigFile;
             if (!File.Exists(configFile))
             {
@@ -283,8 +283,20 @@ namespace EsPy
             //{
                this.btnConnect.Enabled = true;
             //}
-               
             this.UpdateUI();
+            //打开关联文件
+            string command = Environment.CommandLine;//获取进程命令行参数
+            string[] para = command.Split('\"');
+
+            if (para.Length > 3)
+            {
+                string pathC = para[3];//获取打开的文件的路径
+                //下面就可以自己编写代码使用这个pathC参数了
+                //FileStream fs = new FileStream(pathC, FileMode.Open, FileAccess.Read);
+                FileFormats ff = EditorForm.EditorFileFormats;
+                OpenFromFile(pathC, ff);
+                MessageBox.Show(pathC);
+            }
 
         }
 
@@ -1051,6 +1063,23 @@ namespace EsPy
         private void myblog_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.付坤.中国");
+        }
+
+        private void MainForm_DragDrop_1(object sender, DragEventArgs e)
+        {
+            MessageBox.Show("开发中...");
+        }
+
+        private void MainForm_DragEnter_1(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                e.Effect = DragDropEffects.Copy;
+            }
+            else
+            {
+                e.Effect = DragDropEffects.None;
+            }
         }
     }
 }

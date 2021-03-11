@@ -269,8 +269,11 @@
     </Content>
     <None Include="ClassDiagram1.cd" />
     <None Include="EsPy_TemporaryKey.pfx" />
-    <None Include="Properties\app.manifest" />
-    <None Include="Release\espy.zip" />
+    <None Include="Properties\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Release\Espy_x64.msi" />
+    <None Include="Release\Espy_x86.msi" />
     <None Include="Resources\error16.png" />
     <None Include="Resources\info.png" />
     <None Include="Resources\compile.png" />
