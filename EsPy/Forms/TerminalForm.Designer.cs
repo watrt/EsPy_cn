@@ -103,7 +103,7 @@
             this.mnUndo.MergeIndex = 0;
             this.mnUndo.Name = "mnUndo";
             this.mnUndo.ShortcutKeyDisplayString = "Ctrl+Z";
-            this.mnUndo.Size = new System.Drawing.Size(170, 26);
+            this.mnUndo.Size = new System.Drawing.Size(181, 26);
             this.mnUndo.Text = "撒消";
             // 
             // mnRedo
@@ -113,7 +113,7 @@
             this.mnRedo.MergeIndex = 1;
             this.mnRedo.Name = "mnRedo";
             this.mnRedo.ShortcutKeyDisplayString = "Ctrl+Y";
-            this.mnRedo.Size = new System.Drawing.Size(170, 26);
+            this.mnRedo.Size = new System.Drawing.Size(181, 26);
             this.mnRedo.Text = "重做";
             // 
             // toolStripMenuItem2
@@ -121,7 +121,7 @@
             this.toolStripMenuItem2.MergeAction = System.Windows.Forms.MergeAction.Insert;
             this.toolStripMenuItem2.MergeIndex = 2;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(167, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(178, 6);
             // 
             // mnCut
             // 
@@ -130,7 +130,7 @@
             this.mnCut.MergeIndex = 3;
             this.mnCut.Name = "mnCut";
             this.mnCut.ShortcutKeyDisplayString = "Ctrl+X";
-            this.mnCut.Size = new System.Drawing.Size(170, 26);
+            this.mnCut.Size = new System.Drawing.Size(181, 26);
             this.mnCut.Text = "剪切";
             // 
             // mnCopy
@@ -140,7 +140,7 @@
             this.mnCopy.MergeIndex = 4;
             this.mnCopy.Name = "mnCopy";
             this.mnCopy.ShortcutKeyDisplayString = "";
-            this.mnCopy.Size = new System.Drawing.Size(170, 26);
+            this.mnCopy.Size = new System.Drawing.Size(181, 26);
             this.mnCopy.Text = "复制";
             // 
             // mnPaste
@@ -151,7 +151,7 @@
             this.mnPaste.MergeIndex = 5;
             this.mnPaste.Name = "mnPaste";
             this.mnPaste.ShortcutKeyDisplayString = "Ctrl+V";
-            this.mnPaste.Size = new System.Drawing.Size(170, 26);
+            this.mnPaste.Size = new System.Drawing.Size(181, 26);
             this.mnPaste.Text = "粘贴";
             // 
             // mnDelete
@@ -160,7 +160,7 @@
             this.mnDelete.MergeIndex = 6;
             this.mnDelete.Name = "mnDelete";
             this.mnDelete.ShortcutKeyDisplayString = "Del";
-            this.mnDelete.Size = new System.Drawing.Size(170, 26);
+            this.mnDelete.Size = new System.Drawing.Size(181, 26);
             this.mnDelete.Text = "删除";
             // 
             // mnClean
@@ -169,7 +169,7 @@
             this.mnClean.MergeAction = System.Windows.Forms.MergeAction.Insert;
             this.mnClean.MergeIndex = 7;
             this.mnClean.Name = "mnClean";
-            this.mnClean.Size = new System.Drawing.Size(170, 26);
+            this.mnClean.Size = new System.Drawing.Size(181, 26);
             this.mnClean.Text = "清屏";
             this.mnClean.Click += new System.EventHandler(this.mnClean_Click);
             // 
@@ -178,7 +178,7 @@
             this.toolStripMenuItem3.MergeAction = System.Windows.Forms.MergeAction.Insert;
             this.toolStripMenuItem3.MergeIndex = 8;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(167, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(178, 6);
             // 
             // mnSelectAll
             // 
@@ -186,7 +186,7 @@
             this.mnSelectAll.MergeIndex = 9;
             this.mnSelectAll.Name = "mnSelectAll";
             this.mnSelectAll.ShortcutKeyDisplayString = "";
-            this.mnSelectAll.Size = new System.Drawing.Size(170, 26);
+            this.mnSelectAll.Size = new System.Drawing.Size(181, 26);
             this.mnSelectAll.Text = "全部保存";
             // 
             // toolStripMenuItem7
@@ -194,7 +194,7 @@
             this.toolStripMenuItem7.MergeAction = System.Windows.Forms.MergeAction.Insert;
             this.toolStripMenuItem7.MergeIndex = 10;
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(167, 6);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(178, 6);
             // 
             // mnView
             // 
@@ -210,19 +210,19 @@
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(141, 6);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(178, 6);
             // 
             // mnShowEol
             // 
             this.mnShowEol.Name = "mnShowEol";
-            this.mnShowEol.Size = new System.Drawing.Size(144, 26);
+            this.mnShowEol.Size = new System.Drawing.Size(181, 26);
             this.mnShowEol.Text = "显示换行";
             this.mnShowEol.Click += new System.EventHandler(this.mnShowEol_Click);
             // 
             // mnShowWhitespace
             // 
             this.mnShowWhitespace.Name = "mnShowWhitespace";
-            this.mnShowWhitespace.Size = new System.Drawing.Size(144, 26);
+            this.mnShowWhitespace.Size = new System.Drawing.Size(181, 26);
             this.mnShowWhitespace.Text = "显示空格";
             this.mnShowWhitespace.Click += new System.EventHandler(this.mnShowWhitespace_Click);
             // 
@@ -412,14 +412,14 @@
             // cmShowEOL
             // 
             this.cmShowEOL.Name = "cmShowEOL";
-            this.cmShowEOL.Size = new System.Drawing.Size(144, 26);
+            this.cmShowEOL.Size = new System.Drawing.Size(181, 26);
             this.cmShowEOL.Text = "显示换行";
             this.cmShowEOL.Click += new System.EventHandler(this.mnShowEol_Click);
             // 
             // cmShowWhitespace
             // 
             this.cmShowWhitespace.Name = "cmShowWhitespace";
-            this.cmShowWhitespace.Size = new System.Drawing.Size(144, 26);
+            this.cmShowWhitespace.Size = new System.Drawing.Size(181, 26);
             this.cmShowWhitespace.Text = "显示空格";
             this.cmShowWhitespace.Click += new System.EventHandler(this.mnShowWhitespace_Click);
             // 
