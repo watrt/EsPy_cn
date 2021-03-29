@@ -105,7 +105,7 @@
             this.findtext.Location = new System.Drawing.Point(81, 19);
             this.findtext.Name = "findtext";
             this.findtext.Size = new System.Drawing.Size(333, 25);
-            this.findtext.TabIndex = 8;
+            this.findtext.TabIndex = 0;
             // 
             // replacetext
             // 
@@ -137,6 +137,7 @@
             this.Name = "FindDiaIog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "查找替换";
+            this.Load += new System.EventHandler(this.FindDiaIog_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

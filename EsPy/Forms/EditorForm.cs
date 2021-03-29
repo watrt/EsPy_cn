@@ -723,7 +723,7 @@ namespace EsPy.Forms
             this.scintilla.Text = this.scintilla.Text.Replace("\n", "\r\n");
         }
         /// <summary>
-        /// 查找
+        /// 查找文本
         /// </summary>
         /// <param name="loop">继续找</param>
         private void Findtext(bool loop=false,bool repla=false)
@@ -736,6 +736,10 @@ namespace EsPy.Forms
                     this.scintilla.TargetStart = this.scintilla.CurrentPosition;
                     this.scintilla.TargetEnd = this.scintilla.TextLength;
                     this.scintilla.SearchFlags = SearchFlags.WordStart;
+                    if(findstr[findstr.Count() - 1].ToString().Length == 0)
+                    {
+                        return;
+                    }
                     int st = this.scintilla.SearchInTarget(findstr[findstr.Count() - 1].ToString());
                     if (st == -1)
                     {
@@ -777,6 +781,10 @@ namespace EsPy.Forms
                         this.scintilla.TargetStart = this.scintilla.CurrentPosition;
                         this.scintilla.TargetEnd = this.scintilla.TextLength;
                         this.scintilla.SearchFlags = SearchFlags.WordStart;
+                        if (winfind.findtext.Text.Length == 0)
+                        {
+                            break;
+                        }
                         st = this.scintilla.SearchInTarget(winfind.findtext.Text);
                         if (findstr.Find((string str) => str == winfind.findtext.Text) == null)
                         {

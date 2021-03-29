@@ -26,5 +26,9 @@ namespace EsPy.Dialogs
         {
             this.DialogResult = DialogResult.Yes;
         }
+
+        private void FindDiaIog_Load(object sender, EventArgs e)
+        {
+        }
     }
 }
