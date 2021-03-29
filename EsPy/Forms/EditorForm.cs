@@ -773,6 +773,11 @@ namespace EsPy.Forms
                 {
                     winfind.findtext.Text = findstr[findstr.Count() - 1].ToString();
                 }
+                if (replastr.Count() > 0)
+                {
+                    winfind.replacetext.Text = replastr[replastr.Count() - 1].ToString();
+                }
+                winfind.replacetext.Items.AddRange(replastr.ToArray());
                 winfind.findtext.Items.AddRange(findstr.ToArray());
                 switch (winfind.ShowDialog())
                 {
