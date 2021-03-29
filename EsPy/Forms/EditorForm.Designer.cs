@@ -79,6 +79,9 @@
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripSeparator();
             this.cmShowEOL = new System.Windows.Forms.ToolStripMenuItem();
             this.cmShowWhitespace = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.winToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnSave = new System.Windows.Forms.ToolStripButton();
@@ -367,15 +370,15 @@
             this.mnUpload});
             this.deviceToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.deviceToolStripMenuItem.Name = "deviceToolStripMenuItem";
-            this.deviceToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
-            this.deviceToolStripMenuItem.Text = "Device";
+            this.deviceToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.deviceToolStripMenuItem.Text = "设备";
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.MergeAction = System.Windows.Forms.MergeAction.Insert;
             this.toolStripMenuItem10.MergeIndex = 2;
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(321, 6);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(191, 6);
             // 
             // mnRun
             // 
@@ -384,7 +387,7 @@
             this.mnRun.MergeIndex = 3;
             this.mnRun.Name = "mnRun";
             this.mnRun.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.mnRun.Size = new System.Drawing.Size(324, 26);
+            this.mnRun.Size = new System.Drawing.Size(194, 26);
             this.mnRun.Text = "运行";
             this.mnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
@@ -395,8 +398,8 @@
             this.mnInterrupt.MergeIndex = 4;
             this.mnInterrupt.Name = "mnInterrupt";
             this.mnInterrupt.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.mnInterrupt.Size = new System.Drawing.Size(324, 26);
-            this.mnInterrupt.Text = "Interrupt current program";
+            this.mnInterrupt.Size = new System.Drawing.Size(194, 26);
+            this.mnInterrupt.Text = "中断执行";
             this.mnInterrupt.Click += new System.EventHandler(this.mnInterrupt_Click);
             // 
             // mnUpload
@@ -406,7 +409,7 @@
             this.mnUpload.MergeIndex = 5;
             this.mnUpload.Name = "mnUpload";
             this.mnUpload.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.mnUpload.Size = new System.Drawing.Size(324, 26);
+            this.mnUpload.Size = new System.Drawing.Size(194, 26);
             this.mnUpload.Text = "上传";
             this.mnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
@@ -431,9 +434,10 @@
             this.cmUncomment,
             this.toolStripMenuItem9,
             this.cmShowEOL,
-            this.cmShowWhitespace});
+            this.cmShowWhitespace,
+            this.ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(200, 392);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(200, 418);
             // 
             // cmUndo
             // 
@@ -526,7 +530,6 @@
             // 
             // cmFind
             // 
-            this.cmFind.Enabled = false;
             this.cmFind.MergeAction = System.Windows.Forms.MergeAction.Insert;
             this.cmFind.MergeIndex = 10;
             this.cmFind.Name = "cmFind";
@@ -537,7 +540,6 @@
             // 
             // cmReplace
             // 
-            this.cmReplace.Enabled = false;
             this.cmReplace.MergeAction = System.Windows.Forms.MergeAction.Insert;
             this.cmReplace.MergeIndex = 11;
             this.cmReplace.Name = "cmReplace";
@@ -610,6 +612,29 @@
             this.cmShowWhitespace.Size = new System.Drawing.Size(199, 26);
             this.cmShowWhitespace.Text = "显示空格";
             this.cmShowWhitespace.Click += new System.EventHandler(this.mnShowWhitespace_Click);
+            // 
+            // ToolStripMenuItem
+            // 
+            this.ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.winToolStripMenuItem,
+            this.uToolStripMenuItem});
+            this.ToolStripMenuItem.Name = "ToolStripMenuItem";
+            this.ToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.ToolStripMenuItem.Text = "转换换行";
+            // 
+            // winToolStripMenuItem
+            // 
+            this.winToolStripMenuItem.Name = "winToolStripMenuItem";
+            this.winToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.winToolStripMenuItem.Text = "windows(CRLF)";
+            this.winToolStripMenuItem.Click += new System.EventHandler(this.winToolStripMenuItem_Click);
+            // 
+            // uToolStripMenuItem
+            // 
+            this.uToolStripMenuItem.Name = "uToolStripMenuItem";
+            this.uToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.uToolStripMenuItem.Text = "Unix(LF)";
+            this.uToolStripMenuItem.Click += new System.EventHandler(this.uToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -878,5 +903,8 @@
         private System.Windows.Forms.ToolStripMenuItem mnInterrupt;
         private System.Windows.Forms.ToolStripButton btnPause;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem winToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uToolStripMenuItem;
     }
 }

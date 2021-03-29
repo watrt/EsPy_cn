@@ -163,6 +163,8 @@ namespace EsPy.Forms
 
             this.cmSoftReset.Enabled = this.Port != null && this.Port.IsOpen;
 
+            this.mnPaste.Enabled= this.cmPaste.Enabled = this.scintilla.CanPaste;
+            
             this.mnClean.Enabled =
                 this.cmClean.Enabled =
                 this.mnSelectAll.Enabled =
@@ -173,7 +175,7 @@ namespace EsPy.Forms
 
             this.mnRedo.Enabled =
                 this.cmRedo.Enabled = this.scintilla.CanRedo;
-
+            
             this.mnCut.Enabled =
                 this.mnCopy.Enabled =
                 this.mnDelete.Enabled =
@@ -294,6 +296,11 @@ namespace EsPy.Forms
         private void scintilla_CharAdded(object sender, CharAddedEventArgs e)
         {
             this.scintilla.AutoCCancel();
+        }
+
+        private void mnPaste_Click_1(object sender, EventArgs e)
+        {
+            this.scintilla.Paste();
         }
 
         //public void UIStateChanged(object sender, UIChangedEventArgs e)

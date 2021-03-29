@@ -882,7 +882,7 @@ namespace EsPy
             else
             {
                 ToolStripMenuItem mi = new ToolStripMenuItem();
-                mi.Text = "empty";
+                mi.Text = "空";
                 mi.Enabled = false;
                 this.mnPorts.DropDownItems.Add(mi);
             }

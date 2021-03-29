@@ -111,7 +111,8 @@ namespace EsPy.Forms
                 this.UpdateUI();
             }
         }
-
+        private List<string> findstr=new List<string>();
+        private List<string> replastr = new List<string>();
         private delegate void UpdateStatusEvent(bool busy);
         public void UpdateBusy(bool busy)
         {
@@ -172,9 +173,10 @@ namespace EsPy.Forms
         {
             this.FileName = fname;
             this.scintilla.Text = File.ReadAllText(fname);
-            this.scintilla.GotoPosition(this.scintilla.TextLength);
+            this.scintilla.GotoPosition(0);
             this.scintilla.SetSavePoint();
             this.scintilla.EmptyUndoBuffer();
+
         }
 
         public string Source
@@ -358,7 +360,7 @@ namespace EsPy.Forms
 
         private void mnFind_Click(object sender, EventArgs e)
         {
-
+            Findtext();
         }
 
         private void mnReplace_Click(object sender, EventArgs e)
@@ -470,7 +472,7 @@ namespace EsPy.Forms
             this.mnFind.Enabled =
                 this.cmFind.Enabled =
                 this.mnReplace.Enabled =
-                this.cmReplace.Enabled = false;
+                this.cmReplace.Enabled = true;
 
             this.mnUndo.Enabled =
                 this.cmUndo.Enabled =
@@ -711,7 +713,125 @@ namespace EsPy.Forms
             }
         }
 
+        private void uToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.scintilla.Text = this.scintilla.Text.Replace("\r\n", "\n");
+        }
 
+        private void winToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.scintilla.Text = this.scintilla.Text.Replace("\n", "\r\n");
+        }
+        /// <summary>
+        /// 查找
+        /// </summary>
+        /// <param name="loop">继续找</param>
+        private void Findtext(bool loop=false,bool repla=false)
+        {
+            if (loop)
+            {
+                //继续F3查找
+                if(findstr.Count() > 0)
+                {
+                    this.scintilla.TargetStart = this.scintilla.CurrentPosition;
+                    this.scintilla.TargetEnd = this.scintilla.TextLength;
+                    this.scintilla.SearchFlags = SearchFlags.WordStart;
+                    int st = this.scintilla.SearchInTarget(findstr[findstr.Count() - 1].ToString());
+                    if (st == -1)
+                    {
+                        MessageBox.Show("没有找到", "完成",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        this.scintilla.GotoPosition(st + findstr[findstr.Count() - 1].ToString().Length);
+                        this.scintilla.SelectionStart = st;
+                        this.scintilla.SelectionEnd = st + findstr[findstr.Count() - 1].ToString().Length;
+
+                        if (repla)
+                        {
+                            //替换
+                            string reptext = replastr.Count()>0? replastr[replastr.Count() - 1].ToString() : "";
+                            int len=this.scintilla.ReplaceTarget(reptext);
+                            this.scintilla.GotoPosition(st + len);
+                            this.scintilla.SelectionStart = st;
+                            this.scintilla.SelectionEnd = st + len;
+                            
+                        }
+                        
+                    }
+                }
+            }
+            else
+            {
+                int st = 0;
+                FindDiaIog winfind = new FindDiaIog();
+                if (findstr.Count() > 0)
+                {
+                    winfind.findtext.Text = findstr[findstr.Count() - 1].ToString();
+                }
+                winfind.findtext.Items.AddRange(findstr.ToArray());
+                switch (winfind.ShowDialog())
+                {
+
+                    case DialogResult.Yes:
+                        this.scintilla.TargetStart = this.scintilla.CurrentPosition;
+                        this.scintilla.TargetEnd = this.scintilla.TextLength;
+                        this.scintilla.SearchFlags = SearchFlags.WordStart;
+                        st = this.scintilla.SearchInTarget(winfind.findtext.Text);
+                        if (findstr.Find((string str) => str == winfind.findtext.Text) == null)
+                        {
+                            findstr.Add(winfind.findtext.Text);
+                        }
+                        if (replastr.Find((string str) => str == winfind.replacetext.Text) == null)
+                        {
+                            replastr.Add(winfind.replacetext.Text);
+                        }
+                        if (st == -1)
+                        {
+                            MessageBox.Show("没有找到", "完成", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            this.scintilla.SelectionStart = st;
+                            this.scintilla.SelectionEnd = st + winfind.findtext.Text.Length;
+                        }
+                        break;
+                    case DialogResult.No:
+                        this.scintilla.TargetStart = this.scintilla.CurrentPosition;
+                        this.scintilla.TargetEnd = this.scintilla.TextLength;
+                        this.scintilla.SearchFlags = SearchFlags.WordStart;
+                        st = this.scintilla.SearchInTarget(winfind.findtext.Text);
+                        if (findstr.Find((string str) => str == winfind.findtext.Text) == null)
+                        {
+                            findstr.Add(winfind.findtext.Text);
+                        }
+                        if (replastr.Find((string str) => str == winfind.replacetext.Text) == null)
+                        {
+                            replastr.Add(winfind.replacetext.Text);
+                        }
+                        if (st == -1)
+                        {
+                            MessageBox.Show("没有找到", "完成", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            this.scintilla.GotoPosition(st + findstr[findstr.Count() - 1].ToString().Length);
+                            this.scintilla.SelectionStart = st;
+                            this.scintilla.SelectionEnd = st + findstr[findstr.Count() - 1].ToString().Length;
+                            //替换
+                            string reptext = replastr.Count() > 0 ? replastr[replastr.Count() - 1].ToString() : "";
+                            int len = this.scintilla.ReplaceTarget(reptext);
+                            this.scintilla.GotoPosition(st + len);
+                            this.scintilla.SelectionStart = st;
+                            this.scintilla.SelectionEnd = st + len;
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+            
+        }
         //private Line CurrentLine
         //{ get { return this.scintilla.Lines[this.scintilla.CurrentLine]; } }
         //private string GetWholeWord(int pos)
@@ -781,78 +901,33 @@ namespace EsPy.Forms
         //}
 
         //private CompletionListBox CompletionForm = null;
-        //protected override bool ProcessCmdKey(ref Message msg, Keys key)
-        //{
-        //    const int WM_KEYDOWN = 0x100;
-        //    const int WM_SYSKEYDOWN = 0x104;
+        protected override bool ProcessCmdKey(ref Message msg, Keys key)
+        {
+            const int WM_KEYDOWN = 0x100;
+            const int WM_SYSKEYDOWN = 0x104;
+            
+            if (msg.Msg == WM_KEYDOWN || msg.Msg == WM_SYSKEYDOWN)
+            {
+                if (key == (Keys.Control | Keys.F))
+                {
+                    Findtext();
+                    return true;
+                }
+                if (key == (Keys.F3))
+                {
+                    Findtext(true);
+                    return true;
+                }
+                if (key == (Keys.F4))
+                {
+                    Findtext(true,true);
+                    return true;
+                }
+            }
 
-        //    if (this.scintilla.CallTipActive && this.CompletionForm == null)
-        //    {
-        //        this.scintilla.CallTipCancel();
 
-        //    }
-
-        //    if (msg.Msg == WM_KEYDOWN || msg.Msg == WM_SYSKEYDOWN)
-        //    {
-        //        if (key == (Keys.Control | Keys.Space))
-        //        {
-        //            this.Completions("");
-        //            return true;
-        //        }
-        //    }
-
-        //    return base.ProcessCmdKey(ref msg, key);
-        //    //if (this.Port != null)
-        //    {
-        //        if (msg.Msg == WM_KEYDOWN || msg.Msg == WM_SYSKEYDOWN)
-        //        {
-        //            if (key == (Keys.Control | Keys.Space))
-        //            {
-        //                this.Completions("");
-        //                return true;
-        //            }
-
-        //            switch (key)
-        //            {
-
-        //                case Keys.Up:
-        //                    if (this.CompletionForm.Visible)
-        //                    {
-        //                        this.CompletionForm.SelectPreviousItem();
-        //                        return true;
-        //                    }
-        //                    break;
-
-        //                case Keys.Down:
-        //                    if (this.CompletionForm.Visible)
-        //                    {
-        //                        this.CompletionForm.SelectNextItem();
-        //                        return true;
-        //                    }
-        //                    break;
-
-        //                case Keys.Enter:
-        //                case Keys.Tab:
-        //                    BaseDefinition def = this.CompletionForm.SelectedDefinition;
-        //                    string insert = "";
-        //                    if (def is Completion)
-        //                    {
-        //                        insert = (def as Completion).complete;
-        //                    }
-        //                    this.scintilla.InsertText(this.scintilla.CurrentPosition, insert);
-        //                    this.scintilla.GotoPosition(this.scintilla.CurrentPosition + insert.Length);
-        //                    this.CompletionForm.Hide();
-        //                    return true;
-
-        //                case Keys.Escape:
-        //                    this.CompletionForm.Hide();
-        //                    return true;
-        //            }
-        //        }
-        //    }
-
-        //    return base.ProcessCmdKey(ref msg, key);
-        //}
+            return base.ProcessCmdKey(ref msg, key);
+        }
 
 
 

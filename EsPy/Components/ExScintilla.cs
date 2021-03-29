@@ -431,7 +431,7 @@ namespace EsPy.Components
 
         public void SetLang()
         {
-            this.EolMode = Eol.CrLf;
+            this.EolMode = Eol.Lf;
             this.StyleResetDefault();
             this.Styles[Style.Default].Font = "Consolas";
             this.Styles[Style.Default].Size = Properties.Settings.Default.fontsize;
@@ -482,7 +482,7 @@ namespace EsPy.Components
 
         public void SetDefault()
         {
-            this.EolMode = Eol.CrLf;
+            this.EolMode = Eol.Lf;
             this.StyleResetDefault();
             this.Styles[Style.Default].Font = "Consolas";
             this.Styles[Style.Default].Size = Properties.Settings.Default.fontsize;
