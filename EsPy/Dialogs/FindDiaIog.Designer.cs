@@ -114,7 +114,7 @@
             this.replacetext.Location = new System.Drawing.Point(81, 61);
             this.replacetext.Name = "replacetext";
             this.replacetext.Size = new System.Drawing.Size(333, 25);
-            this.replacetext.TabIndex = 9;
+            this.replacetext.TabIndex = 2;
             // 
             // FindDiaIog
             // 
