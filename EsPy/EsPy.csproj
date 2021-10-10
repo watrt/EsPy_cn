@@ -115,10 +115,10 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>A893FB6980C6757787CB4E217BC795C478B30EF8</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>A2CB77594AA68000798032007A40B8D39B08FAC2</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>EsPy_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>EsPy_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>false</GenerateManifests>
@@ -274,6 +274,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="ClassDiagram1.cd" />
+    <None Include="EsPy_1_TemporaryKey.pfx" />
     <None Include="EsPy_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest">
       <SubType>Designer</SubType>
