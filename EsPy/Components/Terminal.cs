@@ -346,7 +346,8 @@ namespace EsPy.Components
 
             //if (this.CurrentPosition < this.ActPos)
             //    this.CurrentPosition = this.ActPos;
-
+            Console.WriteLine("CurrentPosition{0}",this.CurrentPosition);
+            Console.WriteLine("PromptPos{0}", this.PromptPos);
             if (this.CurrentPosition < this.PromptPos)
                 this.CurrentPosition = this.PromptPos;
 
@@ -458,6 +459,11 @@ namespace EsPy.Components
                                 return true;
                             break;
 
+                        case Keys.Right:
+                            
+                            return true;
+                            break;
+
                         case Keys.Home:
                             this.CurrentPosition = this.PromptPos;
                             return true;
@@ -474,7 +480,7 @@ namespace EsPy.Components
                         case Keys.Back:
                             if (this.PromptPos == this.CurrentPosition)
                             {
-                                this.Port.Write(8);
+                                //this.Port.Write(8);
                                 return true;
                             }
                             //else if()
