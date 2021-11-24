@@ -29,6 +29,15 @@ namespace EsPy.Components
         const int WM_KEYDOWN = 0x100;
         const int WM_SYSKEYDOWN = 0x104;
         const int WM_LBUTTONDOWN = 0x0201;
+
+        private const int BACK_COLOR = 0xfefefe;
+        private const int FORE_COLOR = 0xff0000;
+
+        /// <summary>
+        /// set this true to show circular buttons for code folding (the [+] and [-] buttons on the margin)
+        /// </summary>
+        private const bool CODEFOLDING_CIRCULAR = true;
+
         public string Lang = "";
         public string CommentLine = "";
         public string CommentStart = "";
@@ -442,8 +451,8 @@ namespace EsPy.Components
             this.Styles[Style.BraceLight].ForeColor = Color.BlueViolet;
             this.Styles[Style.BraceBad].ForeColor = Color.Red;
 
-            this.IndentWidth = 2;
-            this.TabWidth = 2;
+            this.IndentWidth = 4;
+            this.TabWidth = 4;
             this.IndentationGuides = IndentView.LookBoth;
 
             this.ExtraAscent = Properties.Settings.Default.ExtraAscent;
@@ -452,15 +461,14 @@ namespace EsPy.Components
             this.SetProperty("fold", "1");
 
             this.Margins[0].Width = 42;
-
             this.Margins[2].Type = MarginType.Symbol;
             this.Margins[2].Mask = Marker.MaskFolders;
             this.Margins[2].Sensitive = true;
-            this.Margins[2].Width = 20;
+            this.Margins[2].Width = 15;
 
             for (int i = Marker.FolderEnd; i <= Marker.FolderOpen; i++)
             {
-                this.Markers[i].SetForeColor(SystemColors.ControlLightLight);
+                this.Markers[i].SetForeColor(SystemColors.Window);
                 this.Markers[i].SetBackColor(SystemColors.ControlDark);
             }
 
@@ -478,6 +486,8 @@ namespace EsPy.Components
 
             this.LoadStyle();
             this.LoadLang();
+            this.InitHotkeys();
+
         }
 
         public void SetDefault()
@@ -495,11 +505,10 @@ namespace EsPy.Components
             this.SetProperty("fold", "1");
 
             this.Margins[0].Width = 42;
-
             this.Margins[2].Type = MarginType.Symbol;
             this.Margins[2].Mask = Marker.MaskFolders;
             this.Margins[2].Sensitive = true;
-            this.Margins[2].Width = 20;
+            this.Margins[2].Width = 15;
 
             for (int i = Marker.FolderEnd; i <= Marker.FolderOpen; i++)
             {
@@ -519,6 +528,25 @@ namespace EsPy.Components
 
             this.AutomaticFold = (AutomaticFold.Show | AutomaticFold.Click | AutomaticFold.Change);
 
+
+
+        }
+        private void InitHotkeys()
+        {
+            // remove conflicting hotkeys from scintilla
+            this.ClearCmdKey(Keys.Control | Keys.F);
+            this.ClearCmdKey(Keys.Control | Keys.R);
+            this.ClearCmdKey(Keys.Control | Keys.H);
+            this.ClearCmdKey(Keys.Control | Keys.L);
+            this.ClearCmdKey(Keys.Control | Keys.U);
+            this.ClearCmdKey(Keys.Control | Keys.S);
+
+        }
+
+
+        public static Color IntToColor(int rgb)
+        {
+            return Color.FromArgb(255, (byte)(rgb >> 16), (byte)(rgb >> 8), (byte)rgb);
         }
 
         private void InsertMatchedChars(CharAddedEventArgs e)
