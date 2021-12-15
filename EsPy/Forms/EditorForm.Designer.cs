@@ -793,8 +793,10 @@
             // 
             this.scintilla.AutoCAutoHide = false;
             this.scintilla.AutoCChooseSingle = true;
+            this.scintilla.AutoCMaxHeight = 9;
             this.scintilla.AutomaticFold = ((ScintillaNET.AutomaticFold)(((ScintillaNET.AutomaticFold.Show | ScintillaNET.AutomaticFold.Click) 
             | ScintillaNET.AutomaticFold.Change)));
+            this.scintilla.BiDirectionality = ScintillaNET.BiDirectionalDisplayType.Disabled;
             this.scintilla.CaretLineBackColorAlpha = 128;
             this.scintilla.ContextMenuStrip = this.contextMenuStrip1;
             this.scintilla.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -804,12 +806,16 @@
             this.scintilla.IndentationGuides = ScintillaNET.IndentView.LookBoth;
             this.scintilla.IndentWidth = 4;
             this.scintilla.Lexer = ScintillaNET.Lexer.Python;
-            this.scintilla.Location = new System.Drawing.Point(0, 39);
+            this.scintilla.Location = new System.Drawing.Point(0, 28);
             this.scintilla.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.scintilla.MouseDwellTime = 500;
             this.scintilla.Name = "scintilla";
-            this.scintilla.Size = new System.Drawing.Size(848, 263);
+            this.scintilla.ScrollWidth = 1;
+            this.scintilla.Size = new System.Drawing.Size(848, 274);
+            this.scintilla.TabIndents = true;
             this.scintilla.TabIndex = 2;
+            this.scintilla.UseRightToLeftReadingLayout = false;
+            this.scintilla.WrapMode = ScintillaNET.WrapMode.None;
             this.scintilla.SavePointLeft += new System.EventHandler<System.EventArgs>(this.scintilla_SavePointLeft);
             this.scintilla.SavePointReached += new System.EventHandler<System.EventArgs>(this.scintilla_SavePointReached);
             this.scintilla.UpdateUI += new System.EventHandler<ScintillaNET.UpdateUIEventArgs>(this.UpdateUI);
