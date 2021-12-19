@@ -134,12 +134,8 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ScintillaNET, Version=3.8.7.0, Culture=neutral, PublicKeyToken=186712faa6314cea, processorArchitecture=MSIL">
-      <HintPath>..\packages\unofficial.ScintillaNET.3.8.7\lib\net40\ScintillaNET.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ScintillaNET_FindReplaceDialog, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ScintillaNET_FindReplaceDialog.1.5.0\lib\net40\ScintillaNET_FindReplaceDialog.dll</HintPath>
+    <Reference Include="ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jacobslusser.ScintillaNET.3.6.3\lib\net40\ScintillaNET.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -390,12 +386,6 @@
     <None Include="Resources\Mlogo_138wh.png" />
     <None Include="Resources\watrt.png" />
     <None Include="Resources\202005141589436766159685.png" />
-    <Content Include="Resources\Clock.ico" />
-    <Content Include="Resources\Clock.png" />
-    <Content Include="Resources\DeleteHS.png" />
-    <Content Include="Resources\GoToNextMessage.png" />
-    <Content Include="Resources\GoToPreviousMessage.png" />
-    <Content Include="Resources\LineColorHS.png" />
     <Content Include="src\1.txt" />
     <Content Include="src\analogRead.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

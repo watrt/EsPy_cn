@@ -9,7 +9,6 @@ using EsPy.Utility;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using ScintillaNET;
-using ScintillaNET_FindReplaceDialog;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,7 +35,6 @@ namespace EsPy.Forms
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern IntPtr PostMessage(IntPtr hWnd, int msg, IntPtr wp, IntPtr lp);
         int lastCaretPos = 0;
-        private FindReplace _FindReplace = null;
         private EditorForm()
         {
             InitializeComponent();
@@ -50,7 +48,6 @@ namespace EsPy.Forms
 
         public EditorForm(MainForm main_form) : this()
         {
-            _FindReplace=new FindReplace(this.scintilla);
             this.Port = main_form.Port;
         }
 
@@ -363,8 +360,7 @@ namespace EsPy.Forms
 
         private void mnFind_Click(object sender, EventArgs e)
         {
-            //Findtext();
-            _FindReplace.ShowFind();
+            Findtext();
         }
 
         private void mnReplace_Click(object sender, EventArgs e)
@@ -927,21 +923,17 @@ namespace EsPy.Forms
             {
                 if (key == (Keys.Control | Keys.F))
                 {
-                    //Findtext();
-                    _FindReplace = new FindReplace(this.scintilla);
-                    _FindReplace.ShowFind();
+                    Findtext();
                     return true;
                 }
                 if (key == (Keys.F3))
                 {
-                    //Findtext(true);
-                    _FindReplace.Window.FindNext();
+                    Findtext(true);
                     return true;
                 }
                 if (key == (Keys.F4))
                 {
-                    //Findtext(true,true);
-                    _FindReplace.Window.ReplaceNext();
+                    Findtext(true,true);
                     return true;
                 }
             }
