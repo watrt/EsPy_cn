@@ -31,7 +31,7 @@ namespace EsPy
         IntPtr ClipboardViewer;
 
         FileSystemWatcher FileSystemWatcher = null;
-        
+
         private DeserializeDockContent deserializeDockContent;
         public TerminalForm TerminalForm = null;
         //public ErrorListForm ErrorListForm = null;
