@@ -68,7 +68,7 @@ namespace EsPy.Utility
             }
             else
             {
-                Helpers.ErrorBox($"Could not load the devices from {filename}");
+                Helpers.ErrorBox($"无法加载设备的 {filename}");
             }
             return null;
         }

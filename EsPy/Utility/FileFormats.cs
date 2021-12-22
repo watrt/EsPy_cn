@@ -18,7 +18,7 @@ namespace EsPy.Utility
         {
             get
             {
-                string known = "All known files|";
+                string known = "所有已知的类型|";
                 string ksep = "";
                 string filters = "";
                 string sep = "";

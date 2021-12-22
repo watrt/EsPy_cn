@@ -2,7 +2,6 @@
 using EsPy.Forms;
 using EsPy.Units;
 using EsPy.Utility;
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,7 +31,7 @@ namespace EsPy
         IntPtr ClipboardViewer;
 
         FileSystemWatcher FileSystemWatcher = null;
-
+        public string devuceid = "123456789";
         private DeserializeDockContent deserializeDockContent;
         public TerminalForm TerminalForm = null;
         //public ErrorListForm ErrorListForm = null;
@@ -932,10 +932,10 @@ namespace EsPy
         private void mnViewHelp_Click(object sender, EventArgs e)
         {
             
-            string p = Path.Combine(Application.StartupPath, "帮助", "help.html");
+            string p = Path.Combine(Application.StartupPath, "Helps", "help.html");
             if (File.Exists(p))
                 System.Diagnostics.Process.Start(p);
-            else MessageBox.Show("帮助文件不出口!", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else MessageBox.Show("找不到帮助文件!", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void mnWebREPL_Click(object sender, EventArgs e)
@@ -1080,6 +1080,78 @@ namespace EsPy
             {
                 e.Effect = DragDropEffects.None;
             }
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            //更新例程
+            Console.Write(post("http://www.xb6.cn/tools/code/randname.php"));
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            //更新补全
+            string keywords = post("http://www.xb6.cn/tools/espy_cn/keywords.php");
+            if (keywords.Length > 10)
+            {
+                Properties.Settings.Default.keywords = keywords;
+                MessageBox.Show("更新补全完成", "成功");
+            }
+            
+        }
+        private string post(string url,string postdate="")
+        {
+            postdate = this.devuceid + "&" + postdate;
+            try
+            {
+                //获取提交的字节
+                byte[] bs = Encoding.UTF8.GetBytes(postdate);
+                //设置提交的相关参数
+                HttpWebRequest req = (HttpWebRequest)HttpWebRequest.Create(url);
+                req.Method = "POST";
+                req.ContentType = "application/x-www-form-urlencoded";
+                req.ContentLength = bs.Length;
+                //提交请求数据
+                Stream reqStream = req.GetRequestStream();
+                reqStream.Write(bs, 0, bs.Length);
+                reqStream.Close();
+                //接收返回的页面，必须的，不能省略
+                WebResponse wr = req.GetResponse();
+                System.IO.Stream respStream = wr.GetResponseStream();
+                System.IO.StreamReader reader = new System.IO.StreamReader(respStream, System.Text.Encoding.GetEncoding("utf-8"));
+                string t = reader.ReadToEnd();
+                wr.Close();
+                return t;
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.Message);
+                MessageBox.Show("失败","获取失败");
+                return "";
+            }
+        }
+        private static string HttpDownloadFile(string url, string path)
+        {
+            // 设置参数
+            HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
+            //发送请求并获取相应回应数据
+            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+            //直到request.GetResponse()程序才开始向目标网页发送Post请求
+            Stream responseStream = response.GetResponseStream();
+
+            //创建本地文件写入流
+            Stream stream = new FileStream(path, FileMode.Create);
+
+            byte[] bArr = new byte[1024];
+            int size = responseStream.Read(bArr, 0, (int)bArr.Length);
+            while (size > 0)
+            {
+                stream.Write(bArr, 0, size);
+                size = responseStream.Read(bArr, 0, (int)bArr.Length);
+            }
+            stream.Close();
+            responseStream.Close();
+            return path;
         }
     }
 }
