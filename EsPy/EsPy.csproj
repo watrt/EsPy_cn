@@ -248,6 +248,12 @@
     <Compile Include="Forms\TerminalForm.Designer.cs">
       <DependentUpon>TerminalForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\yunfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\yunfile.Designer.cs">
+      <DependentUpon>yunfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Globals.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -331,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TerminalForm.resx">
       <DependentUpon>TerminalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\yunfile.resx">
+      <DependentUpon>yunfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

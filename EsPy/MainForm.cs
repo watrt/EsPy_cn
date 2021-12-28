@@ -34,6 +34,7 @@ namespace EsPy
         public string devuceid = "123456789";
         private DeserializeDockContent deserializeDockContent;
         public TerminalForm TerminalForm = null;
+        public yunfile yunfile = null;
         //public ErrorListForm ErrorListForm = null;
         public MainForm()
         {
@@ -273,6 +274,11 @@ namespace EsPy
                 this.TerminalForm = new TerminalForm();
                 this.TerminalForm.Show(this.dockPanel1,DockState.DockBottom);
             }
+            if (this.yunfile == null)
+            {
+                this.yunfile = new yunfile();
+                this.yunfile.Show(this.dockPanel1, DockState.DockLeft);
+            }
             //
             //if (!this.ComportIsExists)
             //{
@@ -376,6 +382,7 @@ namespace EsPy
         {
   
             this.mnTerminal.Enabled = this.TerminalForm == null;
+            this.yunfileToolStripMenuItem.Enabled = this.yunfile == null;
             //this.JediState.Text = Globals.PyClient != null ? "Connected" : "Not connected";
         }
 
@@ -411,6 +418,16 @@ namespace EsPy
             this.UpdateUI();
         }
 
+        private void yunfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.yunfile == null)
+            {
+                this.yunfile = new yunfile();
+            }
+            this.yunfile.Show(this.dockPanel1);
+            this.UpdateUI();
+        }
+
         private IDockContent GetContentFromPersistString(string persistString)
         {
             string[] items = persistString.Split(',');
@@ -427,6 +444,7 @@ namespace EsPy
                     this.TerminalForm.DockState = DockState.DockRight;
                 return this.TerminalForm;
             }
+
             //else if (persistString == typeof(ErrorListForm).ToString())
             //{
             //    if (this.ErrorListForm != null)
@@ -927,6 +945,7 @@ namespace EsPy
         private void btnView_DropDownOpening(object sender, EventArgs e)
         {
             this.mnTerminal.Enabled = this.TerminalForm.DockState == DockState.Hidden;
+            this.yunfileToolStripMenuItem.Enabled = this.yunfile.DockState == DockState.Hidden;
         }
 
         private void mnViewHelp_Click(object sender, EventArgs e)
@@ -1153,5 +1172,6 @@ namespace EsPy
             responseStream.Close();
             return path;
         }
+
     }
 }

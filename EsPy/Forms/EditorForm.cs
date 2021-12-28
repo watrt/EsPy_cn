@@ -178,6 +178,7 @@ namespace EsPy.Forms
             this.scintilla.Text = File.ReadAllText(fname);
             this.scintilla.GotoPosition(0);
             this.scintilla.SetSavePoint();
+            this.scintilla.AutoCIgnoreCase = true;
             this.scintilla.EmptyUndoBuffer();
 
         }
