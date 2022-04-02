@@ -276,8 +276,9 @@ namespace EsPy
             }
             if (this.yunfile == null)
             {
-                this.yunfile = new yunfile();
+                this.yunfile = new yunfile(this);
                 this.yunfile.Show(this.dockPanel1, DockState.DockLeft);
+                this.yunfile.Hide();
             }
             //
             //if (!this.ComportIsExists)
@@ -422,7 +423,7 @@ namespace EsPy
         {
             if (this.yunfile == null)
             {
-                this.yunfile = new yunfile();
+                this.yunfile = new yunfile(this);
             }
             this.yunfile.Show(this.dockPanel1);
             this.UpdateUI();

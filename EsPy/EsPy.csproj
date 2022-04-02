@@ -283,6 +283,7 @@
     <Content Include="Helps\images\esp8266-wemos-d1-mini-pinout.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="ClassDiagram1.cd" />
     <None Include="EsPy_1_TemporaryKey.pfx" />
     <None Include="EsPy_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest">

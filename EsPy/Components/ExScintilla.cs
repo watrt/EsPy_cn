@@ -42,6 +42,7 @@ namespace EsPy.Components
         public string CommentLine = "";
         public string CommentStart = "";
         public string CommentEnd = "";
+        public bool selecttext_status = false;
 
         public ExScintilla() : base()
         {
@@ -64,6 +65,7 @@ namespace EsPy.Components
             this.Delete += new System.EventHandler<ScintillaNET.ModificationEventArgs>(this.ExScintilla_Delete);
             this.DwellEnd += new System.EventHandler<ScintillaNET.DwellEventArgs>(this.ExScintilla_DwellEnd);
             this.TextChanged += new System.EventHandler(this.ExScintilla_TextChanged);
+            this.DoubleClick+= new System.EventHandler<ScintillaNET.DoubleClickEventArgs>(this.ExScintilla_DoubleClick);
             this.Leave += new System.EventHandler(this.ExScintilla_Leave);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ExScintilla_MouseDown);
             this.MouseHover += new System.EventHandler(this.ExScintilla_MouseHover);
@@ -71,6 +73,8 @@ namespace EsPy.Components
             this.ResumeLayout(false);
 
         }
+
+
 
         //private CompletionForm FCompletionForm = null;
         //public void HideCompletions()
@@ -123,7 +127,7 @@ namespace EsPy.Components
         //    int c = this.CurrentPosition - line.Position;
 
         //    Words words = TextHelper.FindWords(line.Text, c + dx);
-            
+
         //    List<Completion> list = this.Completions.Where(k => k.name.ToLower().StartsWith(words.Filter.ToLower())).ToList();
 
         //    // Todo: Add/Remove items
@@ -135,13 +139,13 @@ namespace EsPy.Components
         //    }
         //    else
         //    {
-                
+
         //    }
         //}
 
         //private void Complete()
         //{
-            
+
         //    if (this.FCompletionForm.SelectedItem != null)
         //    {
         //        string name = this.FCompletionForm.SelectedItem.name;
@@ -163,7 +167,7 @@ namespace EsPy.Components
         //    }
         //    else this.HideCompletions();
         //}
-         
+
         //protected override void WndProc(ref Message m)
         //{
         //    if (this.FCompletionForm != null)
@@ -209,7 +213,7 @@ namespace EsPy.Components
         //                //    if (c == '.' || char.IsWhiteSpace(c))
         //                //    {
         //                //        this.HideCompletions();
-                                
+
         //                //    }
         //                //    else
         //                //    {
@@ -617,8 +621,22 @@ namespace EsPy.Components
                     break;
             }
         }
+        private void ExScintilla_DoubleClick(object sender, DoubleClickEventArgs e)
+        {
+            Console.WriteLine(e);
+            string selecttext = this.SelectedText;
+            if (selecttext.Length > 2)
+            {
+                this.HighlightWord(selecttext);
+            }
+            else
+            {
+                this.IndicatorClearRange(0, this.TextLength);
+            }
+        }
         private void ExScintilla_CharAdded(object sender, CharAddedEventArgs e)
         {
+            
             if (Properties.Settings.Default.InsertMatchedChars)
             {
                 InsertMatchedChars(e);
@@ -634,13 +652,18 @@ namespace EsPy.Components
             // Display the autocompletion list
             int lenEntered = currentPos - wordStartPos;
             Console.WriteLine(lenEntered);
+            string keytxt = this.Text.Substring(this.CurrentPosition - lenEntered, lenEntered); //获取当前关键字
+            Console.WriteLine(keytxt);
+            List<string> r = s.Where(x => x.Length > keytxt.Length && x.Substring(0, keytxt.Length).ToLower() == keytxt.ToLower()).ToList();  //过滤关键字
+            r.Sort();
             if (lenEntered > 0)
             {
-                string keytxt = this.Text.Substring(this.CurrentPosition - lenEntered, lenEntered); //获取当前关键字
-                List<string> r = s.Where(x => x.Length > keytxt.Length && x.Substring(0, keytxt.Length).ToLower() == keytxt.ToLower()).ToList();  //过滤关键字
-                r.Sort();
-                this.AutoCShow(lenEntered, string.Join(" ", r));
- 
+                if (!this.AutoCActive)
+                    this.AutoCShow(lenEntered, string.Join(" ", r));
+            }
+            else
+            {
+                this.AutoCCancel();
             }
             
             //var currentPos = this.CurrentPosition;
@@ -707,6 +730,8 @@ namespace EsPy.Components
 
         private void ExScintilla_MouseDown(object sender, MouseEventArgs e)
         {
+            Console.WriteLine("ExScintilla_MouseDown");
+            
             //if (this.FCompletionForm != null)
             //    this.HideCompletions();
         }
@@ -747,10 +772,45 @@ namespace EsPy.Components
             //    }
             //}
         }
+        //高亮显示文本
+        private void HighlightWord(string text)
+        {
+            
+            if (string.IsNullOrEmpty(text))
+                return;
+            selecttext_status = true;
+            // Indicators 0-7 could be in use by a lexer
+            // so we'll use indicator 8 to highlight words.
+            const int NUM = 8;
 
+            // Remove all uses of our indicator
+            this.IndicatorCurrent = NUM;
+            this.IndicatorClearRange(0, this.TextLength);
+
+            // Update indicator appearance
+            this.Indicators[NUM].Style = IndicatorStyle.StraightBox;
+            this.Indicators[NUM].Under = true;
+            this.Indicators[NUM].ForeColor = Color.Green;
+            this.Indicators[NUM].OutlineAlpha = 50;
+            this.Indicators[NUM].Alpha = 30;
+
+            // Search the document
+            this.TargetStart = 0;
+            this.TargetEnd = this.TextLength;
+            this.SearchFlags = SearchFlags.None;
+            while (this.SearchInTarget(text) != -1)
+            {
+                // Mark the search results with the current indicator
+                this.IndicatorFillRange(this.TargetStart, this.TargetEnd - this.TargetStart);
+
+                // Search the remainder of the document
+                this.TargetStart = this.TargetEnd;
+                this.TargetEnd = this.TextLength;
+            }
+        }
         private void ExScintilla_TextChanged(object sender, EventArgs e)
         {
-
+            Console.WriteLine(e);
         }
     }
 }
