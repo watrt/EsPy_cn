@@ -1,9 +1,9 @@
-﻿# Supported variables
+﻿# 支持参数
 #
-# $PORT 
-# $BAUDRATE
-# $FIRMWARE
-
+# $PORT #商品
+# $BAUDRATE	#波特率
+# $FIRMWARE	#固件地址
+WPYTHON; -p $PORT -b $BAUDRATE write_flash -fm dio -fs detect 0x1000 "$FIRMWARE"
 Wemos Mini D1; -p $PORT -b $BAUDRATE write_flash -fm dio -fs detect 0x0000 "$FIRMWARE"
 Node MCU; -p $PORT -b $BAUDRATE write_flash -fm dio -fs detect 0x0000 "$FIRMWARE"
 Sonoff Basic; -p $PORT -b $BAUDRATE write_flash -fm dout -ff 20m -fs detect 0x0000 "$FIRMWARE"

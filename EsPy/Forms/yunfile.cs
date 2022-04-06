@@ -54,9 +54,13 @@ namespace EsPy.Forms
                 dt = JsonConvert.DeserializeObject<DataTable>(yun);
                 foreach (DataRow l in dt.Rows)
                 {
-                    Console.WriteLine(l.Table.Columns.Contains("info"));
+                    //Console.WriteLine(l.Table.Columns.Contains("info"));
                     int icon = l["type"].ToString() == "dir" ? 0 : 1;
                     TreeNode s = new TreeNode(l["name"].ToString(), icon, icon);
+                    if (l["type"].ToString() == "dir")
+                    {
+
+                    }
                     if (l.Table.Columns.Contains("id"))
                         s.Tag = l["id"].ToString();
                     if (l.Table.Columns.Contains("info"))
@@ -132,7 +136,7 @@ namespace EsPy.Forms
                 
                 string Filepath = System.AppDomain.CurrentDomain.BaseDirectory + Properties.Settings.Default.Workpath + "\\" + e.Node.Text;
                 HttpDownloadFile("http://www.xb6.cn/tools/espy_cn/yunpan.php?id="+e.Node.Tag, Filepath);
-                Console.WriteLine("http://www.xb6.cn/tools/espy_cn/yunpan.php?id=" + e.Node.Tag);
+                //Console.WriteLine("http://www.xb6.cn/tools/espy_cn/yunpan.php?id=" + e.Node.Tag);
                 FileFormats ff = EditorForm.EditorFileFormats;
                 
                 IDocument doc = pf.OpenFromFile(Filepath, ff);

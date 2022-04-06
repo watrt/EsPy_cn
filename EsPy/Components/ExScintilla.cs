@@ -623,7 +623,7 @@ namespace EsPy.Components
         }
         private void ExScintilla_DoubleClick(object sender, DoubleClickEventArgs e)
         {
-            Console.WriteLine(e);
+            //Console.WriteLine(e);
             string selecttext = this.SelectedText;
             if (selecttext.Length > 2)
             {
@@ -651,9 +651,9 @@ namespace EsPy.Components
 
             // Display the autocompletion list
             int lenEntered = currentPos - wordStartPos;
-            Console.WriteLine(lenEntered);
+            //Console.WriteLine(lenEntered);
             string keytxt = this.Text.Substring(this.CurrentPosition - lenEntered, lenEntered); //获取当前关键字
-            Console.WriteLine(keytxt);
+            //Console.WriteLine(keytxt);
             List<string> r = s.Where(x => x.Length > keytxt.Length && x.Substring(0, keytxt.Length).ToLower() == keytxt.ToLower()).ToList();  //过滤关键字
             r.Sort();
             if (lenEntered > 0)

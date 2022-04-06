@@ -16,17 +16,16 @@ namespace EsPy.Dialogs
 {
     public partial class EspToolDialog : Form
     {
+        string esp32flashexe = "Tools/esptool.exe";
+        string esp32tool = "";
+        private System.Diagnostics.Process proc;
         public EspToolDialog()
         {
             InitializeComponent();
 
             this.BaudRate = Properties.Settings.Default.EspToolBaud;
             this.cbBaudrate.Text = this.BaudRate.ToString();
-            this.tbPython.Text = Properties.Settings.Default.PythonExe;
-            if (tbPython.Text == "")
-                this.tbPython.Text = Helpers.GetPythonPath();
 
-            this.tbEsptool.Text = Properties.Settings.Default.EspToolPy;
             this.tbFirmware.Text = Properties.Settings.Default.FrimwareBin;
 
             string[] ports = System.IO.Ports.SerialPort.GetPortNames();
@@ -53,33 +52,8 @@ namespace EsPy.Dialogs
             }
         }
 
-        private void btnPython_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog d = new OpenFileDialog();
-            d.Filter = "python.exe|python.exe";
-            if (this.tbPython.Text != "" && Directory.Exists(Path.GetDirectoryName(this.tbPython.Text)))
-                d.InitialDirectory = Path.GetDirectoryName(this.tbPython.Text);
 
-            if (d.ShowDialog() == DialogResult.OK)
-            {
-                this.tbPython.Text = d.FileName;
-            }
-            d.Dispose();
-        }
 
-        private void btnEsptool_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog d = new OpenFileDialog();
-            d.Filter = "esptool.py|esptool.py";
-            if (this.tbEsptool.Text != "" && Directory.Exists(Path.GetDirectoryName(this.tbEsptool.Text)))
-                d.InitialDirectory = Path.GetDirectoryName(this.tbEsptool.Text);
-
-            if (d.ShowDialog() == DialogResult.OK)
-            {
-                this.tbEsptool.Text = d.FileName;
-            }
-            d.Dispose();
-        }
 
         private void btnFirmware_Click(object sender, EventArgs e)
         {
@@ -109,7 +83,7 @@ namespace EsPy.Dialogs
             string portname = this.cbPort.SelectedItem.ToString();
             if (Utility.Helpers.PortIsOpen(portname))
             {
-                Helpers.ErrorBox($"{portname} has been alredy opened!");
+                Helpers.ErrorBox($"{portname} 已经打开了！");
                 return "";
             }
 
@@ -122,6 +96,9 @@ namespace EsPy.Dialogs
 
             try
             {
+                this.textBox4.Text = args + "\r\n\r\n";
+                this.textBox4.Text += "请等待...\r\n\r\n";
+                proc = new System.Diagnostics.Process();
                 System.Diagnostics.ProcessStartInfo inf = new System.Diagnostics.ProcessStartInfo(
                     cmd, "" + args);
                 inf.RedirectStandardOutput = true;
@@ -130,33 +107,36 @@ namespace EsPy.Dialogs
                 inf.UseShellExecute = false;
                 inf.CreateNoWindow = true;
 
-                System.Diagnostics.Process proc = new System.Diagnostics.Process();
+                //System.Diagnostics.Process proc = new System.Diagnostics.Process();
                 //proc.OutputDataReceived += Proc_OutputDataReceived;
                 //proc.ErrorDataReceived += Proc_ErrorDataReceived;
                 proc.StartInfo = inf;
-
+                proc.OutputDataReceived -= new DataReceivedEventHandler(ProcessOutDataReceived);
                 proc.Start();
+                proc.OutputDataReceived += new DataReceivedEventHandler(ProcessOutDataReceived);
+                proc.BeginErrorReadLine();
+                proc.BeginOutputReadLine();
+                //res = proc.StandardOutput.ReadToEnd();
+                //this.textBox4.Text = res;
+                //res += proc.StandardError.ReadToEnd();
+                //proc.WaitForExit();
+                //while (!proc.HasExited)
+                //{
+                //    Thread.Sleep(100);
+                //}
 
-                res = proc.StandardOutput.ReadToEnd();
-                res += proc.StandardError.ReadToEnd();
-                proc.WaitForExit();
-                while (!proc.HasExited)
-                {
-                    Thread.Sleep(100);
-                }
+                //proc.Close();
+                //proc.Dispose();
 
-                proc.Close();
-                proc.Dispose();
-
-                for (int i = 1; i < res.Length;)
-                {
-                    if (res[i] < 10)
-                    {
-                        res = res.Remove(i - 1, 2);
-                        i--;
-                    }
-                    else i++;
-                }
+                //for (int i = 1; i < res.Length;)
+                //{
+                //    if (res[i] < 10)
+                //    {
+                //        res = res.Remove(i - 1, 2);
+                //        i--;
+                //    }
+                //    else i++;
+                //}
 
                 return res;
             }
@@ -168,6 +148,26 @@ namespace EsPy.Dialogs
             {
                 this.Enabled = true;
                 Globals.MainForm.Cursor = Cursors.Default;
+            }
+        }
+
+        private void ProcessOutDataReceived(object sender, DataReceivedEventArgs e)
+        {
+            Application.DoEvents();
+            if (this.textBox4.InvokeRequired)
+            {
+                this.textBox4.Invoke(new Action(() =>
+               {
+                   this.textBox4.AppendText(e.Data + "\r\n");
+               }));
+            }
+            else
+            {
+                if (textBox4.Disposing)
+                {
+                    this.textBox4.AppendText(e.Data + "\r\n");
+                }
+                
             }
         }
 
@@ -202,8 +202,8 @@ namespace EsPy.Dialogs
         {
             if (this.CheckPaths(false))
             {
-                string args = String.Format("\"{0}\" -p {1} -b {2} read_mac", this.tbEsptool.Text, this.PortName, this.BaudRate);
-                this.textBox4.Text = this.Run(this.tbPython.Text, args);
+                string args = String.Format(" -p {0} -b {1} read_mac", this.PortName, this.BaudRate);
+                this.textBox4.Text = this.Run(esp32flashexe, args);
             }
         }
 
@@ -211,8 +211,8 @@ namespace EsPy.Dialogs
         {
             if (this.CheckPaths(false))
             {
-                string args = String.Format("\"{0}\" -p {1} -b {2} flash_id", this.tbEsptool.Text, this.PortName, this.BaudRate);
-                this.textBox4.Text = this.Run(this.tbPython.Text, args);
+                string args = String.Format(" -p {0} -b {1} flash_id", this.PortName, this.BaudRate);
+                this.textBox4.Text = this.Run(esp32flashexe, args);
             }
         }
 
@@ -220,8 +220,9 @@ namespace EsPy.Dialogs
         {
             if (this.CheckPaths(false))
             {
-                string args = String.Format("\"{0}\" -p {1} -b {2} chip_id", this.tbEsptool.Text, this.PortName, this.BaudRate);
-                this.textBox4.Text = this.Run(this.tbPython.Text, args);
+                string args = String.Format(" -p {0} -b {1} chip_id", this.PortName, this.BaudRate);
+                Console.WriteLine("", args);
+                this.textBox4.Text = this.Run(esp32flashexe, args);
             }
         }
 
@@ -231,10 +232,10 @@ namespace EsPy.Dialogs
             {
                 if (MessageBox.Show("确定擦除设备?", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                 {
-                    string args = String.Format("\"{0}\" -p {1} -b {2} erase_flash", this.tbEsptool.Text, this.PortName, this.BaudRate);
+                    string args = String.Format(" -p {0} -b {1} erase_flash", this.PortName, this.BaudRate);
                     this.textBox4.Text = "请等待...\r\n\r\n";
                     Application.DoEvents();
-                    this.textBox4.Text += this.Run(this.tbPython.Text, args);
+                    this.textBox4.Text += this.Run(esp32flashexe, args);
                 }
             }
         }
@@ -246,16 +247,16 @@ namespace EsPy.Dialogs
                 if (MessageBox.Show("你确定写入设备吗?", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                 {
 
-                    //string args = String.Format("\"{0}\" -p {1} -b {2} write_flash --verify --flash_size=detect 0 \"{3}\"", this.tbEsptool.Text, this.PortName, this.BaudRate, this.tbFirmware.Text);
+                    //string args = String.Format("\"{0}\" -p {1} -b {2} write_flash --verify --flash_size=detect 0 \"{3}\"", this.esp32tool, this.PortName, this.BaudRate, this.tbFirmware.Text);
                     //string args = String.Format("\"{0}\" -p {1} -b {2} write_flash -fm {3} -ff 20m -fs detect 0x0000 \"{4}\"",
-                    //    this.tbEsptool.Text,
+                    //    this.esp32tool,
                     //    this.PortName,
                     //    this.BaudRate,
                     //    this.FlashMode.Text,
                     //    this.tbFirmware.Text);
 
                     //string args = String.Format("\"{0}\" -p {1} -b {2} write_flash -fm {3} -fs detect 0x0000 \"{4}\"",
-                    //    this.tbEsptool.Text,
+                    //    this.esp32tool,
                     //    this.PortName,
                     //    this.BaudRate,
                     //    this.FlashMode.Text,
@@ -266,13 +267,13 @@ namespace EsPy.Dialogs
                         string args = this.tbParams.Text.Replace("$PORT", this.PortName);
                         args = args.Replace("$BAUDRATE", this.BaudRate.ToString());
                         args = args.Replace("$FIRMWARE", this.tbFirmware.Text);
-                        args = " \"" + this.tbEsptool.Text + "\" " + args;
+                        //args = " \"" + this.esp32tool + "\" " + args;
 
                         this.textBox4.Text = args + "\r\n\r\n";
                         this.textBox4.Text += "请等待...\r\n\r\n";
 
                         Application.DoEvents();
-                        this.textBox4.Text += this.Run(this.tbPython.Text, args);
+                        this.textBox4.Text += this.Run(esp32flashexe, args);
                     }
 
                 }
@@ -283,9 +284,9 @@ namespace EsPy.Dialogs
         {
             if (this.CheckPaths())
             {
-                //string args = String.Format("\"{0}\" -p \"{1}\" -b {2} verify_flash 0x40000 \"{3}\"", this.tbEsptool.Text, this.PortName, this.BaudRate, this.tbFirmware.Text);
-                string args = String.Format("\"{0}\" -p \"{1}\" -b {2} verify_flash 0x00000 \"{3}\"", this.tbEsptool.Text, this.PortName, this.BaudRate, this.tbFirmware.Text);
-                this.textBox4.Text = this.Run(this.tbPython.Text, args);
+                //string args = String.Format("\"{0}\" -p \"{1}\" -b {2} verify_flash 0x40000 \"{3}\"", this.esp32tool, this.PortName, this.BaudRate, this.tbFirmware.Text);
+                string args = String.Format(" -p \"{0}\" -b {1} verify_flash 0x00000 \"{2}\"", this.PortName, this.BaudRate, this.tbFirmware.Text);
+                this.textBox4.Text = this.Run(esp32flashexe, args);
             }
         }
 
@@ -296,11 +297,6 @@ namespace EsPy.Dialogs
         {
             string err = "";
 
-            if (!File.Exists(this.tbPython.Text))
-                err += "python.exe 位置不正确!\r\n";
-
-            if (!File.Exists(this.tbEsptool.Text))
-                err += "esptool.py 位置不正确!\r\n";
 
             if (firmware && !File.Exists(this.tbFirmware.Text))
                 err += "firmware.bin 位置不正确!\r\n";
@@ -317,8 +313,8 @@ namespace EsPy.Dialogs
         {
             //if (this.CheckPaths(false))
             {
-                Properties.Settings.Default.PythonExe = this.tbPython.Text;
-                Properties.Settings.Default.EspToolPy = this.tbEsptool.Text;
+                Properties.Settings.Default.PythonExe = "";
+                Properties.Settings.Default.EspToolPy = this.esp32tool;
                 Properties.Settings.Default.FrimwareBin = this.tbFirmware.Text;
                 Properties.Settings.Default.EspToolBaud = this.BaudRate;
                 Properties.Settings.Default.EspToolDeviceIndex = this.cbDevice.SelectedIndex;
@@ -398,6 +394,21 @@ namespace EsPy.Dialogs
                 }
             }
             d.Dispose();
+        }
+
+        private void EspToolDialog_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            string portname = this.cbPort.SelectedItem.ToString();
+            if (Utility.Helpers.PortIsOpen(portname))
+            {
+                proc.Close();
+                proc.Dispose();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

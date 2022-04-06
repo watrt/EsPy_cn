@@ -243,6 +243,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6DDBEF77C19947C792AF1EB027DC9E40"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6E1AFCA44AEC45F086360DFC1ADD63F2"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -520,19 +526,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7ABB235B5E701D69CE151BA11BE3CCCB"
+        "OwnerKey" = "8:_38EECD9F1171451EB02F1FC21369403C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_702830507BE84F26AD9F961B8A26628C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_38EECD9F1171451EB02F1FC21369403C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -557,6 +557,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_EA7EB6D646FAC20EE16BFDCEE45DDF85"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7ABB235B5E701D69CE151BA11BE3CCCB"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -981,11 +987,6 @@
             "AssemblyAsmDisplayName" = "8:ScintillaNET FindReplaceDialog cn, Version=1.4.0.29662, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_2892CA9907FF527A02550C57D6D670E6"
-                    {
-                    "Name" = "8:ScintillaNET FindReplaceDialog cn.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:ScintillaNET FindReplaceDialog cn.DLL"
             "TargetName" = "8:"
@@ -1069,14 +1070,9 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:EsPy_cn, Version=2.0.0.3, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:EsPy_cn, Version=2.0.0.4, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_38EECD9F1171451EB02F1FC21369403C"
-                    {
-                    "Name" = "8:EsPy_cn.exe"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x64\\Release\\EsPy_cn.exe"
             "TargetName" = "8:"
@@ -1436,6 +1432,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6DDBEF77C19947C792AF1EB027DC9E40"
+            {
+            "SourcePath" = "8:..\\EsPy\\bin\\x64\\Release\\Tools\\esptool.exe"
+            "TargetName" = "8:esptool.exe"
+            "Tag" = "8:"
+            "Folder" = "8:_38521363D2CF4617A96765E04430CDDD"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6E1AFCA44AEC45F086360DFC1ADD63F2"
             {
             "SourcePath" = "8:..\\EsPy\\bin\\x64\\Release\\src\\weather\\12.bin"
@@ -1463,11 +1479,6 @@
             "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_702830507BE84F26AD9F961B8A26628C"
-                    {
-                    "Name" = "8:Newtonsoft.Json.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x64\\Release\\Newtonsoft.Json.dll"
             "TargetName" = "8:"
@@ -1554,11 +1565,6 @@
             "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7ABB235B5E701D69CE151BA11BE3CCCB"
-                    {
-                    "Name" = "8:Newtonsoft.Json.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Newtonsoft.Json.DLL"
             "TargetName" = "8:"
@@ -1745,11 +1751,6 @@
             "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_8FBEB7EAADE966A22AFFA964E5E49BA1"
-                    {
-                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015.DLL"
             "TargetName" = "8:"
@@ -1976,11 +1977,6 @@
             "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_BCFCDA341201A2730F639A088884585F"
-                    {
-                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.DLL"
             "TargetName" = "8:"
@@ -2267,11 +2263,6 @@
             "AssemblyAsmDisplayName" = "8:ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_EA7EB6D646FAC20EE16BFDCEE45DDF85"
-                    {
-                    "Name" = "8:ScintillaNET.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:ScintillaNET.DLL"
             "TargetName" = "8:"
@@ -2515,15 +2506,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Espy_x64"
-        "ProductCode" = "8:{7CE6CAA6-2982-486F-B056-461B7A183946}"
-        "PackageCode" = "8:{774210A6-384E-4C1E-AC19-6FE84324E9C1}"
+        "ProductCode" = "8:{12BBABBB-459A-4C3D-BA0A-C5D13D2EE0A7}"
+        "PackageCode" = "8:{903217C8-715C-4DA6-858F-895EC594580C}"
         "UpgradeCode" = "8:{9FB6A90D-61BB-43EC-B820-C1AB5A936A70}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:2.0.3"
+        "InstallAllUsers" = "11:TRUE"
+        "ProductVersion" = "8:2.0.5"
         "Manufacturer" = "8:watrt"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
