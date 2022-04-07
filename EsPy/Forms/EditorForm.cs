@@ -45,7 +45,6 @@ namespace EsPy.Forms
             this.DockAreas = DockAreas.Document;
             this.EOLVisible = Properties.Settings.Default.EolVisible;
             this.WhitespaceVisible = Properties.Settings.Default.WhitespaceVisible;
-
         }
 
         public EditorForm(MainForm main_form) : this()

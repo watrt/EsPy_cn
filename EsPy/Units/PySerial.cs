@@ -38,7 +38,11 @@ namespace EsPy.Units
           
             this.Write(CTRL_D);
         }
-
+        public void hardwareReset()
+        {
+            this.WriteLine("import machine");
+            this.WriteLine($"machine.reset()");
+        }
         public void PasteMode()
         {
             this.Write(CTRL_E);  

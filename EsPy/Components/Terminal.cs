@@ -32,6 +32,7 @@ namespace EsPy.Components
             this.Lang = "python";
             this.SetLang();
             this.ReadOnly = true;
+            this.CshowStatus = false;
         }
 
         private PySerial FPort = null;
@@ -97,8 +98,8 @@ namespace EsPy.Components
         public void Clean()
         {
             this.Text = "";
-            if(this.Port != null && this.Port.IsOpen)
-            this.Port.WriteLine("");
+            if (this.Port != null && this.Port.IsOpen)
+                this.Port.WriteLine("");
         }
 
         private void FPort_PortClose(object sender, EventArgs e)
@@ -111,10 +112,7 @@ namespace EsPy.Components
 
         private void FPort_DataReceived(object sender, string data)
         {
-            //byte[] gb;
-            //gb = Encoding.Default.GetBytes("#测试中文");
-            //gb = Encoding.Default.GetBytes(data);
-            //Console.WriteLine(Encoding.UTF8.GetString(gb));
+
             this.UpdateTerminal(data, "");
         }
 
@@ -146,7 +144,7 @@ namespace EsPy.Components
 
             if (this.InvokeRequired)
             {
-                this.Invoke(new UpdateTerminalEvent(UpdateTerminal), new object[] { data, message});
+                this.Invoke(new UpdateTerminalEvent(UpdateTerminal), new object[] { data, message });
             }
             else
             {
@@ -161,10 +159,9 @@ namespace EsPy.Components
                 //{
                 //    this.DeleteRange(this.TextLength - 1, 1);
                 //}
-                
+
                 if (message != "")
                 {
-                    //message = Encoding.UTF8.GetString(Encoding.ASCII.GetBytes(message));
                     if (message.Contains("\r\n"))
                     {
                         this.AppendText(message);
@@ -185,19 +182,19 @@ namespace EsPy.Components
                 //    this.DeleteRange(0, this.Lines[0].EndPosition);
                 //}
 
-                string res = this.Text ;
-         
+                string res = this.Text;
+
                 for (int i = 0; i < data.Length; i++)
                 {
                     char c = data[i];
-                    
+
                     // Todo: \[K
                     //this.C0 = this.C1;
                     //this.C1 = this.C2;
                     //this.C2 = this.C3;
                     //this.C3 = c;
 
-                      
+
 
                     if (c == '\b' && res.Length >= 1)
                     {
@@ -244,7 +241,7 @@ namespace EsPy.Components
                 this.BeforeMouse = -1;
             }
         }
-       
+
         private void AddToHistory()
         {
             string text = this.Lines[this.CurrentLine].Text;
@@ -262,7 +259,7 @@ namespace EsPy.Components
                 this.History.Add(text);
                 this.HistoryPos = this.History.Count;
                 this.HistoryModified = true;
-                while(this.History.Count > 100)
+                while (this.History.Count > 100)
                 {
                     this.History.RemoveAt(0);
                 }
@@ -292,7 +289,7 @@ namespace EsPy.Components
             string text = this.GetTextRange(this.PromptPos, this.TextLength - this.PromptPos);
             //string text = this.GetTextRange(this.PromptPos, this.TextLength - this.PromptPos);
             //text = this.GetTextRange(line.Position + SerialPort.PROMPT.Length, this.TextLength - line.Position);
-           
+
             if (history)
             {
                 this.AddToHistory();
@@ -303,7 +300,7 @@ namespace EsPy.Components
         }
 
         protected override void WndProc(ref Message m)
-        {           
+        {
             if (m.Msg == WM_LBUTTONDOWN || m.Msg == WM_RBUTTONDOWN)
             {
                 if (this.BeforeMouse == -1)
@@ -340,17 +337,15 @@ namespace EsPy.Components
 
             if (this.BeforeMouse >= 0)
             {
-               this.GotoPosition (this.BeforeMouse);
+                this.GotoPosition(this.BeforeMouse);
                 this.BeforeMouse = -1;
             }
 
             //if (this.CurrentPosition < this.ActPos)
             //    this.CurrentPosition = this.ActPos;
-            Console.WriteLine("CurrentPosition{0}",this.CurrentPosition);
-            Console.WriteLine("PromptPos{0}", this.PromptPos);
-            //移动光标有BUG先暂时解除锁定
-            //if (this.CurrentPosition < this.PromptPos)
-               // this.CurrentPosition = this.PromptPos;
+
+            if (this.CurrentPosition < this.PromptPos)
+                this.CurrentPosition = this.PromptPos;
 
             // this.ActPos = this.CurrentPosition;
 
@@ -372,23 +367,21 @@ namespace EsPy.Components
                                 //byte[] buff = Encoding.UTF8.GetBytes(Clipboard.GetText().Replace("\r", ""));
                                 //this.Port.Write(buff, 0, buff.Length);
                                 //this.Port.SoftReset();
+
+
+
                             }
                             return true;
 
                             break;
 
                         case Keys.Control | Keys.A:
-                            this.Port.EnterRawMode();                            
+                            this.Port.EnterRawMode();
                             return true;
 
                         case Keys.Control | Keys.B:
                             //this.Port.Write(new byte[] { 2 });
                             this.Port.LeaveRawMode();
-                            return true;
-
-                        case Keys.Control | Keys.C:
-                            //this.Port.Write(new byte[] { 2 });
-                            this.Port.Interrupt();
                             return true;
 
                         case Keys.Control | Keys.I:
@@ -411,12 +404,12 @@ namespace EsPy.Components
                         //    this.Port.Write(new byte[] { 9 });
                         //    return true;
 
-                        case  Keys.Tab:
+                        case Keys.Tab:
                             string l = this.GetAndRemoveLine(false);
                             this.Port.Write(l);
                             this.Port.Write(9);
                             return true;
-                            //break;
+                        //break;
 
                         case Keys.Down:
                             this.HistoryPos++;
@@ -456,15 +449,8 @@ namespace EsPy.Components
                             return true;
 
                         case Keys.Left:
-                            //移动光标有BUG先暂时解除锁定
-                            //if (this.PromptPos >= this.CurrentPosition)
-                            //    return true;
-                            break;
-
-                        case Keys.Right:
-                            //移动光标有BUG先暂时解除锁定
-                            //if (this.PromptPos >= this.CurrentPosition)
-                            //    return true;
+                            if (this.PromptPos >= this.CurrentPosition)
+                                return true;
                             break;
 
                         case Keys.Home:
@@ -483,7 +469,7 @@ namespace EsPy.Components
                         case Keys.Back:
                             if (this.PromptPos == this.CurrentPosition)
                             {
-                                //this.Port.Write(8);
+                                this.Port.Write(8);
                                 return true;
                             }
                             //else if()
@@ -492,20 +478,20 @@ namespace EsPy.Components
                         case Keys.Enter:
                             this.Port.WriteLine(this.GetAndRemoveLine(true));
                             return true;
-                        //default:
-                        //    if()
+                            //default:
+                            //    if()
 
-                        //    break;
+                            //    break;
                     }
                 }
             }
             //KeysConverter kc = new KeysConverter();
-            
+
             //string keyChar = kc.ConvertToString(keyData);
             //if(keyData != Keys.ShiftKey)
             //    this.Port.Write(keyChar.ToLower());
             //else 
-           
+
             bool res = base.ProcessCmdKey(ref msg, keyData);
             //this.ActPos = this.CurrentPosition;
             return res;

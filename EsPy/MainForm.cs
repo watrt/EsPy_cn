@@ -778,6 +778,7 @@ namespace EsPy
                 this.Port.WriteTimeout = Properties.Settings.Default.PyPortWriteTimeout;
                 this.Port.ReadTimeout = Properties.Settings.Default.PyPortReadTmeout;
                 this.Port.Open();
+                this.Port.WriteLine("");
             }
             catch (Exception ex)
             {
@@ -821,7 +822,7 @@ namespace EsPy
             this.mnFileManager.Enabled =
                this.btnFileManager.Enabled =
                 this.btnReset.Enabled =
-                this.btnDisconnect.Enabled = true;
+                this.btnDisconnect.Enabled =this.toolStripButton1.Enabled= true;
         }
 
         private void Port_PortClose(object sender, EventArgs e)
@@ -1174,5 +1175,9 @@ namespace EsPy
             return path;
         }
 
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Port.hardwareReset();
+        }
     }
 }

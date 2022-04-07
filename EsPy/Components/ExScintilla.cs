@@ -10,6 +10,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Xml;
 using static EsPy.Utility.TextHelper;
@@ -37,13 +38,13 @@ namespace EsPy.Components
         /// set this true to show circular buttons for code folding (the [+] and [-] buttons on the margin)
         /// </summary>
         private const bool CODEFOLDING_CIRCULAR = true;
-
+        public bool CshowStatus { get; set; } = true;
         public string Lang = "";
         public string CommentLine = "";
         public string CommentStart = "";
         public string CommentEnd = "";
+        
         public bool selecttext_status = false;
-
         public ExScintilla() : base()
         {
             this.InitializeComponent();
@@ -63,9 +64,10 @@ namespace EsPy.Components
             // 
             this.CharAdded += new System.EventHandler<ScintillaNET.CharAddedEventArgs>(this.ExScintilla_CharAdded);
             this.Delete += new System.EventHandler<ScintillaNET.ModificationEventArgs>(this.ExScintilla_Delete);
+            this.DoubleClick += new System.EventHandler<ScintillaNET.DoubleClickEventArgs>(this.ExScintilla_DoubleClick);
             this.DwellEnd += new System.EventHandler<ScintillaNET.DwellEventArgs>(this.ExScintilla_DwellEnd);
+            this.InsertCheck += new System.EventHandler<ScintillaNET.InsertCheckEventArgs>(this.ExScintilla_InsertCheck);
             this.TextChanged += new System.EventHandler(this.ExScintilla_TextChanged);
-            this.DoubleClick+= new System.EventHandler<ScintillaNET.DoubleClickEventArgs>(this.ExScintilla_DoubleClick);
             this.Leave += new System.EventHandler(this.ExScintilla_Leave);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ExScintilla_MouseDown);
             this.MouseHover += new System.EventHandler(this.ExScintilla_MouseHover);
@@ -552,7 +554,6 @@ namespace EsPy.Components
         {
             return Color.FromArgb(255, (byte)(rgb >> 16), (byte)(rgb >> 8), (byte)rgb);
         }
-
         private void InsertMatchedChars(CharAddedEventArgs e)
         {
             var caretPos = this.CurrentPosition;
@@ -658,7 +659,7 @@ namespace EsPy.Components
             r.Sort();
             if (lenEntered > 0)
             {
-                if (!this.AutoCActive)
+                if ((!this.AutoCActive) && CshowStatus)
                     this.AutoCShow(lenEntered, string.Join(" ", r));
             }
             else
@@ -810,7 +811,27 @@ namespace EsPy.Components
         }
         private void ExScintilla_TextChanged(object sender, EventArgs e)
         {
-            Console.WriteLine(e);
+            //Console.WriteLine(e);
+        }
+
+        private void ExScintilla_InsertCheck(object sender, InsertCheckEventArgs e)
+        {
+            if (CshowStatus)
+            {
+                if ((e.Text.EndsWith("\r") || e.Text.EndsWith("\n")))
+                {
+                    var curLine = this.LineFromPosition(e.Position);
+                    var curLineText = this.Lines[curLine].Text;
+
+                    var indent = Regex.Match(curLineText, @"^\s*");
+                    e.Text += indent.Value; // Add indent following "\r\n"
+
+                    // Current line end with bracket?
+                    if (Regex.IsMatch(curLineText, @"{\s*$"))
+                        e.Text += '\t'; // Add tab
+                }
+            }
+
         }
     }
 }
