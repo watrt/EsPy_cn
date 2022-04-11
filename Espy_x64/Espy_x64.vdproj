@@ -532,25 +532,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_702830507BE84F26AD9F961B8A26628C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8FBEB7EAADE966A22AFFA964E5E49BA1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BCFCDA341201A2730F639A088884585F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2892CA9907FF527A02550C57D6D670E6"
+        "OwnerKey" = "8:_7ABB235B5E701D69CE151BA11BE3CCCB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -562,7 +544,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7ABB235B5E701D69CE151BA11BE3CCCB"
+        "OwnerKey" = "8:_2892CA9907FF527A02550C57D6D670E6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_BCFCDA341201A2730F639A088884585F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_8FBEB7EAADE966A22AFFA964E5E49BA1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_702830507BE84F26AD9F961B8A26628C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -1070,9 +1070,14 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:EsPy_cn, Version=2.0.0.4, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:EsPy_cn, Version=2.0.0.6, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_38EECD9F1171451EB02F1FC21369403C"
+                    {
+                    "Name" = "8:EsPy_cn.exe"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x64\\Release\\EsPy_cn.exe"
             "TargetName" = "8:"
@@ -1479,6 +1484,11 @@
             "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_702830507BE84F26AD9F961B8A26628C"
+                    {
+                    "Name" = "8:Newtonsoft.Json.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x64\\Release\\Newtonsoft.Json.dll"
             "TargetName" = "8:"
@@ -2506,15 +2516,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Espy_x64"
-        "ProductCode" = "8:{12BBABBB-459A-4C3D-BA0A-C5D13D2EE0A7}"
-        "PackageCode" = "8:{903217C8-715C-4DA6-858F-895EC594580C}"
+        "ProductCode" = "8:{8F3D78EB-6EE5-4358-9543-8E458AE9D3F6}"
+        "PackageCode" = "8:{22DDB88A-2580-4FF6-BEF8-E8116451CB85}"
         "UpgradeCode" = "8:{9FB6A90D-61BB-43EC-B820-C1AB5A936A70}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:2.0.5"
+        "ProductVersion" = "8:2.0.7"
         "Manufacturer" = "8:watrt"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
