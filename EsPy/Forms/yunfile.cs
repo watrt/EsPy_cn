@@ -62,7 +62,7 @@ namespace EsPy.Forms
 
                     }
                     if (l.Table.Columns.Contains("id"))
-                        s.Tag = l["id"].ToString();
+                        s.Tag = l["path"].ToString();
                     if (l.Table.Columns.Contains("info"))
                         s.ToolTipText = l["info"].ToString();
                     treeView1.Nodes.Add(s);
@@ -131,21 +131,70 @@ namespace EsPy.Forms
 
         private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            if (e.Node.ImageIndex != 0)
+            if (e.Node.ImageIndex == 0)
             {
-                
-                string Filepath = System.AppDomain.CurrentDomain.BaseDirectory + Properties.Settings.Default.Workpath + "\\" + e.Node.Text;
-                HttpDownloadFile("http://www.xb6.cn/tools/espy_cn/yunpan.php?id="+e.Node.Tag, Filepath);
-                //Console.WriteLine("http://www.xb6.cn/tools/espy_cn/yunpan.php?id=" + e.Node.Tag);
-                FileFormats ff = EditorForm.EditorFileFormats;
-                
-                IDocument doc = pf.OpenFromFile(Filepath, ff);
-                if (doc != null)
+                try
                 {
-                    (doc as DockContent).Show(pf.dockPanel1);
+                    string yun = post("http://www.xb6.cn/tools/espy_cn/yunpan.php?path=" + e.Node.Tag);
+                    DataTable dt = new DataTable();
+                    dt = JsonConvert.DeserializeObject<DataTable>(yun);
+                    if (dt.Rows.Count == 0) { MessageBox.Show("目录下没有文件", "提示",MessageBoxButtons.OK,MessageBoxIcon.Asterisk); }
+                    foreach (DataRow l in dt.Rows)
+                    {
+                        Console.WriteLine(l.Table.Columns.Contains("info"));
+                        int icon = l["type"].ToString() == "dir" ? 0 : 1;
+                        TreeNode s = new TreeNode(l["name"].ToString(), icon, icon);
+                        if (l["type"].ToString() == "dir")
+                        {
+
+                        }
+                        if (l.Table.Columns.Contains("id"))
+                            s.Tag = l["path"].ToString();
+                        if (l.Table.Columns.Contains("info"))
+                            s.ToolTipText = l["info"].ToString();
+                        e.Node.Nodes.Add(s);
+                        e.Node.Expand();
+                        //treeView1.Nodes.Add(s);
+
+                    }
                 }
-                //MessageBox.Show("开发中..."+ Filepath);
+                catch (Exception er)
+                {
+                    MessageBox.Show("获取云盘数据失败", "失败",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
             }
+            else
+            {
+                try
+                {
+                    string Filepath = System.AppDomain.CurrentDomain.BaseDirectory + Properties.Settings.Default.Workpath + "\\" + e.Node.Text;
+                    HttpDownloadFile("http://www.xb6.cn/tools/espy_cn/" + e.Node.Tag, Filepath);
+                    //Console.WriteLine("http://www.xb6.cn/tools/espy_cn/yunpan.php?id=" + e.Node.Tag);
+
+                    if (Filepath.Substring(Filepath.Length-2, 2) == "py")
+                    {
+                        FileFormats ff = EditorForm.EditorFileFormats;
+                        IDocument doc = pf.OpenFromFile(Filepath, ff);
+                        if (doc != null)
+                        {
+                            (doc as DockContent).Show(pf.dockPanel1);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("已下载到:"+ Filepath + "\n文件类型不支持编辑！", "失败", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    }
+
+
+                }catch(Exception err)
+                {
+                    MessageBox.Show("获取文件失败", "失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+
+
+                //MessageBox.Show("开发中..."+ Filepath);
         }
     }
 }

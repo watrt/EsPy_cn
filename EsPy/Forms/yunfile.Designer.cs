@@ -37,8 +37,7 @@
             this.mnEdit});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(379, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(284, 25);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.Visible = false;
@@ -49,13 +48,13 @@
             this.userconfig});
             this.mnEdit.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.mnEdit.Name = "mnEdit";
-            this.mnEdit.Size = new System.Drawing.Size(51, 24);
+            this.mnEdit.Size = new System.Drawing.Size(44, 21);
             this.mnEdit.Text = "&编辑";
             // 
             // userconfig
             // 
             this.userconfig.Name = "userconfig";
-            this.userconfig.Size = new System.Drawing.Size(181, 26);
+            this.userconfig.Size = new System.Drawing.Size(112, 22);
             this.userconfig.Text = "云配置";
             // 
             // treeView1
@@ -64,10 +63,11 @@
             this.treeView1.ImageIndex = 0;
             this.treeView1.ImageList = this.imageList1;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.treeView1.Name = "treeView1";
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.ShowNodeToolTips = true;
-            this.treeView1.Size = new System.Drawing.Size(379, 682);
+            this.treeView1.Size = new System.Drawing.Size(284, 546);
             this.treeView1.TabIndex = 2;
             this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
             // 
@@ -80,15 +80,14 @@
             // 
             // yunfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 682);
+            this.ClientSize = new System.Drawing.Size(284, 546);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.menuStrip1);
             this.HideOnClose = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "yunfile";
             this.Text = "云文件";
             this.Load += new System.EventHandler(this.yunfile_Load);

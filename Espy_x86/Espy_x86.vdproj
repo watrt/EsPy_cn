@@ -111,30 +111,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_1E6F21A704A30278378070384735B340"
-        "OwnerKey" = "8:_748F29D48A967ECB513EB8DE30EF1FC2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1E6F21A704A30278378070384735B340"
-        "OwnerKey" = "8:_06925456DE3E4461902061A6DED43DB1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1E6F21A704A30278378070384735B340"
-        "OwnerKey" = "8:_D470F93E237B428B9A20F39F3475E01A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1E6F21A704A30278378070384735B340"
-        "OwnerKey" = "8:_F392A078E58C43599EA7365CB81607C2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_1F19340907424BB18E06DB7A72C2ED41"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -213,18 +189,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_4D8B49E7FAAE77B5C0DB33A115F1E177"
-        "OwnerKey" = "8:_06925456DE3E4461902061A6DED43DB1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4D8B49E7FAAE77B5C0DB33A115F1E177"
-        "OwnerKey" = "8:_F392A078E58C43599EA7365CB81607C2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_4E50CEC054854142A6CBC81D305B9377"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -287,18 +251,6 @@
         {
         "MsmKey" = "8:_711326E9D09E4FA7A4323E990EF19A84"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_748F29D48A967ECB513EB8DE30EF1FC2"
-        "OwnerKey" = "8:_06925456DE3E4461902061A6DED43DB1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_748F29D48A967ECB513EB8DE30EF1FC2"
-        "OwnerKey" = "8:_F392A078E58C43599EA7365CB81607C2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -375,30 +327,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_9F65F974B58B4165A6BC414F613F48F6"
-        "OwnerKey" = "8:_06925456DE3E4461902061A6DED43DB1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9F65F974B58B4165A6BC414F613F48F6"
-        "OwnerKey" = "8:_4D8B49E7FAAE77B5C0DB33A115F1E177"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9F65F974B58B4165A6BC414F613F48F6"
-        "OwnerKey" = "8:_4955695C879C48D29986D3ED6ED55F0A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9F65F974B58B4165A6BC414F613F48F6"
-        "OwnerKey" = "8:_F392A078E58C43599EA7365CB81607C2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_A03D9A6C18C94C6487D0D5C7D1A91A74"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -443,18 +371,6 @@
         {
         "MsmKey" = "8:_B86CE0F12ACD4D0E9582A26852010C38"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_C143C9F010BCF8F6FF96B51DCC3A5E3D"
-        "OwnerKey" = "8:_06925456DE3E4461902061A6DED43DB1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_C143C9F010BCF8F6FF96B51DCC3A5E3D"
-        "OwnerKey" = "8:_F392A078E58C43599EA7365CB81607C2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -631,84 +547,6 @@
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_02A63A182EB149838979D1170EC1642B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C143C9F010BCF8F6FF96B51DCC3A5E3D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1E6F21A704A30278378070384735B340"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_748F29D48A967ECB513EB8DE30EF1FC2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9F65F974B58B4165A6BC414F613F48F6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4D8B49E7FAAE77B5C0DB33A115F1E177"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_06925456DE3E4461902061A6DED43DB1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4955695C879C48D29986D3ED6ED55F0A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4D38754B1BF14C5980C75AEE39AC02CB"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_98798B0E3A394F7AB8E2A3C2469C18CA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D470F93E237B428B9A20F39F3475E01A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F15F838D59794F8EACDBC96558F5A8EC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F392A078E58C43599EA7365CB81607C2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
     }
     "Configurations"
     {
@@ -831,11 +669,6 @@
             "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_02A63A182EB149838979D1170EC1642B"
-                    {
-                    "Name" = "8:Newtonsoft.Json.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\Newtonsoft.Json.dll"
             "TargetName" = "8:"
@@ -902,11 +735,6 @@
             "AssemblyAsmDisplayName" = "8:EsPy_cn, Version=2.0.0.6, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_06925456DE3E4461902061A6DED43DB1"
-                    {
-                    "Name" = "8:EsPy_cn.exe"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\EsPy_cn.exe"
             "TargetName" = "8:"
@@ -1146,32 +974,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1E6F21A704A30278378070384735B340"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:ScintillaNET.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1F19340907424BB18E06DB7A72C2ED41"
             {
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\src\\weather\\31.bin"
@@ -1399,11 +1201,6 @@
             "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_4955695C879C48D29986D3ED6ED55F0A"
-                    {
-                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll"
             "TargetName" = "8:"
@@ -1430,11 +1227,6 @@
             "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_4D38754B1BF14C5980C75AEE39AC02CB"
-                    {
-                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\WeifenLuo.WinFormsUI.Docking.dll"
             "TargetName" = "8:"
@@ -1452,32 +1244,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4D8B49E7FAAE77B5C0DB33A115F1E177"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4E50CEC054854142A6CBC81D305B9377"
@@ -1700,32 +1466,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_748F29D48A967ECB513EB8DE30EF1FC2"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ScintillaNET FindReplaceDialog cn, Version=1.4.0.29662, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:ScintillaNET FindReplaceDialog cn.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_754D2A4FF3B349038EF8B298B5FDBA29"
             {
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\EsPy_cn.exe.config"
@@ -1913,11 +1653,6 @@
             "AssemblyAsmDisplayName" = "8:ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_98798B0E3A394F7AB8E2A3C2469C18CA"
-                    {
-                    "Name" = "8:ScintillaNET.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\ScintillaNET.dll"
             "TargetName" = "8:"
@@ -1975,32 +1710,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9F65F974B58B4165A6BC414F613F48F6"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A03D9A6C18C94C6487D0D5C7D1A91A74"
@@ -2163,32 +1872,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C143C9F010BCF8F6FF96B51DCC3A5E3D"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:Newtonsoft.Json.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C5D1FA915AEE4A4F8BB4FBB6EB895CD0"
             {
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\src\\fontshow.py"
@@ -2336,11 +2019,6 @@
             "AssemblyAsmDisplayName" = "8:VPKSoft.ScintillaLexers, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_D470F93E237B428B9A20F39F3475E01A"
-                    {
-                    "Name" = "8:VPKSoft.ScintillaLexers.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\VPKSoft.ScintillaLexers.dll"
             "TargetName" = "8:"
@@ -2687,11 +2365,6 @@
             "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_F15F838D59794F8EACDBC96558F5A8EC"
-                    {
-                    "Name" = "8:Newtonsoft.Json.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\Newtonsoft.Json.dll"
             "TargetName" = "8:"
@@ -2738,11 +2411,6 @@
             "AssemblyAsmDisplayName" = "8:EsPy_cn, Version=2.0.0.6, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_F392A078E58C43599EA7365CB81607C2"
-                    {
-                    "Name" = "8:EsPy_cn.exe"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\EsPy_cn.exe"
             "TargetName" = "8:"
@@ -2946,15 +2614,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Espy_x86"
-        "ProductCode" = "8:{3F1EFDAB-4A01-42E4-A06B-08C5F37DF76C}"
-        "PackageCode" = "8:{0EF02F9A-CBA2-4C3B-A798-B1B6F34EC191}"
+        "ProductCode" = "8:{944BD104-3B59-47C1-B904-BAE57340372A}"
+        "PackageCode" = "8:{E55F0FF2-5A2E-4448-A491-AFF8BAA313FC}"
         "UpgradeCode" = "8:{FB2F224D-7E6C-4E49-8AD5-98C61DEDAE1F}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:2.0.7"
+        "ProductVersion" = "8:2.0.8"
         "Manufacturer" = "8:watrt"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
