@@ -138,7 +138,14 @@ namespace EsPy.Forms
                     string yun = post("http://www.xb6.cn/tools/espy_cn/yunpan.php?path=" + e.Node.Tag);
                     DataTable dt = new DataTable();
                     dt = JsonConvert.DeserializeObject<DataTable>(yun);
-                    if (dt.Rows.Count == 0) { MessageBox.Show("目录下没有文件", "提示",MessageBoxButtons.OK,MessageBoxIcon.Asterisk); }
+                    if (dt.Rows.Count == 0)
+                    {
+                        MessageBox.Show("目录下没有文件", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    }
+                    else
+                    {
+                        e.Node.Nodes.Clear();
+                    }
                     foreach (DataRow l in dt.Rows)
                     {
                         Console.WriteLine(l.Table.Columns.Contains("info"));
