@@ -2879,7 +2879,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Espy_x64"
         "ProductCode" = "8:{0B6FDD0E-9E71-4FCA-B27C-7E7E3D0CBD9E}"
-        "PackageCode" = "8:{E035FDAE-8904-4BB4-8A1B-F1AAA4556E0D}"
+        "PackageCode" = "8:{4A24B3A3-399C-4ED2-887D-859FFB8A2FF9}"
         "UpgradeCode" = "8:{9FB6A90D-61BB-43EC-B820-C1AB5A936A70}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -2999,7 +2999,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_6EBDB89766384629A494AA7B0C9E1FCF"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_37BCF9B2979341FFAAAE5F043DDAF100"
             {
             "Name" = "8:EsPy_cn"
             "Arguments" = "8:"
@@ -3007,13 +3007,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:32512"
             "Transitive" = "11:FALSE"
-            "Target" = "8:"
+            "Target" = "8:_28E72DDB98D94A1BA07E07BEDF5A653A"
             "Folder" = "8:_D9D8B1AC268A4A3191BE0298105EAEDA"
             "WorkingFolder" = "8:_E831D241B4254D1687B2614F39ACC6C6"
-            "Icon" = "8:"
+            "Icon" = "8:_28E72DDB98D94A1BA07E07BEDF5A653A"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_77DEC2073D864047B8AB41F46807C314"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B58F3973EADC49ECAE8A0DD11E628584"
             {
             "Name" = "8:EsPy_cn"
             "Arguments" = "8:"
@@ -3021,10 +3021,10 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:32512"
             "Transitive" = "11:FALSE"
-            "Target" = "8:"
+            "Target" = "8:_28E72DDB98D94A1BA07E07BEDF5A653A"
             "Folder" = "8:_4E0DC532F7E042E984550216CBF9FC63"
             "WorkingFolder" = "8:_E831D241B4254D1687B2614F39ACC6C6"
-            "Icon" = "8:"
+            "Icon" = "8:_28E72DDB98D94A1BA07E07BEDF5A653A"
             "Feature" = "8:"
             }
         }
