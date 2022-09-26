@@ -26,7 +26,7 @@
     <UpdatePeriodically>true</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://付坤.中国/tools/espy_cn/</InstallUrl>
+    <InstallUrl>http://xb6.cn/tools/espy_cn/</InstallUrl>
     <UpdateUrl>http://付坤.中国/tools/espy_cn/</UpdateUrl>
     <SupportUrl>http://付坤.中国/</SupportUrl>
     <ProductName>Espy_cn</ProductName>
@@ -35,8 +35,8 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <TrustUrlParameters>true</TrustUrlParameters>
-    <ApplicationRevision>13</ApplicationRevision>
-    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>14</ApplicationRevision>
+    <ApplicationVersion>2.1.1.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -280,9 +280,6 @@
     <Content Include="Conf\devices.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Helps\images\esp8266-wemos-d1-mini-pinout.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="ClassDiagram1.cd" />
     <None Include="EsPy_1_TemporaryKey.pfx" />
     <None Include="EsPy_TemporaryKey.pfx" />
@@ -367,9 +364,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Content Include="Helps\images\esptool.png" />
-    <Content Include="Helps\images\espy.png" />
-    <Content Include="Helps\images\filemanager.png" />
+    <Content Include="Helps\images\esptool.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Helps\images\espy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Helps\images\filemanager.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\cpu.png" />
     <None Include="Resources\splash.png" />
     <None Include="Resources\Warning.png" />
@@ -401,6 +404,9 @@
     <None Include="Resources\watrt.png" />
     <None Include="Resources\202005141589436766159685.png" />
     <None Include="Resources\hupdate.png" />
+    <Content Include="Helps\images\wpython.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="src\1.txt" />
     <Content Include="src\analogRead.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -1083,7 +1083,7 @@ namespace EsPy
 
         private void myblog_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.付坤.中国");
+            System.Diagnostics.Process.Start("http://www.xb6.cn");
         }
 
         private void MainForm_DragDrop_1(object sender, DragEventArgs e)
