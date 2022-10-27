@@ -189,7 +189,8 @@ namespace EsPy.Forms
                     }
                     else
                     {
-                        MessageBox.Show("已下载到:"+ Filepath + "\n文件类型不支持编辑！", "失败", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        System.Diagnostics.Process.Start("Explorer.exe", Filepath.ToString());
+                        //MessageBox.Show("已下载到:"+ Filepath + "\n文件类型不支持编辑！", "失败", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     }
 
 
