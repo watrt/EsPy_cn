@@ -69,6 +69,30 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_1E6F21A704A30278378070384735B340"
+        "OwnerKey" = "8:_748F29D48A967ECB513EB8DE30EF1FC2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1E6F21A704A30278378070384735B340"
+        "OwnerKey" = "8:_EAC3B5605C204E2FA991298A69D47AB9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1E6F21A704A30278378070384735B340"
+        "OwnerKey" = "8:_C94519D15DAB476EA2620D94B9B3CDC5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1E6F21A704A30278378070384735B340"
+        "OwnerKey" = "8:_79FAF98580004311A283E478495431FB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_1F73C48483DC42F79395661F248A0230"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -101,12 +125,6 @@
         {
         "MsmKey" = "8:_2CFAAEE250034FFC8F4384306C53F238"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2DCFDE5D4729E1414BA5CB63A7129BCD"
-        "OwnerKey" = "8:_79FAF98580004311A283E478495431FB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -147,12 +165,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_3E7DF1DE6B417ED2BD9D2CB564A85253"
-        "OwnerKey" = "8:_79FAF98580004311A283E478495431FB"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_428F09427ECE4301B449CACDAAF44E2B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -179,6 +191,12 @@
         {
         "MsmKey" = "8:_4785BE2A0B384EF7A5818ECAC78EF3EA"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4D8B49E7FAAE77B5C0DB33A115F1E177"
+        "OwnerKey" = "8:_79FAF98580004311A283E478495431FB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -231,6 +249,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_748F29D48A967ECB513EB8DE30EF1FC2"
+        "OwnerKey" = "8:_79FAF98580004311A283E478495431FB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_75549E3231BE479AA5E2F1417DB5D3AA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -251,30 +275,6 @@
         {
         "MsmKey" = "8:_79FAF98580004311A283E478495431FB"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_7A0F71E9BD679B1E6762DE5F9358A349"
-        "OwnerKey" = "8:_3E7DF1DE6B417ED2BD9D2CB564A85253"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_7A0F71E9BD679B1E6762DE5F9358A349"
-        "OwnerKey" = "8:_EAC3B5605C204E2FA991298A69D47AB9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_7A0F71E9BD679B1E6762DE5F9358A349"
-        "OwnerKey" = "8:_C94519D15DAB476EA2620D94B9B3CDC5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_7A0F71E9BD679B1E6762DE5F9358A349"
-        "OwnerKey" = "8:_79FAF98580004311A283E478495431FB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -387,6 +387,24 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_9F65F974B58B4165A6BC414F613F48F6"
+        "OwnerKey" = "8:_3E59A1C379854A27AA4FFFA5521B8773"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9F65F974B58B4165A6BC414F613F48F6"
+        "OwnerKey" = "8:_4D8B49E7FAAE77B5C0DB33A115F1E177"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9F65F974B58B4165A6BC414F613F48F6"
+        "OwnerKey" = "8:_79FAF98580004311A283E478495431FB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_A62B3C85A8F24010A4018EFF70847472"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -435,20 +453,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_BCC5B18AFD34FB8B2DC5DCAC9DB75201"
+        "MsmKey" = "8:_C143C9F010BCF8F6FF96B51DCC3A5E3D"
         "OwnerKey" = "8:_79FAF98580004311A283E478495431FB"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BCC5B18AFD34FB8B2DC5DCAC9DB75201"
-        "OwnerKey" = "8:_3E59A1C379854A27AA4FFFA5521B8773"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BCC5B18AFD34FB8B2DC5DCAC9DB75201"
-        "OwnerKey" = "8:_2DCFDE5D4729E1414BA5CB63A7129BCD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -561,12 +567,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_EBCAB4DC1A97B04BDEAE7BDCBBE39A2E"
-        "OwnerKey" = "8:_79FAF98580004311A283E478495431FB"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_EDB9098D809348659FAFFC4B363C7FE5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -598,19 +598,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EBCAB4DC1A97B04BDEAE7BDCBBE39A2E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3E59A1C379854A27AA4FFFA5521B8773"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_85B54D810D5A4D93B68BF7407D51D51F"
+        "OwnerKey" = "8:_79FAF98580004311A283E478495431FB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -622,13 +610,37 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2B68D7B10A2B432DAFD366CEC6E19EFE"
+        "OwnerKey" = "8:_C94519D15DAB476EA2620D94B9B3CDC5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C94519D15DAB476EA2620D94B9B3CDC5"
+        "OwnerKey" = "8:_85B54D810D5A4D93B68BF7407D51D51F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_4D8B49E7FAAE77B5C0DB33A115F1E177"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_748F29D48A967ECB513EB8DE30EF1FC2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1E6F21A704A30278378070384735B340"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C143C9F010BCF8F6FF96B51DCC3A5E3D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -640,31 +652,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_79FAF98580004311A283E478495431FB"
+        "OwnerKey" = "8:_3E59A1C379854A27AA4FFFA5521B8773"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2DCFDE5D4729E1414BA5CB63A7129BCD"
+        "OwnerKey" = "8:_9F65F974B58B4165A6BC414F613F48F6"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BCC5B18AFD34FB8B2DC5DCAC9DB75201"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3E7DF1DE6B417ED2BD9D2CB564A85253"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7A0F71E9BD679B1E6762DE5F9358A349"
+        "OwnerKey" = "8:_2B68D7B10A2B432DAFD366CEC6E19EFE"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -942,6 +942,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1E6F21A704A30278378070384735B340"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_1E6F21A704A30278378070384735B340"
+                    {
+                    "Name" = "8:ScintillaNET.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ScintillaNET.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1F73C48483DC42F79395661F248A0230"
             {
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\src\\weather\\1.bin"
@@ -1071,37 +1102,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2DCFDE5D4729E1414BA5CB63A7129BCD"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_2DCFDE5D4729E1414BA5CB63A7129BCD"
-                    {
-                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_33C1963E4FF9407DB92476D5E24E0EC8"
@@ -1235,37 +1235,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3E7DF1DE6B417ED2BD9D2CB564A85253"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ScintillaNET FindReplaceDialog cn, Version=1.4.0.29662, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_3E7DF1DE6B417ED2BD9D2CB564A85253"
-                    {
-                    "Name" = "8:ScintillaNET FindReplaceDialog cn.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ScintillaNET FindReplaceDialog cn.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_428F09427ECE4301B449CACDAAF44E2B"
             {
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\Tools\\webrepl\\webrepl.html"
@@ -1375,6 +1344,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4D8B49E7FAAE77B5C0DB33A115F1E177"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_4D8B49E7FAAE77B5C0DB33A115F1E177"
+                    {
+                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.ThemeVS2015.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_52DE867B076245DE935CBA7E1CF805C2"
@@ -1537,6 +1537,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_748F29D48A967ECB513EB8DE30EF1FC2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ScintillaNET FindReplaceDialog cn, Version=1.4.0.29662, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_748F29D48A967ECB513EB8DE30EF1FC2"
+                    {
+                    "Name" = "8:ScintillaNET FindReplaceDialog cn.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ScintillaNET FindReplaceDialog cn.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_75549E3231BE479AA5E2F1417DB5D3AA"
             {
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\src\\weather\\36.bin"
@@ -1601,7 +1632,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:EsPy_cn, Version=2.1.1.14, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:EsPy_cn, Version=2.1.1.15, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_79FAF98580004311A283E478495431FB"
@@ -1626,37 +1657,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7A0F71E9BD679B1E6762DE5F9358A349"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_7A0F71E9BD679B1E6762DE5F9358A349"
-                    {
-                    "Name" = "8:ScintillaNET.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ScintillaNET.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7BB6D3E7FE984A829B5A6F1866609944"
@@ -2030,6 +2030,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9F65F974B58B4165A6BC414F613F48F6"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_9F65F974B58B4165A6BC414F613F48F6"
+                    {
+                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A62B3C85A8F24010A4018EFF70847472"
             {
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\src\\boot.py"
@@ -2190,20 +2221,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BCC5B18AFD34FB8B2DC5DCAC9DB75201"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C143C9F010BCF8F6FF96B51DCC3A5E3D"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_BCC5B18AFD34FB8B2DC5DCAC9DB75201"
+                    "_C143C9F010BCF8F6FF96B51DCC3A5E3D"
                     {
-                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.DLL"
+                    "Name" = "8:Newtonsoft.Json.DLL"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.DLL"
+            "SourcePath" = "8:Newtonsoft.Json.DLL"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
@@ -2603,37 +2634,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EBCAB4DC1A97B04BDEAE7BDCBBE39A2E"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_EBCAB4DC1A97B04BDEAE7BDCBBE39A2E"
-                    {
-                    "Name" = "8:Newtonsoft.Json.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Newtonsoft.Json.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_DDE2511956B14020B2B7B959868FFFF4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EDB9098D809348659FAFFC4B363C7FE5"
             {
             "SourcePath" = "8:..\\EsPy\\bin\\x86\\Release\\src\\weather\\29.bin"
@@ -2879,14 +2879,14 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Espy_x86"
         "ProductCode" = "8:{F4350D3B-B896-46D5-923D-B4DE8EE1771C}"
-        "PackageCode" = "8:{87D63074-490C-41CC-BF81-4BF6FD405C3C}"
-        "UpgradeCode" = "8:{FB2F224D-7E6C-4E49-8AD5-98C61DEDAE1F}"
+        "PackageCode" = "8:{C09E16DE-F5B9-462D-910B-8F4D52760740}"
+        "UpgradeCode" = "8:{37621E30-C199-4C04-BD95-219FFE500182}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:2.1.14"
+        "ProductVersion" = "8:2.1.15"
         "Manufacturer" = "8:watrt"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
