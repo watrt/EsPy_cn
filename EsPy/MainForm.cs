@@ -196,7 +196,8 @@ namespace EsPy
                 this.btnConnect.Enabled =
                     this.mnFileManager.Enabled =
                     this.btnDisconnect.Enabled =
-                    this.btnReset.Enabled =
+                    this.btnReset.Enabled = 
+                    this.btnchipconf.Enabled =
                     this.btnFileManager.Enabled = false;
 
             }
@@ -820,7 +821,7 @@ namespace EsPy
                 this.btnConnect.Enabled = false;
 
             this.mnFileManager.Enabled =
-               this.btnFileManager.Enabled =
+               this.btnFileManager.Enabled =this.btnchipconf.Enabled=
                 this.btnReset.Enabled =
                 this.btnDisconnect.Enabled =this.toolStripButton1.Enabled= true;
         }
@@ -831,7 +832,7 @@ namespace EsPy
                 this.btnConnect.Enabled = true;
 
             this.mnFileManager.Enabled =
-               this.btnFileManager.Enabled =
+               this.btnFileManager.Enabled = this.btnchipconf.Enabled =
                 this.btnReset.Enabled =
                 this.btnDisconnect.Enabled = false;
 
@@ -1178,6 +1179,28 @@ namespace EsPy
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             this.Port.hardwareReset();
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void btnchipconf_Click(object sender, EventArgs e)
+        {
+            if (this.Port != null)
+            {
+                Globals.Terminal.Locked = true;
+                this.Port.Sync(true);
+                this.Port.Clean();
+                chipconf d = new chipconf();
+                d.Port = this.Port;
+                d.ShowDialog();
+                d.Dispose();
+                this.Port.Clean();
+                this.Port.Sync(false);
+                Globals.Terminal.Locked = false;
+            }
         }
     }
 }

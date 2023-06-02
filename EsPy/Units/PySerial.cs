@@ -308,7 +308,44 @@ namespace EsPy.Units
             prog.Add("os.getcwd()");
             return this.Exec(prog);
         }
-
+        public ResultStatus Getfreq()
+        {
+            List<string> prog = new List<string>();
+            prog.Add("import machine");
+            prog.Add("machine.freq()");
+            ResultStatus res = this.Exec(prog);
+            if (res.Result == ResultStatus.Statuses.Error)
+                return res;
+            return res;
+        }
+        public ResultStatus Getwifi()
+        {
+            List<string> prog = new List<string>();
+            prog.Add("import network");
+            prog.Add("__w=network.WLAN(network.STA_IF)");
+            prog.Add("__w.active(True)");
+            prog.Add("s=__w.scan()");
+            prog.Add("for i in s:");
+            prog.Add("    print('{0},{1},{2},{3},{4},{5}'.format(i[0].decode(),str(bssid),i[2],i[3],i[4],i[5]))");
+            prog.Add("del __w");
+            this.ReadTimeout = 15000;
+            ResultStatus res = this.Exec(prog);
+            this.ReadTimeout = Properties.Settings.Default.PyPortReadTmeout;
+            Console.WriteLine(res.ToString());
+            if (res.Result == ResultStatus.Statuses.Success)
+            {
+                return res;
+                List<wificlient> wificlient = new List<wificlient>();
+                foreach (string line in (res.Data as List<string>))
+                {
+                    
+                    string[] items = line.Split(',');
+                    wificlient.Add(new wificlient(items[0], items[1], int.Parse(items[2]), int.Parse(items[3]),false));
+                }
+                res.Data = wificlient.OrderBy(k => k.RSSI).ToList();
+            }
+            return res;
+        }
         public ResultStatus Stat(string fname)
         {
             List<string> prog = new List<string>();
@@ -345,6 +382,7 @@ namespace EsPy.Units
             this.WriteLine($"exec(open('./{file}').read(),globals())");
             return new ResultStatus(ResultStatus.Statuses.Success,"");
         }
+
         public ResultStatus Cd(string path)
         {
             List<string> prog = new List<string>();

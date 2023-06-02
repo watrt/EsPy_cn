@@ -60,9 +60,9 @@
             this.mnTools = new System.Windows.Forms.ToolStripMenuItem();
             this.mnWebREPL = new System.Windows.Forms.ToolStripMenuItem();
             this.mnHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.myblog = new System.Windows.Forms.ToolStripMenuItem();
             this.ePS8266ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnViewHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.myblog = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
@@ -95,6 +95,7 @@
             this.btnReset = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.btnFileManager = new System.Windows.Forms.ToolStripButton();
+            this.btnchipconf = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.btnTerminalClear = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -127,7 +128,8 @@
             this.mnHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(794, 25);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1059, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -143,7 +145,7 @@
             this.toolStripMenuItem2,
             this.exitToolStripMenuItem});
             this.mnFile.Name = "mnFile";
-            this.mnFile.Size = new System.Drawing.Size(44, 21);
+            this.mnFile.Size = new System.Drawing.Size(51, 24);
             this.mnFile.Text = "&文件";
             // 
             // mnNew
@@ -158,14 +160,14 @@
             this.mnNewOther});
             this.mnNew.Image = ((System.Drawing.Image)(resources.GetObject("mnNew.Image")));
             this.mnNew.Name = "mnNew";
-            this.mnNew.Size = new System.Drawing.Size(202, 22);
+            this.mnNew.Size = new System.Drawing.Size(243, 26);
             this.mnNew.Text = "新建";
             // 
             // mnNewPython
             // 
             this.mnNewPython.Name = "mnNewPython";
             this.mnNewPython.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.mnNewPython.Size = new System.Drawing.Size(171, 22);
+            this.mnNewPython.Size = new System.Drawing.Size(205, 26);
             this.mnNewPython.Tag = ".py";
             this.mnNewPython.Text = "Python...";
             this.mnNewPython.Click += new System.EventHandler(this.mnNewPython_Click);
@@ -173,7 +175,7 @@
             // mnNewHtml
             // 
             this.mnNewHtml.Name = "mnNewHtml";
-            this.mnNewHtml.Size = new System.Drawing.Size(171, 22);
+            this.mnNewHtml.Size = new System.Drawing.Size(205, 26);
             this.mnNewHtml.Tag = ".html";
             this.mnNewHtml.Text = "HTML...";
             this.mnNewHtml.Click += new System.EventHandler(this.mnNewHtml_Click);
@@ -181,7 +183,7 @@
             // mnNewCss
             // 
             this.mnNewCss.Name = "mnNewCss";
-            this.mnNewCss.Size = new System.Drawing.Size(171, 22);
+            this.mnNewCss.Size = new System.Drawing.Size(205, 26);
             this.mnNewCss.Tag = ".css";
             this.mnNewCss.Text = "Css...";
             this.mnNewCss.Click += new System.EventHandler(this.mnNewCss_Click);
@@ -189,7 +191,7 @@
             // mnNewJs
             // 
             this.mnNewJs.Name = "mnNewJs";
-            this.mnNewJs.Size = new System.Drawing.Size(171, 22);
+            this.mnNewJs.Size = new System.Drawing.Size(205, 26);
             this.mnNewJs.Tag = ".js";
             this.mnNewJs.Text = "Javascript...";
             this.mnNewJs.Click += new System.EventHandler(this.mnNewJs_Click);
@@ -197,7 +199,7 @@
             // mnNewJson
             // 
             this.mnNewJson.Name = "mnNewJson";
-            this.mnNewJson.Size = new System.Drawing.Size(171, 22);
+            this.mnNewJson.Size = new System.Drawing.Size(205, 26);
             this.mnNewJson.Tag = ".json";
             this.mnNewJson.Text = "JSON...";
             this.mnNewJson.Click += new System.EventHandler(this.mnNewJson_Click);
@@ -205,14 +207,14 @@
             // mnNewTxt
             // 
             this.mnNewTxt.Name = "mnNewTxt";
-            this.mnNewTxt.Size = new System.Drawing.Size(171, 22);
+            this.mnNewTxt.Size = new System.Drawing.Size(205, 26);
             this.mnNewTxt.Text = "Text...";
             this.mnNewTxt.Click += new System.EventHandler(this.mnNewTxt_Click);
             // 
             // mnNewOther
             // 
             this.mnNewOther.Name = "mnNewOther";
-            this.mnNewOther.Size = new System.Drawing.Size(171, 22);
+            this.mnNewOther.Size = new System.Drawing.Size(205, 26);
             this.mnNewOther.Text = "其它文件...";
             this.mnNewOther.Click += new System.EventHandler(this.mnNewOther_Click);
             // 
@@ -221,21 +223,21 @@
             this.mnOpen.Image = ((System.Drawing.Image)(resources.GetObject("mnOpen.Image")));
             this.mnOpen.Name = "mnOpen";
             this.mnOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.mnOpen.Size = new System.Drawing.Size(202, 22);
+            this.mnOpen.Size = new System.Drawing.Size(243, 26);
             this.mnOpen.Text = "打开...";
             this.mnOpen.Click += new System.EventHandler(this.mnOpen_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(199, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(240, 6);
             // 
             // mnSave
             // 
             this.mnSave.Enabled = false;
             this.mnSave.Name = "mnSave";
             this.mnSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.mnSave.Size = new System.Drawing.Size(202, 22);
+            this.mnSave.Size = new System.Drawing.Size(243, 26);
             this.mnSave.Text = "保存";
             this.mnSave.Click += new System.EventHandler(this.mnSave_Click);
             // 
@@ -243,7 +245,7 @@
             // 
             this.mnSaveAs.Enabled = false;
             this.mnSaveAs.Name = "mnSaveAs";
-            this.mnSaveAs.Size = new System.Drawing.Size(202, 22);
+            this.mnSaveAs.Size = new System.Drawing.Size(243, 26);
             this.mnSaveAs.Text = "另存为...";
             this.mnSaveAs.Click += new System.EventHandler(this.mnSaveAs_Click);
             // 
@@ -253,20 +255,20 @@
             this.mnSaveAll.Name = "mnSaveAll";
             this.mnSaveAll.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
-            this.mnSaveAll.Size = new System.Drawing.Size(202, 22);
+            this.mnSaveAll.Size = new System.Drawing.Size(243, 26);
             this.mnSaveAll.Text = "保存全部";
             this.mnSaveAll.Click += new System.EventHandler(this.mnSaveAll_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(199, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(240, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = global::EsPy.Properties.Resources.power_exit;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
             this.exitToolStripMenuItem.Text = "退出";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -275,14 +277,14 @@
             this.mnEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingsToolStripMenuItem});
             this.mnEdit.Name = "mnEdit";
-            this.mnEdit.Size = new System.Drawing.Size(44, 21);
+            this.mnEdit.Size = new System.Drawing.Size(51, 24);
             this.mnEdit.Text = "&编辑";
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.MergeIndex = 20;
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
             this.settingsToolStripMenuItem.Text = "设置...";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
@@ -292,7 +294,7 @@
             this.mnTerminal,
             this.yunfileToolStripMenuItem});
             this.mnView.Name = "mnView";
-            this.mnView.Size = new System.Drawing.Size(44, 21);
+            this.mnView.Size = new System.Drawing.Size(51, 24);
             this.mnView.Text = "&显示";
             this.mnView.DropDownOpening += new System.EventHandler(this.btnView_DropDownOpening);
             // 
@@ -300,14 +302,14 @@
             // 
             this.mnTerminal.Image = global::EsPy.Properties.Resources.command;
             this.mnTerminal.Name = "mnTerminal";
-            this.mnTerminal.Size = new System.Drawing.Size(112, 22);
+            this.mnTerminal.Size = new System.Drawing.Size(129, 26);
             this.mnTerminal.Text = "终端";
             this.mnTerminal.Click += new System.EventHandler(this.mnTerminal_Click);
             // 
             // yunfileToolStripMenuItem
             // 
             this.yunfileToolStripMenuItem.Name = "yunfileToolStripMenuItem";
-            this.yunfileToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.yunfileToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.yunfileToolStripMenuItem.Text = "云文件";
             this.yunfileToolStripMenuItem.Click += new System.EventHandler(this.yunfileToolStripMenuItem_Click);
             // 
@@ -319,7 +321,7 @@
             this.toolStripMenuItem4,
             this.mnEspTool});
             this.mnDevice.Name = "mnDevice";
-            this.mnDevice.Size = new System.Drawing.Size(44, 21);
+            this.mnDevice.Size = new System.Drawing.Size(51, 24);
             this.mnDevice.Text = "设备";
             this.mnDevice.DropDownOpening += new System.EventHandler(this.mnDevice_DropDownOpening);
             // 
@@ -327,7 +329,7 @@
             // 
             this.mnPorts.Image = global::EsPy.Properties.Resources.port;
             this.mnPorts.Name = "mnPorts";
-            this.mnPorts.Size = new System.Drawing.Size(130, 22);
+            this.mnPorts.Size = new System.Drawing.Size(151, 26);
             this.mnPorts.Text = "端口";
             // 
             // mnFileManager
@@ -335,20 +337,20 @@
             this.mnFileManager.Enabled = false;
             this.mnFileManager.Image = global::EsPy.Properties.Resources.filemanager;
             this.mnFileManager.Name = "mnFileManager";
-            this.mnFileManager.Size = new System.Drawing.Size(130, 22);
+            this.mnFileManager.Size = new System.Drawing.Size(151, 26);
             this.mnFileManager.Text = "文件管理";
             this.mnFileManager.Click += new System.EventHandler(this.mnFileManager_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(127, 6);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(148, 6);
             // 
             // mnEspTool
             // 
             this.mnEspTool.Image = global::EsPy.Properties.Resources.cpu;
             this.mnEspTool.Name = "mnEspTool";
-            this.mnEspTool.Size = new System.Drawing.Size(130, 22);
+            this.mnEspTool.Size = new System.Drawing.Size(151, 26);
             this.mnEspTool.Text = "Esp工具...";
             this.mnEspTool.Click += new System.EventHandler(this.btnFlashing_Click);
             // 
@@ -357,13 +359,13 @@
             this.mnTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnWebREPL});
             this.mnTools.Name = "mnTools";
-            this.mnTools.Size = new System.Drawing.Size(44, 21);
+            this.mnTools.Size = new System.Drawing.Size(51, 24);
             this.mnTools.Text = "工具";
             // 
             // mnWebREPL
             // 
             this.mnWebREPL.Name = "mnWebREPL";
-            this.mnWebREPL.Size = new System.Drawing.Size(131, 22);
+            this.mnWebREPL.Size = new System.Drawing.Size(153, 26);
             this.mnWebREPL.Text = "WebREPL";
             this.mnWebREPL.Click += new System.EventHandler(this.mnWebREPL_Click);
             // 
@@ -379,14 +381,22 @@
             this.toolStripSeparator3,
             this.mnAbout});
             this.mnHelp.Name = "mnHelp";
-            this.mnHelp.Size = new System.Drawing.Size(44, 21);
+            this.mnHelp.Size = new System.Drawing.Size(51, 24);
             this.mnHelp.Text = "帮助";
+            // 
+            // myblog
+            // 
+            this.myblog.Image = global::EsPy.Properties.Resources.watrt;
+            this.myblog.Name = "myblog";
+            this.myblog.Size = new System.Drawing.Size(144, 26);
+            this.myblog.Text = "我的博客";
+            this.myblog.Click += new System.EventHandler(this.myblog_Click);
             // 
             // ePS8266ToolStripMenuItem
             // 
             this.ePS8266ToolStripMenuItem.Image = global::EsPy.Properties.Resources.Mlogo_138wh;
             this.ePS8266ToolStripMenuItem.Name = "ePS8266ToolStripMenuItem";
-            this.ePS8266ToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.ePS8266ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.ePS8266ToolStripMenuItem.Text = "EPS32";
             this.ePS8266ToolStripMenuItem.Click += new System.EventHandler(this.ePS8266ToolStripMenuItem_Click);
             // 
@@ -394,28 +404,20 @@
             // 
             this.mnViewHelp.Image = global::EsPy.Properties.Resources.help;
             this.mnViewHelp.Name = "mnViewHelp";
-            this.mnViewHelp.Size = new System.Drawing.Size(156, 26);
+            this.mnViewHelp.Size = new System.Drawing.Size(144, 26);
             this.mnViewHelp.Text = "帮助";
             this.mnViewHelp.Click += new System.EventHandler(this.mnViewHelp_Click);
-            // 
-            // myblog
-            // 
-            this.myblog.Image = global::EsPy.Properties.Resources.watrt;
-            this.myblog.Name = "myblog";
-            this.myblog.Size = new System.Drawing.Size(156, 26);
-            this.myblog.Text = "我的博客";
-            this.myblog.Click += new System.EventHandler(this.myblog_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(153, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(141, 6);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Image = global::EsPy.Properties.Resources._1967;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(156, 26);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(144, 26);
             this.toolStripMenuItem3.Text = "更新例程";
             this.toolStripMenuItem3.Visible = false;
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
@@ -424,19 +426,19 @@
             // 
             this.toolStripMenuItem5.Image = global::EsPy.Properties.Resources._1967;
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(156, 26);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(144, 26);
             this.toolStripMenuItem5.Text = "更新补全";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(153, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
             // 
             // mnAbout
             // 
             this.mnAbout.Name = "mnAbout";
-            this.mnAbout.Size = new System.Drawing.Size(156, 26);
+            this.mnAbout.Size = new System.Drawing.Size(144, 26);
             this.mnAbout.Text = "关于...";
             this.mnAbout.Click += new System.EventHandler(this.mnAbout_Click);
             // 
@@ -463,13 +465,15 @@
             this.btnReset,
             this.toolStripSeparator7,
             this.btnFileManager,
+            this.btnchipconf,
             this.toolStripSeparator8,
             this.btnTerminalClear});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 25);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(794, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(1059, 31);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // btnNew
             // 
@@ -485,13 +489,13 @@
             this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
             this.btnNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(37, 28);
+            this.btnNew.Size = new System.Drawing.Size(38, 28);
             this.btnNew.Text = "新文件";
             // 
             // btnNewPython
             // 
             this.btnNewPython.Name = "btnNewPython";
-            this.btnNewPython.Size = new System.Drawing.Size(142, 22);
+            this.btnNewPython.Size = new System.Drawing.Size(167, 26);
             this.btnNewPython.Tag = ".py";
             this.btnNewPython.Text = "Python...";
             this.btnNewPython.Click += new System.EventHandler(this.mnNewPython_Click);
@@ -499,7 +503,7 @@
             // btnNewHtml
             // 
             this.btnNewHtml.Name = "btnNewHtml";
-            this.btnNewHtml.Size = new System.Drawing.Size(142, 22);
+            this.btnNewHtml.Size = new System.Drawing.Size(167, 26);
             this.btnNewHtml.Tag = ".html";
             this.btnNewHtml.Text = "HTML...";
             this.btnNewHtml.Click += new System.EventHandler(this.mnNewHtml_Click);
@@ -507,7 +511,7 @@
             // btnNewCss
             // 
             this.btnNewCss.Name = "btnNewCss";
-            this.btnNewCss.Size = new System.Drawing.Size(142, 22);
+            this.btnNewCss.Size = new System.Drawing.Size(167, 26);
             this.btnNewCss.Tag = ".css";
             this.btnNewCss.Text = "Css...";
             this.btnNewCss.Click += new System.EventHandler(this.mnNewCss_Click);
@@ -515,7 +519,7 @@
             // btnNewJs
             // 
             this.btnNewJs.Name = "btnNewJs";
-            this.btnNewJs.Size = new System.Drawing.Size(142, 22);
+            this.btnNewJs.Size = new System.Drawing.Size(167, 26);
             this.btnNewJs.Tag = ".js";
             this.btnNewJs.Text = "Javascript...";
             this.btnNewJs.Click += new System.EventHandler(this.mnNewJs_Click);
@@ -523,7 +527,7 @@
             // btnNewJson
             // 
             this.btnNewJson.Name = "btnNewJson";
-            this.btnNewJson.Size = new System.Drawing.Size(142, 22);
+            this.btnNewJson.Size = new System.Drawing.Size(167, 26);
             this.btnNewJson.Tag = ".json";
             this.btnNewJson.Text = "JSON...";
             this.btnNewJson.Click += new System.EventHandler(this.mnNewJson_Click);
@@ -531,14 +535,14 @@
             // btnNewText
             // 
             this.btnNewText.Name = "btnNewText";
-            this.btnNewText.Size = new System.Drawing.Size(142, 22);
+            this.btnNewText.Size = new System.Drawing.Size(167, 26);
             this.btnNewText.Text = "Text...";
             this.btnNewText.Click += new System.EventHandler(this.mnNewTxt_Click);
             // 
             // btnNewOther
             // 
             this.btnNewOther.Name = "btnNewOther";
-            this.btnNewOther.Size = new System.Drawing.Size(142, 22);
+            this.btnNewOther.Size = new System.Drawing.Size(167, 26);
             this.btnNewOther.Text = "其它文件...";
             this.btnNewOther.Click += new System.EventHandler(this.mnNewOther_Click);
             // 
@@ -703,6 +707,17 @@
             this.btnFileManager.Text = "文件管理";
             this.btnFileManager.Click += new System.EventHandler(this.mnFileManager_Click);
             // 
+            // btnchipconf
+            // 
+            this.btnchipconf.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnchipconf.Enabled = false;
+            this.btnchipconf.Image = global::EsPy.Properties.Resources.kservices;
+            this.btnchipconf.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnchipconf.Name = "btnchipconf";
+            this.btnchipconf.Size = new System.Drawing.Size(28, 28);
+            this.btnchipconf.Text = "硬件配置";
+            this.btnchipconf.Click += new System.EventHandler(this.btnchipconf_Click);
+            // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
@@ -726,16 +741,17 @@
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel1,
             this.FilePath});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 462);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 584);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(794, 25);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1059, 25);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel4
             // 
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(35, 20);
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(44, 20);
             this.toolStripStatusLabel4.Text = "Port:";
             this.toolStripStatusLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -750,13 +766,13 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(35, 20);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(43, 20);
             this.toolStripStatusLabel1.Text = "文件:";
             // 
             // FilePath
             // 
             this.FilePath.Name = "FilePath";
-            this.FilePath.Size = new System.Drawing.Size(23, 20);
+            this.FilePath.Size = new System.Drawing.Size(27, 20);
             this.FilePath.Text = "---";
             // 
             // dockPanel1
@@ -765,12 +781,12 @@
             this.dockPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dockPanel1.DockBackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dockPanel1.DocumentStyle = WeifenLuo.WinFormsUI.Docking.DocumentStyle.DockingWindow;
-            this.dockPanel1.Location = new System.Drawing.Point(0, 56);
-            this.dockPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dockPanel1.Location = new System.Drawing.Point(0, 59);
+            this.dockPanel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.ShowAutoHideContentOnHover = false;
             this.dockPanel1.ShowDocumentIcon = true;
-            this.dockPanel1.Size = new System.Drawing.Size(794, 406);
+            this.dockPanel1.Size = new System.Drawing.Size(1059, 525);
             this.dockPanel1.TabIndex = 3;
             this.dockPanel1.ActiveDocumentChanged += new System.EventHandler(this.dockPanel1_ActiveDocumentChanged);
             this.dockPanel1.ActiveContentChanged += new System.EventHandler(this.dockPanel1_ActiveContentChanged);
@@ -781,13 +797,13 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnOpenFileFolder});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(158, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 28);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // mnOpenFileFolder
             // 
             this.mnOpenFileFolder.Name = "mnOpenFileFolder";
-            this.mnOpenFileFolder.Size = new System.Drawing.Size(157, 22);
+            this.mnOpenFileFolder.Size = new System.Drawing.Size(180, 24);
             this.mnOpenFileFolder.Text = "打开所在目录...";
             this.mnOpenFileFolder.Click += new System.EventHandler(this.mnOpenFileFolder_Click);
             // 
@@ -798,9 +814,9 @@
             // MainForm
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 487);
+            this.ClientSize = new System.Drawing.Size(1059, 609);
             this.Controls.Add(this.dockPanel1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
@@ -808,7 +824,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -910,6 +926,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem yunfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton btnchipconf;
     }
 }
 
