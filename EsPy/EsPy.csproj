@@ -466,6 +466,1210 @@
     <Content Include="Tools\esptool.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Tools\vm\bundle_out\app.11ff83f89f6b4d9d8e0d.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.11ff83f89f6b4d9d8e0d.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.162a42789b8a44864359.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.162a42789b8a44864359.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.177f19ac242dfd8314f5.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.177f19ac242dfd8314f5.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.1865db6ae467ae0e79ff.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.1865db6ae467ae0e79ff.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.1b1f8f8723168c0c6ebc.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.1b1f8f8723168c0c6ebc.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.1b97a06d3101f3ab6086.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.1b97a06d3101f3ab6086.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.1d998fe22c3fc8b5b407.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.1d998fe22c3fc8b5b407.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.1f8c6dcfe5cf66715942.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.1f8c6dcfe5cf66715942.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.21a0970243eebec4a2fa.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.21a0970243eebec4a2fa.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.240d952947c574f702db.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.240d952947c574f702db.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.24bbb895039ab0bd6a37.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.24bbb895039ab0bd6a37.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.2a6340f387f674745398.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.2a6340f387f674745398.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.2da9266d70d0eca6918b.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.2da9266d70d0eca6918b.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.2e7ebde8afc3a8660037.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.2e7ebde8afc3a8660037.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.2f0ebffd3a2b3bd7babc.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.2f0ebffd3a2b3bd7babc.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.35bdc242afacb884998d.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.35bdc242afacb884998d.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.3772d743a4750342928d.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.3772d743a4750342928d.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.37b556c6a259d54268fe.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.37b556c6a259d54268fe.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.3a70b68902ddb1fb4995.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.3a70b68902ddb1fb4995.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.4e8fc5e50194d2c28bcc.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.4e8fc5e50194d2c28bcc.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.5207dbe8c85351374a36.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.5207dbe8c85351374a36.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.52f39c980386053fa1c6.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.52f39c980386053fa1c6.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.53c07524acb938763e76.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.53c07524acb938763e76.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.5414b8dcdae4909edc4e.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.5414b8dcdae4909edc4e.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.54e3403f55dbea50a14d.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.54e3403f55dbea50a14d.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.57e66aeb2b48d9273eb3.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.57e66aeb2b48d9273eb3.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.592cf60c0b0b7b1c0545.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.592cf60c0b0b7b1c0545.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.59638ca91160135587a6.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.59638ca91160135587a6.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.5a33aa3b54b06be87dde.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.5a33aa3b54b06be87dde.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.5a6781d9090267bb5bbc.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.5a6781d9090267bb5bbc.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.5cd6678b8c53cfe344b1.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.5cd6678b8c53cfe344b1.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.604d5239de319eb16d6d.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.604d5239de319eb16d6d.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.62530189b0605c082b0a.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.62530189b0605c082b0a.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.67eef798510da4e6bcc1.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.67eef798510da4e6bcc1.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.691bdc6a0c64dfd296bb.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.691bdc6a0c64dfd296bb.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.7034bfef6227f129334c.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.7034bfef6227f129334c.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.7118e4979a059f77b086.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.7118e4979a059f77b086.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.777819d14d81c5f7ebe4.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.777819d14d81c5f7ebe4.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.7aac643fbbaa64d5eac9.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.7aac643fbbaa64d5eac9.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.7b0587089b2ae5926869.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.7b0587089b2ae5926869.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.7c225dcd7d4a06893b04.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.7c225dcd7d4a06893b04.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.81bc5f08624d97d84242.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.81bc5f08624d97d84242.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.82cee4bbe3abd1664164.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.82cee4bbe3abd1664164.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.847ef3ca17414d960dc3.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.847ef3ca17414d960dc3.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.8d0abdee6b23fc1eee61.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.8d0abdee6b23fc1eee61.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.8e7bbb6f00e961b780b3.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.8e7bbb6f00e961b780b3.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.8e92337e02ade2919eff.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.8e92337e02ade2919eff.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.8f91bc46b04ad8611811.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.8f91bc46b04ad8611811.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.937e11bf97af339a184c.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.937e11bf97af339a184c.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.9982e6fa63512f1a5086.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.9982e6fa63512f1a5086.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.99dcba8eb29483d0816f.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.99dcba8eb29483d0816f.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.9d12ce8e8c285c414fbd.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.9d12ce8e8c285c414fbd.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.9e852ab5f4508aa0b170.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.9e852ab5f4508aa0b170.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.a1d1577a9cc8621c3bae.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.a1d1577a9cc8621c3bae.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.a86df1cc695354fcafe6.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.a86df1cc695354fcafe6.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.ace5558a54a61cb26d7b.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.ace5558a54a61cb26d7b.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.adb9f748ab2cc6f25c1c.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.adb9f748ab2cc6f25c1c.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.b37204f0962c171d4d73.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.b37204f0962c171d4d73.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.b3c54f8cbd1e7cd3d326.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.b3c54f8cbd1e7cd3d326.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.b9b0f135d6d21c2d8dff.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.b9b0f135d6d21c2d8dff.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.baf4aac7d1383d17dae9.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.baf4aac7d1383d17dae9.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.bc5d92d4f1025451f275.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.bc5d92d4f1025451f275.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.bec87dc31ba526102cea.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.bec87dc31ba526102cea.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.c51e275e60154a25914a.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.c51e275e60154a25914a.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.c561102dd0903e928b24.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.c561102dd0903e928b24.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.c5a93e1b624a4b3b808c.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.c5a93e1b624a4b3b808c.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.c799673fe3bd0fa17c00.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.c799673fe3bd0fa17c00.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.ce7067972608e10be8f5.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.ce7067972608e10be8f5.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.d2f0f62f79849cad728c.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.d2f0f62f79849cad728c.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.d5d88ef6c84d88ea7290.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.d5d88ef6c84d88ea7290.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.d6333efe94fc9b407112.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.d6333efe94fc9b407112.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.d7500a8429b6400d7ad7.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.d7500a8429b6400d7ad7.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.db57c09aedf153e3e672.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.db57c09aedf153e3e672.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.ddf40d7ed393c941d4db.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.ddf40d7ed393c941d4db.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.dfa761632f87d1c04575.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.dfa761632f87d1c04575.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.e97265ef6647a4b43c8c.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.e97265ef6647a4b43c8c.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.eda5db9887a3e31bb3a7.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.eda5db9887a3e31bb3a7.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.f2dd1424b48f36c271f0.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.f2dd1424b48f36c271f0.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.f5fc8a4ead5179f38ffa.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.f5fc8a4ead5179f38ffa.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.fde686bcdcbd31529b1a.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.fde686bcdcbd31529b1a.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.ffbcf4fa8ecb4a930bf4.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\app.ffbcf4fa8ecb4a930bf4.js.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\editor.worker.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\js\all.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\js\axios.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\js\bootstrap.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\js\bootstrap.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\js\browserfs.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\js\jquery-1.12.4.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\js\lz-string.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\js\popper.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\lvgl.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\main.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\micropython.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\bundle_out\wasm_file_api.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\driver\esp32\espidf.c" />
+    <Content Include="Tools\vm\driver\esp32\espidf.h" />
+    <Content Include="Tools\vm\driver\esp32\ili9341.py" />
+    <Content Include="Tools\vm\driver\esp32\ili9XXX.py" />
+    <Content Include="Tools\vm\driver\esp32\lv_spi.py" />
+    <Content Include="Tools\vm\driver\esp32\modILI9341.c" />
+    <Content Include="Tools\vm\driver\esp32\modrtch.c" />
+    <Content Include="Tools\vm\driver\esp32\modxpt2046.c" />
+    <Content Include="Tools\vm\driver\esp32\sh2lib.c" />
+    <Content Include="Tools\vm\driver\esp32\sh2lib.h" />
+    <Content Include="Tools\vm\driver\esp32\xpt2046.py" />
+    <Content Include="Tools\vm\driver\generic\axp192.py" />
+    <Content Include="Tools\vm\driver\generic\ft6x36.py" />
+    <Content Include="Tools\vm\driver\generic\indev_example.py" />
+    <Content Include="Tools\vm\driver\generic\st77xx-test.py" />
+    <Content Include="Tools\vm\driver\generic\st77xx.py" />
+    <Content Include="Tools\vm\driver\generic\xpt2046-test.py" />
+    <Content Include="Tools\vm\driver\generic\xpt2046.py" />
+    <Content Include="Tools\vm\driver\include\common.h" />
+    <Content Include="Tools\vm\driver\js\imagetools.py" />
+    <Content Include="Tools\vm\driver\js\lv_timer.py" />
+    <Content Include="Tools\vm\driver\linux\evdev.py" />
+    <Content Include="Tools\vm\driver\linux\lv_timer.py" />
+    <Content Include="Tools\vm\driver\linux\modfb.c" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_4bit_palette.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_bmp2png.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_decode.c" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_decode.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_encode.c" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_encode.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_encode_type.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_gzip.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_opengl.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_optimize_png.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_png2bmp.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_png_info.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_reencode.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_sdl.c" />
+    <Content Include="Tools\vm\driver\png\lodepng\examples\example_sdl.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\lodepng.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\lodepng.h" />
+    <Content Include="Tools\vm\driver\png\lodepng\lodepng_benchmark.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\lodepng_fuzzer.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\lodepng_unittest.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\lodepng_util.cpp" />
+    <Content Include="Tools\vm\driver\png\lodepng\lodepng_util.h" />
+    <Content Include="Tools\vm\driver\png\lodepng\pngdetail.cpp" />
+    <Content Include="Tools\vm\driver\png\mp_lodepng.c" />
+    <Content Include="Tools\vm\driver\rp2\rp2_dma-test.py" />
+    <Content Include="Tools\vm\driver\rp2\rp2_dma.py" />
+    <Content Include="Tools\vm\driver\SDL\modSDL.c" />
+    <Content Include="Tools\vm\driver\SDL\sdl.c" />
+    <Content Include="Tools\vm\driver\SDL\sdl.h" />
+    <Content Include="Tools\vm\driver\SDL\sdl_common.c" />
+    <Content Include="Tools\vm\driver\SDL\sdl_common.h" />
+    <Content Include="Tools\vm\driver\stm32\STM32F7DISC\ft5336.c" />
+    <Content Include="Tools\vm\driver\stm32\STM32F7DISC\ft5336.h" />
+    <Content Include="Tools\vm\driver\stm32\STM32F7DISC\modrk043fn48h.c" />
+    <Content Include="Tools\vm\driver\stm32\STM32F7DISC\rk043fn48h.h" />
+    <Content Include="Tools\vm\driver\stm32\STM32F7DISC\stm32746g_discovery.h" />
+    <Content Include="Tools\vm\driver\stm32\STM32F7DISC\stm32746g_discovery_ts.c" />
+    <Content Include="Tools\vm\driver\stm32\STM32F7DISC\stm32746g_discovery_ts.h" />
+    <Content Include="Tools\vm\driver\stm32\STM32F7DISC\ts.h" />
+    <Content Include="Tools\vm\driver\stm32\string1.c" />
+    <Content Include="Tools\vm\driver\zephyr\lvgl.c" />
+    <Content Include="Tools\vm\driver\zephyr\lvgl_driver.h" />
+    <Content Include="Tools\vm\driver\zephyr\modlvzephyr.c" />
+    <Content Include="Tools\vm\examples\anim\lv_example_anim_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\anim\lv_example_anim_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\anim\lv_example_anim_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\anim\lv_example_anim_timeline_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\animimg001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\animimg002.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\animimg003.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\caret_down.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\emoji\F600.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\emoji\F617.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\imgbtn_left.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\imgbtn_mid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\imgbtn_right.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\img_caret_down.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\img_cogwheel_argb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\img_cogwheel_chroma_keyed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\img_cogwheel_indexed16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\img_cogwheel_rgb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\img_hand_hour.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\img_hand_min.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\img_skew_strip.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\img_star.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\assets\img_strip.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\event\lv_example_event_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\event\lv_example_event_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\event\lv_example_event_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\event\lv_example_event_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\get_started\lv_example_get_started_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\get_started\lv_example_get_started_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\get_started\lv_example_get_started_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\get_started\lv_example_get_started_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\header.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\icon1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\icon2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\icon3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\icon4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\flex\lv_example_flex_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\flex\lv_example_flex_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\flex\lv_example_flex_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\flex\lv_example_flex_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\flex\lv_example_flex_5.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\flex\lv_example_flex_6.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\grid\lv_example_grid_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\grid\lv_example_grid_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\grid\lv_example_grid_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\grid\lv_example_grid_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\grid\lv_example_grid_5.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\layouts\grid\lv_example_grid_6.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\barcode\lv_example_barcode_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\bmp\example_16bit.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\bmp\example_24bit.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\bmp\example_32bit.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\bmp\lv_example_bmp_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\ffmpeg\birds.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\ffmpeg\ffmpeg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\ffmpeg\lv_example_ffmpeg_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\ffmpeg\lv_example_ffmpeg_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\freetype\lv_example_freetype_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\gif\bulb.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\gif\img_bulb_gif.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\gif\lv_example_gif_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\png\img_wink_png.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\png\lv_example_png_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\png\wink.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\qrcode\lv_example_qrcode_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\rlottie\lv_example_rlottie_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\rlottie\lv_example_rlottie_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\rlottie\lv_example_rlottie_approve.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\sjpg\lv_example_sjpg_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\tiny_ttf\lv_example_tiny_ttf_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\tiny_ttf\lv_example_tiny_ttf_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\libs\tiny_ttf\ubuntu_font.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\lv_example_menu_5.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\lv_example_textarea_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\file_explorer\lv_example_file_explorer_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\file_explorer\lv_example_file_explorer_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\file_explorer\lv_example_file_explorer_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\gridnav\lv_example_gridnav_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\gridnav\lv_example_gridnav_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\gridnav\lv_example_gridnav_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\gridnav\lv_example_gridnav_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\ime\lv_example_ime_pinyin_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\ime\lv_example_ime_pinyin_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\imgfont\lv_example_imgfont_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\msg\lv_example_msg_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\msg\lv_example_msg_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\msg\lv_example_msg_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\others\snapshot\lv_example_snapshot_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\scroll\lv_example_scroll_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\scroll\lv_example_scroll_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\scroll\lv_example_scroll_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\scroll\lv_example_scroll_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\scroll\lv_example_scroll_5.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\scroll\lv_example_scroll_6.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_10.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_11.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_12.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_13.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_14.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_5.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_6.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_7.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_8.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\styles\lv_example_style_9.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\animimg\lv_example_animimg_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\arc\lv_example_arc_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\arc\lv_example_arc_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\bar\lv_example_bar_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\bar\lv_example_bar_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\bar\lv_example_bar_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\bar\lv_example_bar_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\bar\lv_example_bar_5.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\bar\lv_example_bar_6.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\bar\test.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\btnmatrix\lv_example_btnmatrix_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\btnmatrix\lv_example_btnmatrix_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\btnmatrix\lv_example_btnmatrix_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\btn\lv_example_btn_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\btn\lv_example_btn_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\btn\lv_example_btn_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\calendar\lv_example_calendar_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\canvas\lv_example_canvas_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\canvas\lv_example_canvas_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\canvas\lv_example_canvas_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\canvas\lv_example_canvas_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\canvas\lv_example_canvas_5.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\canvas\lv_example_canvas_6.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\canvas\lv_example_canvas_7.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\chart\lv_example_chart_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\chart\lv_example_chart_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\chart\lv_example_chart_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\chart\lv_example_chart_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\chart\lv_example_chart_5.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\chart\lv_example_chart_6.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\chart\lv_example_chart_7.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\chart\lv_example_chart_8.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\chart\lv_example_chart_9.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\checkbox\lv_example_checkbox_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\checkbox\lv_example_checkbox_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\colorwheel\lv_example_colorwheel_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\dropdown\lv_example_dropdown_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\dropdown\lv_example_dropdown_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\dropdown\lv_example_dropdown_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\imgbtn\lv_example_imgbtn_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\img\lv_example_img_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\img\lv_example_img_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\img\lv_example_img_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\img\lv_example_img_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\keyboard\lv_example_keyboard_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\keyboard\lv_example_keyboard_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\label\lv_example_label_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\label\lv_example_label_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\label\lv_example_label_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\label\lv_example_label_5.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\led\lv_example_led_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\line\lv_example_line_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\list\lv_example_list_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\list\lv_example_list_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\list\test.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\menu\lv_example_menu_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\menu\lv_example_menu_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\menu\lv_example_menu_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\menu\lv_example_menu_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\menu\lv_example_menu_5.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\meter\lv_example_meter_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\meter\lv_example_meter_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\meter\lv_example_meter_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\meter\lv_example_meter_4.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\msgbox\lv_example_msgbox_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\obj\lv_example_obj_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\obj\lv_example_obj_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\roller\lv_example_roller_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\roller\lv_example_roller_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\roller\lv_example_roller_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\slider\lv_example_slider_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\slider\lv_example_slider_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\slider\lv_example_slider_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\span\lv_example_span_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\spinbox\lv_example_spinbox_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\spinner\lv_example_spinner_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\switch\lv_example_switch_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\table\lv_example_table_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\table\lv_example_table_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\tabview\lv_example_tabview_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\tabview\lv_example_tabview_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\textarea\lv_example_textarea_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\textarea\lv_example_textarea_2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\textarea\lv_example_textarea_3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\tileview\lv_example_tileview_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\examples\widgets\win\lv_example_win_1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\lib\display_driver.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\lib\display_driver_utils.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\lib\fs_driver.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\lib\imagetools.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\lib\lv_colors.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\lib\lv_utils.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\lib\tpcal.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\vm\lib\utils.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Tools\webrepl\.gitignore">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -601,6 +1805,77 @@
     <None Include="src\weather\99.bin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Tools\vm\bundle_out\56dba998166ea5a0ca7f.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\bundle_out\firmware.wasm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\bundle_out\js\fa-solid-900.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\driver\png\lodepng\.git" />
+    <None Include="Tools\vm\driver\png\lodepng\LICENSE" />
+    <None Include="Tools\vm\driver\png\lodepng\Makefile" />
+    <None Include="Tools\vm\driver\png\lodepng\README.md" />
+    <None Include="Tools\vm\driver\zephyr\README.md" />
+    <None Include="Tools\vm\examples\arduino\LVGL_Arduino\LVGL_Arduino.ino">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\assets\font\lv_font_simsun_16_cjk.fnt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\assets\font\montserrat-16.fnt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\assets\font\montserrat-18.fnt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\assets\font\montserrat-22.fnt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\assets\img_skew_strip_80x20_argb8888.fnt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\fa.font">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\libs\freetype\Lato-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\libs\rlottie\lv_example_rlottie_approve.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\libs\sjpg\small_image.sjpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\libs\tiny_ttf\Ubuntu-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\st12.font">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\st122p.font">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\st14.font">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\st142p.font">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\st16.font">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\examples\st162p.font">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\lib\st12.font">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tools\vm\run.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -704,6 +1979,9 @@
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="src\lib\" />
+    <Folder Include="Tools\vm\examples\others\fragment\" />
+    <Folder Include="Tools\vm\examples\others\monkey\" />
+    <Folder Include="Tools\vm\examples\porting\" />
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="Conf\devices.txt">
