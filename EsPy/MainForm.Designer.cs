@@ -110,6 +110,7 @@
             this.vS2015DarkTheme1 = new WeifenLuo.WinFormsUI.Docking.VS2015DarkTheme();
             this.vS2015LightTheme1 = new WeifenLuo.WinFormsUI.Docking.VS2015LightTheme();
             this.visualStudioToolStripExtender1 = new WeifenLuo.WinFormsUI.Docking.VisualStudioToolStripExtender(this.components);
+            this.vmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -357,7 +358,8 @@
             // mnTools
             // 
             this.mnTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnWebREPL});
+            this.mnWebREPL,
+            this.vmToolStripMenuItem});
             this.mnTools.Name = "mnTools";
             this.mnTools.Size = new System.Drawing.Size(51, 24);
             this.mnTools.Text = "工具";
@@ -365,7 +367,7 @@
             // mnWebREPL
             // 
             this.mnWebREPL.Name = "mnWebREPL";
-            this.mnWebREPL.Size = new System.Drawing.Size(153, 26);
+            this.mnWebREPL.Size = new System.Drawing.Size(181, 26);
             this.mnWebREPL.Text = "WebREPL";
             this.mnWebREPL.Click += new System.EventHandler(this.mnWebREPL_Click);
             // 
@@ -811,6 +813,13 @@
             // 
             this.visualStudioToolStripExtender1.DefaultRenderer = null;
             // 
+            // vmToolStripMenuItem
+            // 
+            this.vmToolStripMenuItem.Name = "vmToolStripMenuItem";
+            this.vmToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.vmToolStripMenuItem.Text = "LVGL模拟器";
+            this.vmToolStripMenuItem.Click += new System.EventHandler(this.vmToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -927,6 +936,7 @@
         private System.Windows.Forms.ToolStripMenuItem yunfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton btnchipconf;
+        private System.Windows.Forms.ToolStripMenuItem vmToolStripMenuItem;
     }
 }
 

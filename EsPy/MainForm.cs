@@ -1202,5 +1202,13 @@ namespace EsPy
                 Globals.Terminal.Locked = false;
             }
         }
+
+        private void vmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string p = Path.Combine(Application.StartupPath, "Tools", "vm", "run.bat");
+            if (File.Exists(p))
+                System.Diagnostics.Process.Start(p);
+            else MessageBox.Show("帮助文件不出口!", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }
